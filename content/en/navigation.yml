@@ -1,0 +1,20 @@
+-
+  url: "/en/"
+  name: "Home"
+  icon: "bookmark"
+-
+  url: "/en/team"
+  name: "Team"
+  icon: "bookmark"
+-
+  url: "/en/technology"
+  name: "Technology"
+  icon: "pencil"
+-
+  url: "/en/service"
+  name: "Service"
+  icon: "pencil"
+-
+  url: "/en/contact"
+  name: "Contact"
+  icon: "pencil"

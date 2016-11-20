@@ -1,0 +1,20 @@
+-
+  url: "/fr/"
+  name: "Home"
+  icon: "bookmark"
+-
+  url: "/fr/team"
+  name: "Team"
+  icon: "bookmark"
+-
+  url: "/fr/technologie"
+  name: "Technologie"
+  icon: "pencil"
+-
+  url: "/fr/service"
+  name: "Service"
+  icon: "pencil"
+-
+  url: "/fr/contact"
+  name: "Contact"
+  icon: "pencil"
