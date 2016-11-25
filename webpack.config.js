@@ -9,8 +9,23 @@ import PhenomicLoaderFeedWebpackPlugin
 import pkg from "./package.json"
 
 export default (config = {}) => {
-  const postcssPlugins = () => [
-    require("stylelint")(),
+  const postcssPlugins = (webpack) => [
+    require("postcss-import")({
+      addDependencyTo: webpack,
+      plugins: [
+        require("stylelint")({
+          config: require("./stylelint.config.js"),
+        }),
+        // require("stylelint")({
+        //   config: {
+        //     "rules": {
+        //       "max-empty-lines": 0,
+        //     }
+        //   },
+        // }),
+      ],
+    }),
+    require("postcss-nested")(),
     require("postcss-cssnext")({
       browsers: "last 2 versions",
       features: {
@@ -244,7 +259,7 @@ export default (config = {}) => {
     },
 
     // webpack 1
-    postcss: postcssPlugins,
+    postcss: function(webpack) { return postcssPlugins(webpack) },
 
     plugins: [
       // webpack 2

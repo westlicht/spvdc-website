@@ -1,14 +1,16 @@
 import React, { PropTypes } from "react"
 
-import Page from "../Page"
+import PlainPage from "../PlainPage"
 import MemberList from "../../components/MemberList"
 
 const Team = (props) => {
   const members = props.head.members
   return (
-    <Page { ...props }>
-      <MemberList members={members} />
-    </Page>
+    <PlainPage { ...props }>
+      <section className="wrapper-content">
+        <MemberList members={members} />
+      </section>
+    </PlainPage>
   )
 }
 

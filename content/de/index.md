@@ -5,6 +5,16 @@ locale: de
 id: index
 ---
 
-Willkommen bei swiss-PVD-Coating AG.
+<section class="wrapper-banner">
 
-**jadajada**
+<h1>Willkommen</h1>
+
+</section>
+
+<section class="wrapper-content">
+
+<h1>Home</h1>
+
+<p>Willkommen bei swiss-PVD-Coating AG.</p>
+
+</section>

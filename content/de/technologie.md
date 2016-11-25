@@ -1,8 +1,10 @@
 ---
 title: Technologie
-layout: Page
+layout: PlainPage
 locale: de
 id: technology
+banner:
+  image: /assets/img/banner/technology.jpg
 ---
 
 ## High Density Pulsed Plasma (HDPP)

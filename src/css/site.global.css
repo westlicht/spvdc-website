@@ -1,0 +1,73 @@
+@import "./core/_root.css";
+@import "./site/_root.css";
+@import "./site/_header.css";
+@import "./site/_footer.css";
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+#wrapper {
+  /*padding-bottom: 1px;*/
+  /*padding-top: 44px;*/
+}
+
+#content {
+  /*background: red;*/
+  padding-top: 2.5em;
+}
+
+@media (min-width: 560px) {
+  #content {
+    padding-top: 0em;
+  }
+}
+
+
+/*#banner {
+  height: 8em;
+  background: #fff url("/assets/img/stairs.jpg") no-repeat center;
+  background-size: auto;
+  width: 100%;
+}*/
+
+.wrapper {
+
+  &-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: var(--max-width);
+    padding-left: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);
+  }
+
+  &-banner {
+    height: 8em;
+    background: #fff url("/assets/img/stairs.jpg") no-repeat center;
+    background-size: auto;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: #fff;
+      text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+      margin: 0;
+      /*background-color: red;*/
+      /*display: block;*/
+      /*text-align: center;*/
+    }
+  }
+}
+
+@media (min-width: 560px) {
+  .wrapper-banner {
+    background-size: cover;
+  }
+}

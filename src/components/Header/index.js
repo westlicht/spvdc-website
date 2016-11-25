@@ -6,56 +6,53 @@ import React, { PropTypes } from "react"
 // import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
 // import gitHubSvg from "../icons/iconmonstr-github-1.svg"
 
-import JSONTree from "react-json-tree"
+// import JSONTree from "react-json-tree"
 
-import Navigation from "../Navigation"
+import enhanceCollection from "phenomic/lib/enhance-collection"
+import currentPageId from "../../utils/currentPageId"
 
-import styles from "./index.css"
+// import Navigation from "../Navigation"
+import NavigationMenu from "../NavigationMenu"
 
-const Header = (props, context) => (
-  <header className={ styles.header }>
-    <JSONTree data={ context } />
-    <Navigation { ...props } />
-    {/* <nav className={ styles.nav }>
-      <div className={ styles.navPart1 }>
-        <Link
-          className={ styles.link }
-          to="/"
-        >
-          { "Home" }
-        </Link>
-        <Link
-          className={ styles.link }
-          to="/"
-        >
-          { "Tech" }
-        </Link>
-      </div>
-      <div className={ styles.navPart2 }>
-        {
-          pkg.twitter &&
-          <a
-            href={ `https://twitter.com/${pkg.twitter}` }
-            className={ styles.link }
-          >
-            <Svg svg={ twitterSvg } cleanup />
-            { "Twitter" }
-          </a>
-        }
-        {
-          pkg.repository &&
-          <a
-            href={ pkg.repository }
-            className={ styles.link }
-          >
-            <Svg svg={ gitHubSvg } cleanup />
-            { "GitHub" }
-          </a>
-        }
-      </div>
-    </nav> */}
-  </header>
-)
+// import styles from "./index.css"
+
+const Header = (props, context) => {
+
+  // collect translation items
+  const id = currentPageId(context)
+  const translationItems = enhanceCollection(context.collection, {
+    filter: { id: id },
+    sorted: "locale",
+  }).map(item => ({
+    name: item.locale.toUpperCase(),
+    url: item.__url,
+  }))
+
+  // collect navigation items
+  const navigationItems = {
+    en: require("../../../content/en/navigation.yml"),
+    de: require("../../../content/de/navigation.yml"),
+    fr: require("../../../content/fr/navigation.yml"),
+  }[context.locale].map(item => ({
+    name: item.name,
+    url: item.url,
+  }))
+
+
+
+
+  return (
+  <div id="header">
+    <div id="logo">
+      <NavigationMenu id="nav-language" items={ translationItems } />
+      <div id="nav-dropdown"/>
+    </div>
+    <NavigationMenu id="nav-top" items={ navigationItems } />
+    <div id="separator"/>
+    {/* <JSONTree data={ context } shouldExpandNode={ (keyName, data, level) => { return level < 1 } } /> */}
+  </div>
+  )
+}
 
 // Header.propTypes = {
 //   navigationItems: PropTypes.array.isRequired,

@@ -13,8 +13,12 @@ export default function currentPageId(context) {
   invariant(location, "'location' is required from the context")
   invariant(collection, "'collection' is required from the context")
 
+  // add leading delimiter
+  let url = context.location.pathname
+  url = url[0] == "/" ? url : "/" + url
+
   const page = enhanceCollection(context.collection, {
-    filter: { __url: context.location.pathname },
+    filter: { __url: url },
   })[0]
   return page ? page.id : null
 }

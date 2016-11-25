@@ -1,9 +1,9 @@
 import React, { PropTypes } from "react"
 
-import styles from "./index.css"
+// import styles from "./index.css"
 
 const Content = (props) => (
-  <div className={ styles.content }>
+  <div id="content">
     { props.children }
   </div>
 )

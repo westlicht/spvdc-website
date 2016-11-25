@@ -1,8 +1,11 @@
 import React, { PropTypes } from "react"
 import { addLocaleData, IntlProvider } from "react-intl"
 
-import "./index.global.css"
-import "./highlight.global.css"
+import "./css/skeleton.global.css"
+import "./css/site.global.css"
+
+// import "./index.global.css"
+// import "./highlight.global.css"
 
 import Container from "./components/Container"
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
@@ -46,15 +49,17 @@ class AppContainer extends React.Component {
   }
 
   getLocale() {
-    const locale = this.props.location.pathname.replace(/^\//, "").split("/")[0]
-    return locale || "de"
+    let locale = this.props.location.pathname.replace(/^\//, "").split("/")[0]
+    if (!["de", "en", "fr"].includes(locale)) {
+      locale = "de"
+    }
+    return locale
   }
 
   getChildContext() {
     return {
         location: this.props.location,
         locale: this.getLocale(),
-        test: "TEST",
     }
   }
 

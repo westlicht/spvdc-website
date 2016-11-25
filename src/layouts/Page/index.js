@@ -5,7 +5,7 @@ import { BodyContainer, joinUri } from "phenomic"
 
 import Loading from "../../components/Loading"
 
-import styles from "./index.css"
+// import styles from "./index.css"
 
 const Page = (
   {
@@ -45,15 +45,15 @@ const Page = (
   ]
 
   return (
-    <div className={ styles.page }>
+    <div className="container2">
       <Helmet
         title={ metaTitle }
         meta={ meta }
       />
-      {
+      {/* {
         head.title &&
         <h1 className={ styles.heading }>{ head.title }</h1>
-      }
+      } */}
       { header }
       {
         isLoading

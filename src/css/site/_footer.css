@@ -1,0 +1,22 @@
+
+#footer {
+  height: 12rem;
+  background-color: #ddd;
+  /*display: flex;*/
+  /*flex-flow: column;*/
+  /*justify-content: space-between;*/
+
+  /*height: 140px;*/
+
+  /*background: #fff url("/assets/img/logo.svg") no-repeat center;*/
+  /*background-image: url("/assets/img/logo.svg");*/
+
+  /*border-style: solid;*/
+  /*border-bottom: 2px solid #333;*/
+  position: relative;
+
+  a {
+    color: red;
+  }
+
+}

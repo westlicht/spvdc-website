@@ -5,7 +5,7 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 
 import currentPageId from "../../utils/currentPageId"
 
-import styles from "./index.css"
+// import styles from "./index.css"
 
 const Navigation = (props, context) => {
   const items = {
@@ -21,14 +21,15 @@ const Navigation = (props, context) => {
   })
 
   return (
-    <nav className={styles.nav}>
+    <nav>
       {
         items.map((item) => (
           <Link
             to={item.url}
             key={item.url}
-            className={styles.link}
-            activeClassName={styles.linkActive}
+            activeClassName="active"
+            // className={styles.link}
+            // activeClassName={styles.linkActive}
           >
             {/* {
               item.icon &&
@@ -47,23 +48,14 @@ const Navigation = (props, context) => {
           <Link
             to={ item.__url }
             key={ item.__url }
-            className={ styles.link }
-            activeClassName={ styles.linkActive }
+            // className={ styles.link }
+            // activeClassName={ styles.linkActive }
+            hidden="true"
           >
             { item.locale }
           </Link>
         ))
       }
-
-      {/* <Link className={styles.link} to={ "/de/" }>
-        { "Deutsch" }
-      </Link>
-      <Link className={styles.link} to={ "/en/" }>
-        { "English" }
-      </Link>
-      <Link className={styles.link} to={ "/fr/" }>
-        { "Français" }
-      </Link> */}
     </nav>
   )
 }
