@@ -43,22 +43,26 @@ const Header = (props, context) => {
   <div id="header">
     <div id="logo">
       <span id="logo-text">swiss-PVD Coating AG</span>
-      <div id="nav-dropdown" onClick={
-        (e) => {
-          document.querySelector("#nav-top").classList.toggle("hidden")
-        }
-      }/>
+      <div id="nav-dropdown" onClick={ Header.toggleDropdown } />
       <NavigationMenu id="nav-language" items={ translationItems } />
     </div>
-    <NavigationMenu id="nav-top" items={ navigationItems } />
+    <div id="nav-top-wrapper">
+      <NavigationMenu id="nav-top" items={ navigationItems } onClick={ Header.hideDropdown } />
+    </div>
     <div id="separator"/>
     {/* <JSONTree data={ context } shouldExpandNode={ (keyName, data, level) => { return level < 1 } } /> */}
   </div>
   )
 }
 
-Header.toggleNavigation = function(e) {
-  alert("toggle");
+Header.toggleDropdown = function(e) {
+  (e)
+  document.querySelector("#nav-top").classList.toggle("visible")
+}
+
+Header.hideDropdown = function(e) {
+  (e)
+  document.querySelector("#nav-top").classList.remove("visible")
 }
 
 // Header.propTypes = {
