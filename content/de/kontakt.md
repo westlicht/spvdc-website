@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-layout: PlainPage
+layout: Contact
 locale: de
 id: contact
 banner:

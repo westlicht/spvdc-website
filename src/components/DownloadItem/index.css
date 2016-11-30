@@ -1,0 +1,14 @@
+.item {
+  width: 80rem;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 2rem;
+}
+
+.description {
+  width: 40rem;
+}
+
+.link {
+  width: 20rem;
+}

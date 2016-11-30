@@ -1,26 +1,68 @@
 @import "./core/_root.css";
+@import "./core/_arimo.css";
 @import "./site/_root.css";
 @import "./site/_header.css";
 @import "./site/_footer.css";
 
+html {
+  font-size: 1em;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
-  margin: 0;
+  background-color: var(--background-color);
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--font-color);
+
+  /*margin: 0;
   background-color: #fff;
+  min-height: 100%;*/
+
+
+}
+
+h1.headline {
+  font-weight: bold;
+  font-size: 32pt;
+  margin: 0;
+}
+
+h2.subline {
+  font-weight: normal;
+  font-size: 24pt;
+  margin: 0;
+  color: var(--color-primary);
+}
+
+p.lead {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 12pt;
 }
 
 #wrapper {
+  /*display: flex;*/
+  /*flex-flow: column;*/
+  /*justify-content: space-between;*/
   /*padding-bottom: 1px;*/
   /*padding-top: 44px;*/
 }
 
 #content {
   /*background: red;*/
-  padding-top: 2.5em;
+  /*display:flex;*/
+  /*padding-top: 2.5em;*/
+  flex-grow: 1;
 }
 
-@media (min-width: 560px) {
+@media (width <= 40em) {
   #content {
-    padding-top: 0em;
+    padding-top: 2.5em;
   }
 }
 
@@ -35,20 +77,21 @@ body {
 .wrapper {
 
   &-content {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    @neat-outer-container;
+    padding: 1rem 0.5rem;
+    /*padding-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
     max-width: var(--max-width);
     padding-left: calc(var(--gutter) / 2);
-    padding-right: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);*/
   }
 
   &-banner {
     height: 8em;
     background: #fff url("/assets/img/stairs.jpg") no-repeat center;
-    background-size: auto;
+    background-size: cover;
     width: 100%;
 
     display: flex;
@@ -66,8 +109,12 @@ body {
   }
 }
 
-@media (min-width: 560px) {
+@media (width <= 40em) {
   .wrapper-banner {
-    background-size: cover;
+    background-size: auto;
   }
+}
+
+a {
+  text-decoration: none;
 }

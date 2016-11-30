@@ -15,6 +15,10 @@
   name: "Service"
   icon: "pencil"
 -
+  url: "/de/download"
+  name: "Download"
+  icon: "download"
+-
   url: "/de/kontakt"
   name: "Kontakt"
   icon: "pencil"

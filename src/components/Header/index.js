@@ -39,19 +39,26 @@ const Header = (props, context) => {
   }))
 
 
-
-
   return (
   <div id="header">
     <div id="logo">
+      <span id="logo-text">swiss-PVD Coating AG</span>
+      <div id="nav-dropdown" onClick={
+        (e) => {
+          document.querySelector("#nav-top").classList.toggle("hidden")
+        }
+      }/>
       <NavigationMenu id="nav-language" items={ translationItems } />
-      <div id="nav-dropdown"/>
     </div>
     <NavigationMenu id="nav-top" items={ navigationItems } />
     <div id="separator"/>
     {/* <JSONTree data={ context } shouldExpandNode={ (keyName, data, level) => { return level < 1 } } /> */}
   </div>
   )
+}
+
+Header.toggleNavigation = function(e) {
+  alert("toggle");
 }
 
 // Header.propTypes = {

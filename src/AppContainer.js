@@ -1,8 +1,11 @@
 import React, { PropTypes } from "react"
 import { addLocaleData, IntlProvider } from "react-intl"
 
-import "./css/skeleton.global.css"
+import "font-awesome/css/font-awesome.css"
+
+// import "./css/skeleton.global.css"
 import "./css/site.global.css"
+
 
 // import "./index.global.css"
 // import "./highlight.global.css"

@@ -16,16 +16,14 @@ export default (config = {}) => {
         require("stylelint")({
           config: require("./stylelint.config.js"),
         }),
-        // require("stylelint")({
-        //   config: {
-        //     "rules": {
-        //       "max-empty-lines": 0,
-        //     }
-        //   },
-        // }),
       ],
     }),
+    require("postcss-normalize")(),
+    require("postcss-media-minmax")(),
+    require("postcss-neat")(),
+    require("postcss-mixins")(),
     require("postcss-nested")(),
+    require("postcss-inherit")(),
     require("postcss-cssnext")({
       browsers: "last 2 versions",
       features: {
@@ -38,15 +36,25 @@ export default (config = {}) => {
       },
     }),
     require("postcss-reporter")(),
-    ...!config.production ? [
+    ...config.production ? [
+
+    ] : [
       require("postcss-browser-reporter")(),
-    ] : [],
+    ],
   ]
 
   return {
     ...config.dev && {
       devtool: "#cheap-module-eval-source-map",
     },
+
+    phenomic: {
+      plugins: [
+        ...require("phenomic/lib/loader-preset-markdown").default,
+        require("./src/loader-plugin-transform-md-head-property-to-html").default,
+      ],
+    },
+
     module: {
       noParse: /\.min\.js/,
       // webpack 1
@@ -64,26 +72,8 @@ export default (config = {}) => {
           query: {
             context: path.join(__dirname, config.source),
             // plugins: [
-            //   ...require("phenomic/lib/loader-preset-markdown").default
-            // ]
-            // see https://phenomic.io/docs/usage/plugins/
-          },
-        },
-
-        {
-          // phenomic requirement
-          test: /\.raw$/,
-          loader: phenomicLoader,
-          query: {
-            context: path.join(__dirname, config.source),
-            plugins: [
-                // ...require("phenomic/lib/loader-preset-default").default,
-                ...require("phenomic/lib/loader-plugin-init-head-property-from-content").default,
-                ...require("phenomic/lib/loader-plugin-init-rawBody-property-from-content").default
-            ]
-            // plugins: [
-            //   ...require("phenomic/lib/loader-preset-markdown").default
-            // ]
+            //   ...require("phenomic/lib/loader-preset-markdown").default,
+            // ],
             // see https://phenomic.io/docs/usage/plugins/
           },
         },
@@ -187,6 +177,16 @@ export default (config = {}) => {
           }),
           */
         },
+        // node_modules CSS
+        {
+          test: /\.css$/,
+          include: path.resolve(__dirname, "node_modules"),
+          // webpack 1
+          loader: ExtractTextPlugin.extract(
+            "style-loader",
+            "css-loader",
+          ),
+        },
         // ! \\
         // If you want global CSS only, just remove the 2 sections above
         // and use the following one
@@ -242,7 +242,8 @@ export default (config = {}) => {
 
         // copy assets and return generated path in js
         {
-          test: /\.(html|ico|jpe?g|png|gif|eot|otf|webp|ttf|woff|woff2)$/,
+          test: /\.(html|ico|jpe?g|png|gif|eot|otf|webp|ttf|woff|woff2|svg)$/,
+          exclude: path.resolve(__dirname, "node_modules"),
           loader: "file-loader",
           query: {
             name: "[path][name].[hash].[ext]",
@@ -250,11 +251,22 @@ export default (config = {}) => {
           },
         },
 
-        // svg as raw string to be inlined
+        // copy assets in node_modules into assets/vendor
         {
-          test: /\.svg$/,
-          loader: "raw-loader",
+          test: /\.(html|ico|jpe?g|png|gif|eot|otf|webp|ttf|woff|woff2|svg)\??/,
+          include: path.resolve(__dirname, "node_modules"),
+          loader: "file-loader",
+          query: {
+            name: "assets/vendor/[name].[hash].[ext]",
+            context: path.join(__dirname, config.source),
+          },
         },
+
+        // svg as raw string to be inlined
+        // {
+        //   test: /\.svg\??/,
+        //   loader: "raw-loader",
+        // },
       ],
     },
 
