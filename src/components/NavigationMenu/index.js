@@ -7,8 +7,8 @@ const NavigationMenu = (props) => {
       {
         props.items.map((item) => (
           <Link
-            to={item.url}
-            key={item.url}
+            to={ item.url.replace(/\/$/g, '') }
+            key={ item.url }
             activeClassName="active"
             onClick={ props.onClick }
           >
@@ -23,7 +23,7 @@ const NavigationMenu = (props) => {
 NavigationMenu.propTypes = {
   id: PropTypes.string.isRequired,
   items: PropTypes.array.isRequired,
-  onClick: PropTypes.function,
+  onClick: PropTypes.func,
 }
 
 export default NavigationMenu

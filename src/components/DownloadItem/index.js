@@ -9,10 +9,11 @@ const DownloadItem = ({ description, url }) => {
   return (
     <div className={ styles.item }>
       <a className={ styles.link } href={ url }>
-        <Icon className={ styles.icon } name="file-pdf-o" />
+        {/* <Icon className={ styles.icon } name="file-pdf-o" /> */}
+        <Icon className={ styles.icon } name="download" size="lg" />
         { filename }
       </a>
-      <p className={ styles.description }>{ description }</p>
+      <span className={ styles.description }>{ description }</span>
     </div>
   )
 }

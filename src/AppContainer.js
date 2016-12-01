@@ -2,12 +2,11 @@ import React, { PropTypes } from "react"
 import Intl from "intl" // load polyfill
 (Intl)
 import { addLocaleData, IntlProvider } from "react-intl"
+import flatten from "flat"
 
 import "font-awesome/css/font-awesome.css"
 
-// import "./css/skeleton.global.css"
 import "./css/site.global.css"
-
 
 // import "./index.global.css"
 // import "./highlight.global.css"
@@ -18,11 +17,6 @@ import Header from "./components/Header"
 import Content from "./components/Content"
 import Footer from "./components/Footer"
 
-import flattenMessages from "./utils/flattenMessages"
-
-// import getLang from "./i18n/getLang"
-// import getI18n from "./i18n/get"
-
 // Standard locales
 import de from 'react-intl/locale-data/de'
 import en from 'react-intl/locale-data/en'
@@ -31,9 +25,9 @@ addLocaleData([...de, ...en, ...fr])
 
 // Application messages
 const messages = {
-  de: flattenMessages(require("../content/de/translations.yml")),
-  en: flattenMessages(require("../content/en/translations.yml")),
-  fr: flattenMessages(require("../content/fr/translations.yml")),
+  de: flatten(require("../content/de/translations.yml")),
+  en: flatten(require("../content/en/translations.yml")),
+  fr: flatten(require("../content/fr/translations.yml")),
 }
 
 class AppContainer extends React.Component {
@@ -70,11 +64,10 @@ class AppContainer extends React.Component {
 
   render() {
     const locale = this.getLocale()
-    // const locale = getLang(this.context)
     return (
       <IntlProvider locale={ locale } messages={ messages[locale] }>
         <Container>
-          {/* <p>{ JSON.stringify(flattenMessages(deLocaleDataApp)) }</p> */}
+          {/* <p>params: { JSON.stringify(this.props.params) }</p> */}
           <DefaultHeadMeta />
           <Header { ...this.props } />
           <Content>

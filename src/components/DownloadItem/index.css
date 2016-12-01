@@ -1,14 +1,36 @@
+@import "../../css/site/_root.css";
+
 .item {
-  width: 80rem;
   display: flex;
   flex-flow: row wrap;
-  padding-bottom: 2rem;
-}
+  align-items: stretch;
 
-.description {
-  width: 40rem;
+  margin-bottom: 1rem;
+
+  background: var(--color-background-1);
+
+  /*box-shadow: 0 0.5rem 1rem -0.5rem rgba(0,0,0,0.25);*/
 }
 
 .link {
-  width: 20rem;
+  display: flex;
+  flex-basis: 20rem;
+  flex-grow: 1;
+  align-items: center;
+
+  padding: 1rem;
+
+  background: var(--color-background-2);
+}
+
+.icon {
+  padding-right: 0.5rem;
+}
+
+.description {
+  flex-basis: 32rem;
+  flex-grow: 1;
+
+  padding: 1rem;
+  hyphens: auto;
 }

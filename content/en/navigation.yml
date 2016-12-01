@@ -15,6 +15,14 @@
   name: "Service"
   icon: "pencil"
 -
+  url: "/en/coatings"
+  name: "Coatings"
+  icon: ""
+-
+  url: "/en/download"
+  name: "Download"
+  icon: ""
+-
   url: "/en/contact"
   name: "Contact"
   icon: "pencil"

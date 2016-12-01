@@ -15,6 +15,14 @@
   name: "Service"
   icon: "pencil"
 -
+  url: "/fr/revetements"
+  name: "Revêtements"
+  icon: ""
+-
+  url: "/fr/download"
+  name: "Download"
+  icon: ""
+-
   url: "/fr/contact"
   name: "Contact"
   icon: "pencil"

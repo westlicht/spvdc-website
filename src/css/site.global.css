@@ -78,7 +78,7 @@ p.lead {
 
   &-content {
     @neat-outer-container;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
     /*padding-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
@@ -117,4 +117,15 @@ p.lead {
 
 a {
   text-decoration: none;
+
+  &:link, &:visited {
+    color: var(--color-link);
+  }
+  &:hover, &:active {
+    color: var(--color-primary);
+  }
+}
+
+.phenomic-HeadingAnchor {
+  display: none;
 }

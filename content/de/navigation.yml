@@ -1,24 +1,28 @@
 -
   url: "/de/"
   name: "Home"
-  icon: "bookmark"
+  icon: ""
 -
   url: "/de/team"
   name: "Team"
-  icon: "bookmark"
+  icon: ""
 -
   url: "/de/technologie"
   name: "Technologie"
-  icon: "pencil"
+  icon: ""
 -
   url: "/de/service"
   name: "Service"
-  icon: "pencil"
+  icon: ""
+-
+  url: "/de/beschichtungen"
+  name: "Beschichtungen"
+  icon: ""
 -
   url: "/de/download"
   name: "Download"
-  icon: "download"
+  icon: ""
 -
   url: "/de/kontakt"
   name: "Kontakt"
-  icon: "pencil"
+  icon: ""
