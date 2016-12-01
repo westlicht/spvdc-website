@@ -118,10 +118,12 @@ p.lead {
 a {
   text-decoration: none;
 
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: var(--color-link);
   }
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: var(--color-primary);
   }
 }
