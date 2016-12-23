@@ -1,0 +1,11 @@
+@import "../../css/site/_root.css";
+
+.list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.item {
+  background-color: var(--color-background-1);
+  padding: 0.5rem;
+}

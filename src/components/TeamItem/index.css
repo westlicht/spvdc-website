@@ -1,10 +1,12 @@
 .item {
-  @neat-span-columns 6;
-  @neat-omega 2n;
+  /*@neat-span-columns 6;
+  @neat-omega 2n;*/
   /*width: 30rem;*/
-  /*display: flex;
+  /*min-width: 30rem;*/
+  display: flex;
   flex-flow: row wrap;
-  padding-bottom: 2rem;*/
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .portrait {
@@ -13,7 +15,7 @@
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   background-position: center;
   background-size: cover;
-  border-radius: 0.25rem;
+  /*border-radius: 0.25rem;*/
   margin-right: 2rem;
 }
 
@@ -22,6 +24,7 @@
   flex-flow: column nowrap;
   align-self: center;
   padding: 1rem 0;
+  min-width: 20rem;
 }
 
 .name {
@@ -32,12 +35,19 @@
 .short {
   display: block;
   font-style: italic;
+  padding-bottom: 1rem;
 }
 
 .tel {
   display: block;
+  span {
+    padding-right: 0.5rem;
+  }
 }
 
 .email {
   display: block;
+  span {
+    padding-right: 0.5rem;
+  }
 }

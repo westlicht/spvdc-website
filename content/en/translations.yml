@@ -1,3 +1,4 @@
 locale: en
 homepage:
   latestPosts: "Latest Posts"
+  noPosts: "No entries yet."

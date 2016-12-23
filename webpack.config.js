@@ -21,27 +21,23 @@ export default (config = {}) => {
     require("stylelint")({
       config: require("./stylelint.config.js"),
     }),
-    require("postcss-partial-import")(),
-    require("postcss-normalize")(),
+    // require("postcss-normalize")(),
+    require("postcss-partial-import")({
+      addDependencyTo: webpack,
+    }),
+    require("postcss-mixins")(),
     require("postcss-media-minmax")(),
     require("postcss-neat")(),
-    require("postcss-mixins")(),
     require("postcss-nested")(),
     require("postcss-inherit")(),
     require("postcss-cssnext")({
-      browsers: "last 2 versions",
+      browsers: "last 4 versions",
       features: {
-        customProperties: {
-          variables: {
-            mainColor: "#111",
-            mainColorContrasted: "#eee",
-          },
-        },
       },
     }),
     require("postcss-reporter")(),
     ...config.production ? [
-
+      require("postcss-flexibility")(),
     ] : [
       require("postcss-browser-reporter")(),
     ],
@@ -73,9 +69,11 @@ export default (config = {}) => {
           loader: phenomicLoader,
           query: {
             context: path.join(__dirname, config.source),
-            // plugins: [
-            //   ...require("phenomic/lib/loader-preset-markdown").default,
-            // ],
+            plugins: [
+              ...require("phenomic/lib/loader-preset-markdown").default,
+              // require("./src/loader-plugin-transform-md-head-property-to-html").default,
+              // require("./src/plugins/loader-plugin-extract-locale").default,
+            ],
             // see https://phenomic.io/docs/usage/plugins/
           },
         },
@@ -99,6 +97,7 @@ export default (config = {}) => {
           include: [
             path.resolve(__dirname, "scripts"),
             path.resolve(__dirname, "src"),
+            path.resolve(__dirname, "content"),
           ],
           loaders: [
             "babel-loader?cacheDirectory",

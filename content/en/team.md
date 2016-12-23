@@ -1,7 +1,6 @@
 ---
 title: Team
 layout: Team
-locale: en
 id: team
 members:
 -

@@ -1,7 +1,6 @@
 ---
 title: Technology
 layout: Page
-locale: en
 id: technology
 ---
 

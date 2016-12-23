@@ -1,0 +1,18 @@
+#banner {
+  height: 12em;
+  background: #fff url("/assets/img/stairs.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media (width <= 50em) {
+  #banner {
+    height: 10em;
+  }
+}
+
+@media (width <= 40em) {
+  #banner {
+    height: 8em;
+    background-size: 150%;
+  }
+}

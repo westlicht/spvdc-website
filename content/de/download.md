@@ -1,7 +1,6 @@
 ---
 title: Download
 layout: Download
-locale: de
 id: download
 banner:
   image: /assets/img/banner/download.jpg

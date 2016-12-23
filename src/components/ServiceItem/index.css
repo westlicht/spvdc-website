@@ -1,0 +1,58 @@
+@import "../../css/site/_root.css";
+
+.item {
+  /*width: 100%;*/
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  padding: 0 0rem;
+  margin: 0 -1rem;
+
+  background: var(--color-background-1);
+}
+
+.info {
+  display: flex;
+  flex-grow: 4;
+  flex-direction: column;
+  width: 20rem;
+  padding: 1rem;
+
+  h1 {
+    font-size: 2rem;
+    color: var(--color-primary-darker);
+    margin: 0 0 1rem;
+
+    span {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.image {
+  min-width: 20rem;
+  min-height: 16rem;
+  align-self: stretch;
+
+  background: black;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+.arrow {
+  margin: 1rem auto 1rem;
+  width: 0;
+  height: 0;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+  border-top: 3rem solid var(--color-background-1);
+}
+
+.item:last-child > .arrow {
+  display: none;
+}

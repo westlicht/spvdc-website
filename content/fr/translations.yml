@@ -1,3 +1,4 @@
 locale: fr
 homepage:
   latestPosts: "Les derniers articles"
+  noPosts: "Pas d'annonces."

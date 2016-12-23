@@ -1,9 +1,11 @@
 ---
-title: Phenomic base theme
-layout: Homepage
+title: swiss-PVD Coating AG
+layout: Entry
 ---
 
 Hi there.
+
+
 
 Before having fun with Phenomic, be sure to read (or at least pretend to)
 the documentation :

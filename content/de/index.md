@@ -1,20 +1,11 @@
 ---
 title: Home
 layout: Homepage
-locale: de
 id: index
+banner:
+  image: "/assets/img/stairs.jpg"
 ---
+# This is a headline
+## This is a subline
 
-<section class="wrapper-banner">
-
-<h1>Willkommen</h1>
-
-</section>
-
-<section class="wrapper-content">
-
-<h1>Home</h1>
-
-<p>Willkommen bei swiss-PVD-Coating AG.</p>
-
-</section>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

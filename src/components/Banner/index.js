@@ -1,19 +1,19 @@
 import React, { PropTypes } from "react"
 
-import styles from "./index.css"
-
-const Banner = ({ image }) => {
+const Banner = ({ image, children }) => {
   return (
-    <div
-      className={ styles.banner }
+    <section
+      id="banner"
       style={{ backgroundImage: "url(" + image + ")" }}
     >
-    </div>
+      { children }
+    </section>
   )
 }
 
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
+  children: PropTypes.node
 }
 
 export default Banner

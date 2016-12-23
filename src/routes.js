@@ -11,7 +11,10 @@ import Team from "./layouts/Team"
 import PlainPage from "./layouts/PlainPage"
 import Contact from "./layouts/Contact"
 import Download from "./layouts/Download"
+import CoatingIndex from "./layouts/CoatingIndex"
 import Coating from "./layouts/Coating"
+import Service from "./layouts/Service"
+import Entry from "./layouts/Entry"
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
@@ -25,7 +28,10 @@ const PageContainer = (props) => (
       PlainPage,
       Contact,
       Download,
+      CoatingIndex,
       Coating,
+      Service,
+      Entry,
     }}
   />
 )

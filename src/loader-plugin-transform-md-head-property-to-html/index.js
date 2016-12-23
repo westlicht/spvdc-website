@@ -20,6 +20,7 @@ function mapObjectEntries(obj, callback) {
 }
 
 function mdify(head) {
+  head.title += "2"
   return head
 
   //  const flattenHead = flatten(head)

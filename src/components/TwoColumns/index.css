@@ -1,0 +1,19 @@
+.container {
+  @neat-outer-container;
+}
+
+.left {
+  @neat-span-columns 8;
+
+  @media (width <= 40em) {
+    @neat-span-columns 12;
+  }
+}
+
+.right {
+  @neat-span-columns 4;
+
+  @media (width <= 40em) {
+    @neat-span-columns 12;
+  }
+}

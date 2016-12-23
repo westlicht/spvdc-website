@@ -1,6 +1,10 @@
+// polyfills
+import "intl"
+import "intl/locale-data/jsonp/de.js"
+import "intl/locale-data/jsonp/fr.js"
+import "intl/locale-data/jsonp/en.js"
+
 import React, { PropTypes } from "react"
-import Intl from "intl" // load polyfill
-(Intl)
 import { addLocaleData, IntlProvider } from "react-intl"
 import flatten from "flat"
 
@@ -8,14 +12,11 @@ import "font-awesome/css/font-awesome.css"
 
 import "./css/site.global.css"
 
-// import "./index.global.css"
-// import "./highlight.global.css"
-
 import Container from "./components/Container"
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
 import Header from "./components/Header"
-import Content from "./components/Content"
 import Footer from "./components/Footer"
+
 
 // Standard locales
 import de from 'react-intl/locale-data/de'
@@ -26,8 +27,8 @@ addLocaleData([...de, ...en, ...fr])
 // Application messages
 const messages = {
   de: flatten(require("../content/de/translations.yml")),
-  en: flatten(require("../content/en/translations.yml")),
   fr: flatten(require("../content/fr/translations.yml")),
+  en: flatten(require("../content/en/translations.yml")),
 }
 
 class AppContainer extends React.Component {
@@ -49,7 +50,7 @@ class AppContainer extends React.Component {
 
   getLocale() {
     let locale = this.props.location.pathname.replace(/^\//, "").split("/")[0]
-    if (!["de", "en", "fr"].includes(locale)) {
+    if (!["de", "fr", "en"].includes(locale)) {
       locale = "de"
     }
     return locale
@@ -62,17 +63,22 @@ class AppContainer extends React.Component {
     }
   }
 
+  componentDidMount() {
+    // Flexibility
+    if (typeof window !== "undefined") {
+      const flexibility = require("flexibility/flexibility.js")
+      flexibility(document.documentElement)
+    }
+  }
+
   render() {
     const locale = this.getLocale()
     return (
       <IntlProvider locale={ locale } messages={ messages[locale] }>
         <Container>
-          {/* <p>params: { JSON.stringify(this.props.params) }</p> */}
           <DefaultHeadMeta />
           <Header { ...this.props } />
-          <Content>
-            { this.props.children }
-          </Content>
+          { this.props.children }
           <Footer />
         </Container>
       </IntlProvider>
@@ -80,44 +86,5 @@ class AppContainer extends React.Component {
 
   }
 }
-
-// const AppContainer = (props, context) => {
-//   // const i18n = getI18n(context)
-//   const locale = getLang(context)
-//   return (
-//     <IntlProvider locale={ locale } messages={ messages[locale] }>
-//       <Container>
-//         {/* <p>{ JSON.stringify(flattenMessages(deLocaleDataApp)) }</p> */}
-//         <DefaultHeadMeta />
-//         <Header { ...props } />
-//         <Content>
-//           { props.children }
-//         </Content>
-//         <Footer />
-//       </Container>
-//     </IntlProvider>
-//   )
-// }
-//
-// AppContainer.getChildContext = function() {
-//   console.log("getChildContext")
-//   return {
-//       test: "TEST",
-//   }
-// }
-//
-// AppContainer.propTypes = {
-//   children: PropTypes.node,
-//   location: PropTypes.object.isRequired,
-// }
-//
-// AppContainer.contextTypes = {
-//   metadata: PropTypes.object.isRequired,
-//   location: PropTypes.object.isRequired,
-// }
-//
-// AppContainer.childContextTypes = {
-//   test: PropTypes.string,
-// }
 
 export default AppContainer

@@ -1,0 +1,1 @@
+export localeFromURL from "./localeFromURL"

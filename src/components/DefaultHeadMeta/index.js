@@ -1,6 +1,8 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 
+import { joinUri } from "phenomic"
+
 import translatedPages from "../../utils/translatedPages"
 
 const DefaultHeadMeta = (props, context) => {
@@ -12,7 +14,7 @@ const DefaultHeadMeta = (props, context) => {
           <Helmet
             key={ item.locale }
             link={ [
-              { rel: "alternate", hreflang: item.locale, href: context.metadata.pkg.homepage + item.__url }
+              { rel: "alternate", hreflang: item.locale, href: joinUri(context.metadata.pkg.homepage, item.__url) }
             ] }
           />
         ))
@@ -27,7 +29,7 @@ const DefaultHeadMeta = (props, context) => {
           { name: "twitter:site", content: `@${ context.metadata.pkg.twitter }` },
         ] }
         script={ [
-          { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
+          { src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes" },
         ] }
       />
 

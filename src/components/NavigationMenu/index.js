@@ -1,20 +1,23 @@
 import React, { PropTypes } from "react"
-import { Link } from "react-router"
+import { Link } from "phenomic"
 
 const NavigationMenu = (props) => {
   return (
     <nav id={ props.id }>
       {
-        props.items.map((item) => (
-          <Link
-            to={ item.url.replace(/\/$/g, '') }
-            key={ item.url }
-            activeClassName="active"
-            onClick={ props.onClick }
-          >
-            {item.name}
-          </Link>
-        ))
+        props.items.map((item) => {
+          let boundClick = props.onClick.bind(this, item)
+          return (
+            <Link
+              key={ item.url }
+              to={ item.url.replace(/\/$/g, '') }
+              activeClassName="active"
+              onClick={ boundClick }
+            >
+              { item.name }
+            </Link>
+          )
+        })
       }
     </nav>
   )

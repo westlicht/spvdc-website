@@ -1,130 +1,32 @@
-@import "./core/_root.css";
-@import "./core/_arimo.css";
+@import "normalize.css/normalize.css";
+@import "./site/_arimo.css";
 @import "./site/_root.css";
+@import "./site/_base.css";
+@import "./site/_typography.css";
+@import "./site/_lists.css";
+@import "./site/_forms.css";
+
 @import "./site/_header.css";
+@import "./site/_banner.css";
 @import "./site/_footer.css";
 
-html {
-  font-size: 1em;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-body {
-  background-color: var(--background-color);
-  font-size: 1rem;
-  line-height: 1.6rem;
-  font-weight: 400;
-  font-family: var(--font-family);
-  color: var(--font-color);
-
-  /*margin: 0;
-  background-color: #fff;
-  min-height: 100%;*/
-
-
-}
-
-h1.headline {
-  font-weight: bold;
-  font-size: 32pt;
-  margin: 0;
-}
-
-h2.subline {
-  font-weight: normal;
-  font-size: 24pt;
-  margin: 0;
-  color: var(--color-primary);
-}
-
-p.lead {
-  margin-top: 1rem;
-  font-weight: bold;
-  font-size: 12pt;
-}
-
-#wrapper {
-  /*display: flex;*/
-  /*flex-flow: column;*/
-  /*justify-content: space-between;*/
-  /*padding-bottom: 1px;*/
-  /*padding-top: 44px;*/
-}
+/*#wrapper {
+}*/
 
 #content {
-  /*background: red;*/
-  /*display:flex;*/
-  /*padding-top: 2.5em;*/
-  flex-grow: 1;
+  padding-top: 6rem;
+  width: 100%;
+}
+
+@media (width <= 50em) {
+  #content {
+    padding-top: 5rem;
+  }
 }
 
 @media (width <= 40em) {
   #content {
-    padding-top: 2.5em;
-  }
-}
-
-
-/*#banner {
-  height: 8em;
-  background: #fff url("/assets/img/stairs.jpg") no-repeat center;
-  background-size: auto;
-  width: 100%;
-}*/
-
-.wrapper {
-
-  &-content {
-    @neat-outer-container;
-    padding: 1rem 1rem;
-    /*padding-bottom: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    max-width: var(--max-width);
-    padding-left: calc(var(--gutter) / 2);
-    padding-right: calc(var(--gutter) / 2);*/
-  }
-
-  &-banner {
-    height: 8em;
-    background: #fff url("/assets/img/stairs.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      color: #fff;
-      text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-      margin: 0;
-      /*background-color: red;*/
-      /*display: block;*/
-      /*text-align: center;*/
-    }
-  }
-}
-
-@media (width <= 40em) {
-  .wrapper-banner {
-    background-size: auto;
-  }
-}
-
-a {
-  text-decoration: none;
-
-  &:link,
-  &:visited {
-    color: var(--color-link);
-  }
-  &:hover,
-  &:active {
-    color: var(--color-primary);
+    padding-top: 4rem;
   }
 }
 
