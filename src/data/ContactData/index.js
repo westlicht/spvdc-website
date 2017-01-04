@@ -7,8 +7,8 @@ class ContactData {
     return [
       translatedString(address.name, locale),
       translatedString(address.street, locale),
-      translatedString(address.lockbox, locale),
-      address.zipcode.toString() + " " + translatedString(address.city, locale),
+      translatedString(address.lockBox, locale),
+      address.zipCode.toString() + " " + translatedString(address.city, locale),
       translatedString(address.country, locale),
     ]
   }

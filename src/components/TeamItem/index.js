@@ -7,10 +7,9 @@ import EmailAddress from "../EmailAddress"
 import styles from "./index.css"
 
 const TeamItem = ({ member }) => {
-  const url = member.image || "/assets/img/team/placeholder.jpg"
   return (
     <div className={ styles.item }>
-      <div className={ styles.portrait } style={{ backgroundImage: "url(" + url + ")" }} />
+      <div className={ styles.portrait } style={{ backgroundImage: "url(" + member.image + ")" }} />
       <div className={ styles.details }>
         <span className={ styles.name }>{ member.name }</span>
         <span className={ styles.title }>{ member.title }</span>

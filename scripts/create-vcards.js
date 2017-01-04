@@ -34,7 +34,7 @@ package.locales.map(locale => {
       v.workAddress.street = translatedString(address.street, locale)
       v.workAddress.city = translatedString(address.city, locale)
       v.workAddress.stateProvince = translatedString(address.province, locale)
-      v.workAddress.postalCode = address.zipcode.toString()
+      v.workAddress.postalCode = address.zipCode.toString()
       v.workAddress.countryRegion = translatedString(address.country, locale)
 
       const filename = "./content/assets/" + locale + "/contact/" + lowerCase(member.firstName) + "-" + lowerCase(member.lastName) + ".vcf"
