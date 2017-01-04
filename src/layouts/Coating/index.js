@@ -6,7 +6,7 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 import transformMarkdown from "../../transform-markdown"
 import RawHtml from "react-raw-html"
 
-import Page from "../Page2"
+import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Banner from "../../components/Banner"
 import Section from "../../components/Section"
@@ -56,7 +56,7 @@ const Coating = (props, { collection, locale }) => {
   // props.head.banner = { image: "/assets/img/banner/coatings.jpg" }
 
   return (
-    <Page { ...props }>
+    <PageWrapper { ...props }>
       <Banner image="/assets/img/banner/coatings.jpg" />
       <Section>
         <TwoColumns>
@@ -96,7 +96,7 @@ const Coating = (props, { collection, locale }) => {
           </RightColumn>
         </TwoColumns>
       </Section>
-    </Page>
+    </PageWrapper>
   )
 }
 

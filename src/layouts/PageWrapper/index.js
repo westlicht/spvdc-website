@@ -3,28 +3,29 @@ import Helmet from "react-helmet"
 import invariant from "invariant"
 import { joinUri } from "phenomic"
 
-import Loading from "../../components/Loading"
+import translatedPages from "../../utils/translatedPages"
+
+import Container from "../../components/Container"
+import Footer from "../../components/Footer"
 import Content from "../../components/Content"
+import Header from "../../components/Header"
+import Loading from "../../components/Loading"
 
 // import styles from "./index.css"
 
-const Page = (
-  {
+const PageWrapper = (props, context) => {
+  let {
     isLoading,
     __filename,
     __url,
     head,
-    // body,
-    // header,
-    // footer,
-    banner,
-    bannerImage,
     children,
-  },
-  {
+  } = props
+  let {
     metadata: { pkg },
-  }
-) => {
+  } = context
+
+
   invariant(
     typeof head.title === "string",
     `Your page '${ __filename }' needs a title`
@@ -47,25 +48,37 @@ const Page = (
     { name: "description", content: head.description },
   ]
 
+  const translations = translatedPages(context)
+
   return (
-    <Content>
+    <Container>
+      {
+        translations.map(item => (
+          <Helmet
+            key={ item.locale }
+            link={ [
+              { rel: "alternate", hreflang: item.locale, href: joinUri(context.metadata.pkg.homepage, item.__url) }
+            ] }
+          />
+        ))
+      }
       <Helmet
         title={ metaTitle }
         meta={ meta }
       />
-      {/* { banner && <Banner image={ banner } /> } */}
-      {/* { banner && banner }
-      { bannerImage && <Banner image={ bannerImage } /> } */}
-      {/* <Section> */}
+
+      <Header { ...props } />
+      <Content>
         {
           isLoading ? <Loading /> : children
         }
-      {/* </Section> */}
-    </Content>
+      </Content>
+      <Footer />
+    </Container>
   )
 }
 
-Page.propTypes = {
+PageWrapper.propTypes = {
   isLoading: PropTypes.bool,
   __filename: PropTypes.string,
   __url: PropTypes.string,
@@ -78,8 +91,10 @@ Page.propTypes = {
   // footer: PropTypes.element,
 }
 
-Page.contextTypes = {
+PageWrapper.contextTypes = {
   metadata: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  collection: PropTypes.array.isRequired,
 }
 
-export default Page
+export default PageWrapper

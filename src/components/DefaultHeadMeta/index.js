@@ -1,24 +1,9 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 
-import { joinUri } from "phenomic"
-
-import translatedPages from "../../utils/translatedPages"
-
 const DefaultHeadMeta = (props, context) => {
-  const translations = translatedPages(context)
   return (
     <div hidden>
-      {
-        translations.map(item => (
-          <Helmet
-            key={ item.locale }
-            link={ [
-              { rel: "alternate", hreflang: item.locale, href: joinUri(context.metadata.pkg.homepage, item.__url) }
-            ] }
-          />
-        ))
-      }
       <Helmet
         meta={ [
           {
@@ -29,7 +14,7 @@ const DefaultHeadMeta = (props, context) => {
           { name: "twitter:site", content: `@${ context.metadata.pkg.twitter }` },
         ] }
         script={ [
-          { src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes" },
+          { src: "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,es6,Array.prototype.includes&flags=gated" },
         ] }
       />
 
@@ -46,7 +31,6 @@ const DefaultHeadMeta = (props, context) => {
 
 DefaultHeadMeta.contextTypes = {
   metadata: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired,
   collection: PropTypes.array.isRequired,
 }
 

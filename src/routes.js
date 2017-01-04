@@ -3,12 +3,12 @@ import { Route } from "react-router"
 import { PageContainer as PhenomicPageContainer } from "phenomic"
 
 import AppContainer from "./AppContainer"
+import PageWrapper from "./layouts/PageWrapper"
 import Page from "./layouts/Page"
 import PageError from "./layouts/PageError"
 import Homepage from "./layouts/Homepage"
 import Post from "./layouts/Post"
 import Team from "./layouts/Team"
-import PlainPage from "./layouts/PlainPage"
 import Contact from "./layouts/Contact"
 import Download from "./layouts/Download"
 import CoatingIndex from "./layouts/CoatingIndex"
@@ -20,12 +20,12 @@ const PageContainer = (props) => (
   <PhenomicPageContainer
     { ...props }
     layouts={{
+      PageWrapper,
       Page,
       PageError,
       Homepage,
       Post,
       Team,
-      PlainPage,
       Contact,
       Download,
       CoatingIndex,

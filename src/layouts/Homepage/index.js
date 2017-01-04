@@ -4,7 +4,7 @@ import { BodyContainer } from "phenomic"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import { localeFromURL } from "../../intl"
 
-import Page from "../Page2"
+import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Banner from "../../components/Banner"
 import Section from "../../components/Section"
@@ -25,7 +25,7 @@ const Homepage = (props, context) => {
   .slice(0, numberOfLatestPosts)
 
   return (
-    <Page { ...props }>
+    <PageWrapper { ...props }>
       <Banner image="/assets/img/stairs.jpg" />
       <Section>
         <TwoColumns>
@@ -43,7 +43,7 @@ const Homepage = (props, context) => {
           </RightColumn>
         </TwoColumns>
       </Section>
-    </Page>
+    </PageWrapper>
   )
 }
 

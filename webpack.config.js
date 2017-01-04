@@ -37,7 +37,7 @@ export default (config = {}) => {
     }),
     require("postcss-reporter")(),
     ...config.production ? [
-      require("postcss-flexibility")(),
+      // require("postcss-flexibility")(),
     ] : [
       require("postcss-browser-reporter")(),
     ],

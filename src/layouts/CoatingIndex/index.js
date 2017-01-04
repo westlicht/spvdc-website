@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl"
 import { BodyContainer, Link } from "phenomic"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 
-import Page from "../Page2"
+import PageWrapper from "../PageWrapper"
 
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Banner from "../../components/Banner"
@@ -25,7 +25,7 @@ const CoatingIndex = (props, context) => {
   }))
 
   return (
-    <Page { ...props }>
+    <PageWrapper { ...props }>
       <Banner image="/assets/img/banner/coatings.jpg" />
       <Section>
         <TwoColumns>
@@ -53,7 +53,7 @@ const CoatingIndex = (props, context) => {
           </RightColumn>
         </TwoColumns>
       </Section>
-    </Page>
+    </PageWrapper>
   )
 }
 

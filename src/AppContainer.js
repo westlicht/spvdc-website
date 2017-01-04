@@ -8,15 +8,11 @@ import React, { PropTypes } from "react"
 import { addLocaleData, IntlProvider } from "react-intl"
 import flatten from "flat"
 
+import DefaultHeadMeta from "./components/DefaultHeadMeta"
+
 import "font-awesome/css/font-awesome.css"
 
 import "./css/site.global.css"
-
-import Container from "./components/Container"
-import DefaultHeadMeta from "./components/DefaultHeadMeta"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-
 
 // Standard locales
 import de from 'react-intl/locale-data/de'
@@ -63,27 +59,23 @@ class AppContainer extends React.Component {
     }
   }
 
-  componentDidMount() {
-    // Flexibility
-    if (typeof window !== "undefined") {
-      const flexibility = require("flexibility/flexibility.js")
-      flexibility(document.documentElement)
-    }
-  }
-
   render() {
     const locale = this.getLocale()
+    let className = ""
+    if (typeof window !== "undefined") {
+      const ie = require("ie-version")
+      if (ie.version && ie.version <= 9) {
+        className = "ie9"
+      }
+    }
     return (
       <IntlProvider locale={ locale } messages={ messages[locale] }>
-        <Container>
+        <div className={ className }>
           <DefaultHeadMeta />
-          <Header { ...this.props } />
           { this.props.children }
-          <Footer />
-        </Container>
+        </div>
       </IntlProvider>
     )
-
   }
 }
 
