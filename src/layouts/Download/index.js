@@ -2,14 +2,12 @@ import React, { PropTypes } from "react"
 import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
-import Banner from "../../components/Banner"
 import Section from "../../components/Section"
 import DownloadItem from "../../components/DownloadItem"
 
 const Download = (props) => {
   return (
-    <PageWrapper { ...props }>
-      <Banner image="/assets/img/banner/download.jpg" />
+    <PageWrapper { ...props } bannerImage="/assets/img/banner/download.jpg">
       <Section>
         <BodyContainer>{ props.body }</BodyContainer>
         {

@@ -6,7 +6,6 @@ import { localeFromURL } from "../../intl"
 
 import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
-import Banner from "../../components/Banner"
 import Section from "../../components/Section"
 import PostList from "../../components/PostList"
 
@@ -25,8 +24,7 @@ const Homepage = (props, context) => {
   .slice(0, numberOfLatestPosts)
 
   return (
-    <PageWrapper { ...props }>
-      <Banner image="/assets/img/stairs.jpg" />
+    <PageWrapper { ...props } bannerImage="/assets/img/stairs.jpg">
       <Section>
         <TwoColumns>
           <LeftColumn>

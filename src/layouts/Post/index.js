@@ -3,7 +3,6 @@ import { FormattedDate } from "react-intl"
 import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
-import Banner from "../../components/Banner"
 import Section from "../../components/Section"
 
 const Post = (props) => {
@@ -11,8 +10,7 @@ const Post = (props) => {
   const pageDate = props.head.date ? new Date(props.head.date) : null
 
   return (
-    <PageWrapper { ...props }>
-      <Banner image="/assets/img/stairs.jpg" />
+    <PageWrapper { ...props } bannerImage="/assets/img/stairs.jpg">
       <Section>
         {
           pageDate &&

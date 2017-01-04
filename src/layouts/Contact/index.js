@@ -2,7 +2,6 @@ import React, { PropTypes } from "react"
 import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
-import Banner from "../../components/Banner"
 import Section from "../../components/Section"
 // import GoogleMap from "../../components/GoogleMap2"
 // import GoogleMap from "../../components/GoogleMap3"
@@ -19,8 +18,7 @@ const Contact = (props, context) => {
   const address = ContactData.address(context.locale).join("<br>")
 
   return (
-    <PageWrapper { ...props }>
-      <Banner image="/assets/img/banner/contact.jpg" />
+    <PageWrapper { ...props } bannerImage="/assets/img/banner/contact.jpg">
       <Section>
         <BodyContainer>{ props.body }</BodyContainer>
         <TeamList members={ ContactData.members(context.locale) } />

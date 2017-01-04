@@ -8,7 +8,6 @@ import RawHtml from "react-raw-html"
 
 import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
-import Banner from "../../components/Banner"
 import Section from "../../components/Section"
 import SimpleTable from "../../components/SimpleTable"
 
@@ -53,11 +52,8 @@ const Coating = (props, { collection, locale }) => {
     }
   })
 
-  // props.head.banner = { image: "/assets/img/banner/coatings.jpg" }
-
   return (
-    <PageWrapper { ...props }>
-      <Banner image="/assets/img/banner/coatings.jpg" />
+    <PageWrapper { ...props } bannerImage="/assets/img/banner/coatings.jpg">
       <Section>
         <TwoColumns>
           <LeftColumn>

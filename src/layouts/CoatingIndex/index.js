@@ -6,7 +6,6 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 import PageWrapper from "../PageWrapper"
 
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
-import Banner from "../../components/Banner"
 import Section from "../../components/Section"
 import PuzzleContainer from "../../containers/PuzzleContainer"
 // import NavigationMenu from "../../components/NavigationMenu"
@@ -25,8 +24,7 @@ const CoatingIndex = (props, context) => {
   }))
 
   return (
-    <PageWrapper { ...props }>
-      <Banner image="/assets/img/banner/coatings.jpg" />
+    <PageWrapper { ...props } bannerImage="/assets/img/banner/coatings.jpg">
       <Section>
         <TwoColumns>
           <LeftColumn>
