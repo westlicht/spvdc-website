@@ -1,5 +1,4 @@
 import React, { PropTypes } from "react"
-import { Link } from "phenomic"
 import { Icon } from "react-fa"
 
 import PhoneNumber from "../PhoneNumber"
@@ -41,7 +40,7 @@ const TeamItem = ({ member }) => {
 
 TeamItem.propTypes = {
   member: PropTypes.shape({
-    image: PropTypes.string,
+    image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     tel: PropTypes.string,

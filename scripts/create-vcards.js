@@ -6,29 +6,36 @@ const lowerCase = require("lower-case")
 const mkdirp = require("mkdirp")
 
 const package = require("../package.json")
-const contact = yaml.safeLoad(fs.readFileSync("./content/contact/data.yml", "utf8"))
 
-// console.log(package.locales)
+const contact = yaml.safeLoad(fs.readFileSync("./content/contact/data.yml", "utf8"))
+const address = contact.address
+
+function translatedString(item, locale) {
+  if (typeof(item) === "string") {
+    return item
+  } else {
+    return item[locale]
+  }
+}
 
 package.locales.map(locale => {
   contact.members.map(member => {
       v = vCard()
       v.firstName = member.firstName
       v.lastName = member.lastName
-      v.organization = "swiss-PVD Coating AG" // TODO
-      v.title = member.title[locale]
+      v.organization = translatedString(address.name, locale)
+      v.title = translatedString(member.title, locale)
       v.workEmail = member.email
       v.workPhone = member.tel
-      v.workFax = "" // TODO
-      v.workUrl = "" // TODO
+      v.workFax = contact.fax
+      v.workUrl = contact.url
 
-      // TODO
-      v.workAddress.label = 'Work Address'
-      v.workAddress.street = '123 Corporate Loop\nSuite 500'
-      v.workAddress.city = 'Los Angeles'
-      v.workAddress.stateProvince = 'CA'
-      v.workAddress.postalCode = '54321'
-      v.workAddress.countryRegion = 'United States of America'
+      v.workAddress.label = 'Work Address' // TODO
+      v.workAddress.street = translatedString(address.street, locale)
+      v.workAddress.city = translatedString(address.city, locale)
+      v.workAddress.stateProvince = translatedString(address.province, locale)
+      v.workAddress.postalCode = address.zipcode.toString()
+      v.workAddress.countryRegion = translatedString(address.country, locale)
 
       const filename = "./content/assets/" + locale + "/contact/" + lowerCase(member.firstName) + "-" + lowerCase(member.lastName) + ".vcf"
       console.log("Creating " + filename + " ...")

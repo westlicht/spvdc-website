@@ -1,26 +1,24 @@
 address:
-  de: |
-    swiss-PVD Coating AG
-    Archstrasse 38
-    Postfach 1003
-    2540 Grenchen
-    Schweiz
-  fr: |
-    swiss-PVD Coating AG
-    Archstrasse 38
-    Postfach 1003
-    2540 Grenchen
-    Suisse
-  en: |
-    swiss-PVD Coating AG
-    Archstrasse 38
-    Postfach 1003
-    2540 Grenchen
-    Switzerland
-tel: +41 32 652 87 70
-fax: +41 32 652 87 71
-email: info@swiss-pvd-coating.ch
-www: www.swiss-pvd-coating.ch
+  name: swiss-PVD Coating AG
+  street: Archstrasse 38
+  lockbox:
+    de: Postfach 1003
+    fr: Postfach 1003
+    en: Postfach 1003
+  zipcode: 2540
+  city: Grenchen
+  province: SO
+  country:
+    de: Schweiz
+    fr: Suisse
+    en: Switzerland
+
+contact:
+  tel: +41 32 652 87 70
+  fax: +41 32 652 87 71
+  email: info@swiss-pvd-coating.ch
+  www: www.swiss-pvd-coating.ch
+
 members:
 -
   firstName: Tina

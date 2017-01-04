@@ -4,10 +4,9 @@ import { Icon } from "react-fa"
 import PhoneNumber from "../PhoneNumber"
 import EmailAddress from "../EmailAddress"
 
-const contact = require("../../../content/contact/data.yml")
+import ContactData from "../../data/ContactData"
 
 const Footer = (props, context) => {
-
   return (
     <div id="footer">
       <div className="container">
@@ -16,7 +15,7 @@ const Footer = (props, context) => {
             <div className="col">
               <h1>Adresse</h1>
               <p>
-                {contact.address[context.locale].split("\n").map(function(line) {
+                {ContactData.address(context.locale).map(function(line) {
                   return (
                     <span>
                       {line}
@@ -31,19 +30,19 @@ const Footer = (props, context) => {
               <p>
                 <span>
                   <Icon name="phone" fixedWidth={ true } />
-                  <PhoneNumber address={ contact.tel } />
+                  <PhoneNumber address={ ContactData.data.contact.tel } />
                 </span><br/>
                 <span>
                   <Icon name="fax" fixedWidth={ true } />
-                  <PhoneNumber address={ contact.fax } link={ false } />
+                  <PhoneNumber address={ ContactData.data.contact.fax } link={ false } />
                 </span><br/>
                 <span>
                   <Icon name="envelope-o" fixedWidth={ true } />
-                  <EmailAddress address={ contact.email } />
+                  <EmailAddress address={ ContactData.data.contact.email } />
                 </span><br/>
                 <span>
                   <Icon name="globe" fixedWidth={ true } />
-                  <a href={ "http://" + contact.www }>{ contact.www }</a>
+                  <a href={ "http://" + ContactData.data.contact.www }>{ ContactData.data.contact.www }</a>
                 </span><br/>
               </p>
             </div>

@@ -10,26 +10,20 @@ import Section from "../../components/Section"
 import TeamList from "../../components/TeamList"
 import { Gmaps, InfoWindow } from "react-gmaps"
 
-import styles from "./index.css"
+import ContactData from "../../data/ContactData"
 
-const contact = require("../../../content/contact/data.yml")
+import styles from "./index.css"
 
 const Contact = (props, context) => {
 
-  const members = contact.members.map(item => ({
-    name: item.firstName + " " + item.lastName,
-    title: item.title[context.locale],
-    tel: item.tel,
-    email: item.email,
-    vcard: "/assets/" + context.locale + "/contact/" + item.firstName.toLowerCase() + "-" + item.lastName.toLowerCase() + ".vcf",
-  }))
+  const address = ContactData.address(context.locale).join("<br>")
 
   return (
     <PageWrapper { ...props }>
       <Banner image="/assets/img/banner/contact.jpg" />
       <Section>
         <BodyContainer>{ props.body }</BodyContainer>
-        <TeamList members={ members } />
+        <TeamList members={ ContactData.members(context.locale) } />
       </Section>
       <div className={ styles.map }>
         <Gmaps
@@ -57,12 +51,7 @@ const Contact = (props, context) => {
           <InfoWindow
             lat={47.1847479}
             lng={7.3999568}
-            content="
-              <b>swiss-PVD-Coating AG</b><br>
-              Archstrasse 26<br>
-              2540 Grenchen<br>
-              Schweiz
-            "
+            content={ address }
           />
         </Gmaps>
       </div>
