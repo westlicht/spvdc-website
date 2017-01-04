@@ -32,7 +32,7 @@
   font-weight: bold;
 }
 
-.short {
+.title {
   display: block;
   font-style: italic;
   padding-bottom: 1rem;
@@ -46,6 +46,13 @@
 }
 
 .email {
+  display: block;
+  span {
+    padding-right: 0.5rem;
+  }
+}
+
+.vcard {
   display: block;
   span {
     padding-right: 0.5rem;

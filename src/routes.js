@@ -8,7 +8,6 @@ import Page from "./layouts/Page"
 import PageError from "./layouts/PageError"
 import Homepage from "./layouts/Homepage"
 import Post from "./layouts/Post"
-import Team from "./layouts/Team"
 import Contact from "./layouts/Contact"
 import Download from "./layouts/Download"
 import CoatingIndex from "./layouts/CoatingIndex"
@@ -25,7 +24,6 @@ const PageContainer = (props) => (
       PageError,
       Homepage,
       Post,
-      Team,
       Contact,
       Download,
       CoatingIndex,

@@ -3,10 +3,6 @@
   name: "Home"
   icon: ""
 -
-  url: "/de/team"
-  name: "Team"
-  icon: ""
--
   url: "/de/technologie"
   name: "Technologie"
   icon: ""

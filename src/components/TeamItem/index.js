@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import { Link } from "phenomic"
 import { Icon } from "react-fa"
 
 import PhoneNumber from "../PhoneNumber"
@@ -13,7 +14,7 @@ const TeamItem = ({ member }) => {
       <div className={ styles.portrait } style={{ backgroundImage: "url(" + url + ")" }} />
       <div className={ styles.details }>
         <span className={ styles.name }>{ member.name }</span>
-        <span className={ styles.short }>{ member.short }</span>
+        <span className={ styles.title }>{ member.title }</span>
         { member.tel && (
           <span className={ styles.tel }>
             <Icon name="phone" fixedWidth={ true }/>
@@ -27,11 +28,10 @@ const TeamItem = ({ member }) => {
             <EmailAddress address={ member.email } />
           </span>
         )}
-        {(
-          <span className={ styles.email }>
-            {/* <Link> */}
-              <Icon name="vcard-o" fixedWidth={ true }/>
-            {/* </Link> */}
+        { member.vcard && (
+          <span className={ styles.vcard }>
+            <Icon name="vcard-o" fixedWidth={ true }/>
+            <Link to={ member.vcard }>vcard</Link>
           </span>
         )}
       </div>
@@ -40,7 +40,14 @@ const TeamItem = ({ member }) => {
 }
 
 TeamItem.propTypes = {
-  member: PropTypes.object.isRequired,
+  member: PropTypes.shape({
+    image: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    tel: PropTypes.string,
+    email: PropTypes.string,
+    vcard: PropTypes.string,
+  }),
 }
 
 export default TeamItem

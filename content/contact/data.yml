@@ -1,0 +1,50 @@
+address:
+  de: |
+    swiss-PVD Coating AG
+    Archstrasse 38
+    Postfach 1003
+    2540 Grenchen
+    Schweiz
+  fr: |
+    swiss-PVD Coating AG
+    Archstrasse 38
+    Postfach 1003
+    2540 Grenchen
+    Suisse
+  en: |
+    swiss-PVD Coating AG
+    Archstrasse 38
+    Postfach 1003
+    2540 Grenchen
+    Switzerland
+tel: +41 32 652 87 70
+fax: +41 32 652 87 71
+email: info@swiss-pvd-coating.ch
+www: www.swiss-pvd-coating.ch
+members:
+-
+  name: Tina Curtins
+  title:
+    de: Geschäftsführer
+    fr: Geschäftsführer
+    en: Geschäftsführer
+  tel: +41 32 652 87 70
+  email: tina.curtins@swiss-pvd-coating.ch
+  image: /assets/img/team/placeholder.jpg
+-
+  name: Rahel Kallweit
+  title:
+    de: Geschäftsführer
+    fr: Geschäftsführer
+    en: Geschäftsführer
+  tel: +41 32 652 87 70
+  email: rahel.kallweit@swiss-pvd-coating.ch
+  image: /assets/img/team/placeholder.jpg
+-
+  name: Tin Curtins
+  title:
+    de: Produktionsleiter
+    fr: Produktionsleiter
+    en: Produktionsleiter
+  tel: +41 32 652 87 70
+  email: tin.curtins@swiss-pvd-coating.ch

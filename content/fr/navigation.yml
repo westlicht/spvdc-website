@@ -3,10 +3,6 @@
   name: "Home"
   icon: "bookmark"
 -
-  url: "/fr/team"
-  name: "Team"
-  icon: "bookmark"
--
   url: "/fr/technologie"
   name: "Technologie"
   icon: "pencil"

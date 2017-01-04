@@ -17,7 +17,7 @@ const TeamList = ({ members }) => {
 }
 
 TeamList.propTypes = {
-  members: PropTypes.array.isRequired,
+  members: PropTypes.arrayOf(TeamItem.propTypes.member),
 }
 
 export default TeamList
