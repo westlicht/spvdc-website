@@ -23,7 +23,8 @@ email: info@swiss-pvd-coating.ch
 www: www.swiss-pvd-coating.ch
 members:
 -
-  name: Tina Curtins
+  firstName: Tina
+  lastName: Curtins
   title:
     de: Geschäftsführer
     fr: Geschäftsführer
@@ -32,7 +33,8 @@ members:
   email: tina.curtins@swiss-pvd-coating.ch
   image: /assets/img/team/placeholder.jpg
 -
-  name: Rahel Kallweit
+  firstName: Rahel
+  lastName: Kallweit
   title:
     de: Geschäftsführer
     fr: Geschäftsführer
@@ -41,7 +43,8 @@ members:
   email: rahel.kallweit@swiss-pvd-coating.ch
   image: /assets/img/team/placeholder.jpg
 -
-  name: Tin Curtins
+  firstName: Tin
+  lastName: Curtins
   title:
     de: Produktionsleiter
     fr: Produktionsleiter

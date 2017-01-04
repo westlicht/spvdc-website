@@ -17,11 +17,11 @@ const contact = require("../../../content/contact/data.yml")
 const Contact = (props, context) => {
 
   const members = contact.members.map(item => ({
-    name: item.name,
+    name: item.firstName + " " + item.lastName,
     title: item.title[context.locale],
     tel: item.tel,
     email: item.email,
-    vcard: "/assets/contact/vcard.txt",
+    vcard: "/assets/" + context.locale + "/contact/" + item.firstName.toLowerCase() + "-" + item.lastName.toLowerCase() + ".vcf",
   }))
 
   return (

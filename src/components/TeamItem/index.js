@@ -31,7 +31,7 @@ const TeamItem = ({ member }) => {
         { member.vcard && (
           <span className={ styles.vcard }>
             <Icon name="vcard-o" fixedWidth={ true }/>
-            <Link to={ member.vcard }>vcard</Link>
+            <a href={ member.vcard }>vcard</a>
           </span>
         )}
       </div>
