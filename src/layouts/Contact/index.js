@@ -37,11 +37,15 @@ const Contact = (props, context) => {
           height="100%"
           lat={47.1846479}
           lng={7.3993568}
-          zoom={18}
+          zoom={14}
           // zoomControl={false}
           mapTypeControl={false}
           loadingMessage={'Be happy'}
           params={{key: 'AIzaSyBYyj0vwPlxPakSIxBHMKkLUtrJpg1TF2s'}}
+
+          disableDefaultUI={true}
+          draggable={false}
+          scrollwheel={false}
           // styles={require("../../components/GoogleMap/styles.json")}
         >
           {/* <Marker
