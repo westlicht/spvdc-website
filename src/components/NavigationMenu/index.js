@@ -6,7 +6,7 @@ const NavigationMenu = (props) => {
     <nav id={ props.id }>
       {
         props.items.map((item) => {
-          let boundClick = props.onClick.bind(this, item)
+          let boundClick = props.onClick && props.onClick.bind(this, item)
           return (
             <Link
               key={ item.url }

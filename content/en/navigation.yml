@@ -1,24 +1,23 @@
--
-  url: "/en/"
-  name: "Home"
-  icon: "bookmark"
--
-  url: "/en/technology"
-  name: "Technology"
-  icon: "pencil"
--
-  url: "/en/service"
-  name: "Service"
-  icon: "pencil"
--
-  url: "/en/coatings"
-  name: "Coatings"
-  icon: ""
--
-  url: "/en/download"
-  name: "Download"
-  icon: ""
--
-  url: "/en/contact"
-  name: "Contact"
-  icon: "pencil"
+header:
+  -
+    url: "/en/"
+    name: "Home"
+  -
+    url: "/en/technology"
+    name: "Technology"
+  -
+    url: "/en/service"
+    name: "Service"
+  -
+    url: "/en/coatings"
+    name: "Coatings"
+  -
+    url: "/en/download"
+    name: "Download"
+  -
+    url: "/en/contact"
+    name: "Contact"
+footer:
+  -
+    url: "/en/impressum"
+    name: "Impressum"

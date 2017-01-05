@@ -1,24 +1,23 @@
--
-  url: "/fr/"
-  name: "Home"
-  icon: "bookmark"
--
-  url: "/fr/technologie"
-  name: "Technologie"
-  icon: "pencil"
--
-  url: "/fr/service"
-  name: "Service"
-  icon: "pencil"
--
-  url: "/fr/revetements"
-  name: "Revêtements"
-  icon: ""
--
-  url: "/fr/download"
-  name: "Download"
-  icon: ""
--
-  url: "/fr/contact"
-  name: "Contact"
-  icon: "pencil"
+header:
+  -
+    url: "/fr/"
+    name: "Home"
+  -
+    url: "/fr/technologie"
+    name: "Technologie"
+  -
+    url: "/fr/service"
+    name: "Service"
+  -
+    url: "/fr/revetements"
+    name: "Revêtements"
+  -
+    url: "/fr/download"
+    name: "Download"
+  -
+    url: "/fr/contact"
+    name: "Contact"
+footer:
+  -
+    url: "/fr/impressum"
+    name: "Impressum"

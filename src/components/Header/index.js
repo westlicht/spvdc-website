@@ -30,9 +30,9 @@ const Header = (props, context) => {
 
   // collect navigation items
   const navigationItems = {
-    de: require("../../../content/de/navigation.yml"),
-    fr: require("../../../content/fr/navigation.yml"),
-    en: require("../../../content/en/navigation.yml"),
+    de: require("../../../content/de/navigation.yml").header,
+    fr: require("../../../content/fr/navigation.yml").header,
+    en: require("../../../content/en/navigation.yml").header,
   }[context.locale].map(item => ({
     name: item.name,
     url: item.url,

@@ -1,24 +1,23 @@
--
-  url: "/de/"
-  name: "Home"
-  icon: ""
--
-  url: "/de/technologie"
-  name: "Technologie"
-  icon: ""
--
-  url: "/de/service"
-  name: "Service"
-  icon: ""
--
-  url: "/de/beschichtungen"
-  name: "Beschichtungen"
-  icon: ""
--
-  url: "/de/download"
-  name: "Download"
-  icon: ""
--
-  url: "/de/kontakt"
-  name: "Kontakt"
-  icon: ""
+header:
+  -
+    url: "/de/"
+    name: "Home"
+  -
+    url: "/de/technologie"
+    name: "Technologie"
+  -
+    url: "/de/service"
+    name: "Service"
+  -
+    url: "/de/beschichtungen"
+    name: "Beschichtungen"
+  -
+    url: "/de/download"
+    name: "Download"
+  -
+    url: "/de/kontakt"
+    name: "Kontakt"
+footer:
+  -
+    url: "/de/impressum"
+    name: "Impressum"

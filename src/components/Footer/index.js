@@ -4,10 +4,22 @@ import { Icon } from "react-fa"
 import PhoneNumber from "../PhoneNumber"
 import EmailAddress from "../EmailAddress"
 import GoogleMap from "../GoogleMap"
+import NavigationMenu from "../NavigationMenu"
 
 import ContactData from "../../data/ContactData"
 
 const Footer = (props, context) => {
+
+  // collect navigation items
+  const navigationItems = {
+    de: require("../../../content/de/navigation.yml").footer,
+    fr: require("../../../content/fr/navigation.yml").footer,
+    en: require("../../../content/en/navigation.yml").footer,
+  }[context.locale].map(item => ({
+    name: item.name,
+    url: item.url,
+  }))
+
   return (
     <div id="footer">
       <div className="container">
@@ -55,6 +67,7 @@ const Footer = (props, context) => {
             </div>
           </div>
         </section>
+        <NavigationMenu id="nav-footer" items={ navigationItems } />
       </div>
     </div>
   )
