@@ -1,0 +1,53 @@
+@import "../../css/site/_root.css";
+
+.item {
+  /*width: 100%;*/
+  padding-bottom: 1rem;
+
+  a {
+    color: black;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  padding: 1rem;
+  /*margin: 0 -1rem;*/
+
+  background: var(--color-background-1);
+  /*border: 1px solid black;*/
+
+  img {
+    width: 100%;
+    filter: grayscale(80%);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-link);
+  }
+
+  p {
+    color: black;
+  }
+
+  &:hover {
+    /*background: var(--color-primary-lighter);*/
+
+    img {
+      filter: none;
+    }
+
+    h1 {
+      color: var(--color-link-hover);
+    }
+  }
+
+
+}
