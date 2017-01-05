@@ -10,10 +10,10 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  /*align-items: flex-start;*/
 
   padding: 1rem;
   /*margin: 0 -1rem;*/
@@ -22,11 +22,15 @@
   /*border: 1px solid black;*/
 
   img {
+    display: block;
     width: 100%;
+    max-width: 20rem;
+    padding-bottom: 1rem;
     filter: grayscale(80%);
   }
 
   h1 {
+    display: block;
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;

@@ -5,10 +5,10 @@ import styles from "./index.css"
 const PartnerItem = ({ link, image, title, body }) => {
   return (
     <div className={ styles.item }>
-      <a href={ link }>
+      <a href={ link } target="_blank">
         <div className={ styles.container }>
-          <img src={ image }/>
-          <h1>{ title }</h1>
+          <img src={ image } alt={ title }/>
+          {/* <h1>{ title }</h1> */}
           <p>{ body }</p>
         </div>
       </a>
