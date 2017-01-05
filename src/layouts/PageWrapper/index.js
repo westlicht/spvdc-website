@@ -11,6 +11,7 @@ import Content from "../../components/Content"
 import Header from "../../components/Header"
 import Banner from "../../components/Banner"
 import Loading from "../../components/Loading"
+import BreadCrumbs from "../../components/BreadCrumbs"
 
 // import styles from "./index.css"
 
@@ -71,6 +72,7 @@ const PageWrapper = (props, context) => {
       <Header { ...props } />
       <Content>
         { props.bannerImage && (<Banner image={ props.bannerImage }/>)}
+        <BreadCrumbs />
         {
           isLoading ? <Loading /> : children
         }
