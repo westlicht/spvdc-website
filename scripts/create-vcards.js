@@ -26,7 +26,7 @@ package.locales.map(locale => {
       v.organization = translatedString(address.name, locale)
       v.title = translatedString(member.title, locale)
       v.workEmail = member.email
-      v.workPhone = member.tel
+      v.workPhone = member.phone
       v.workFax = contact.fax
       v.workUrl = contact.url
 

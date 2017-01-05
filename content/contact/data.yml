@@ -14,7 +14,7 @@ address:
     en: Switzerland
 
 contact:
-  tel: +41 32 652 87 70
+  phone: +41 32 652 87 70
   fax: +41 32 652 87 71
   email: info@swiss-pvd-coating.ch
   www: www.swiss-pvd-coating.ch
@@ -27,7 +27,7 @@ members:
     de: Geschäftsführer
     fr: Geschäftsführer
     en: Geschäftsführer
-  tel: +41 32 652 87 70
+  phone: +41 32 652 87 70
   email: tina.curtins@swiss-pvd-coating.ch
   image: /assets/img/team/placeholder.jpg
 -
@@ -37,7 +37,7 @@ members:
     de: Geschäftsführer
     fr: Geschäftsführer
     en: Geschäftsführer
-  tel: +41 32 652 87 70
+  phone: +41 32 652 87 70
   email: rahel.kallweit@swiss-pvd-coating.ch
   image: /assets/img/team/placeholder.jpg
 -
@@ -47,5 +47,5 @@ members:
     de: Produktionsleiter
     fr: Produktionsleiter
     en: Produktionsleiter
-  tel: +41 32 652 87 70
+  phone: +41 32 652 87 70
   email: tin.curtins@swiss-pvd-coating.ch

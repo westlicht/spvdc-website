@@ -13,10 +13,10 @@ const TeamItem = ({ member }) => {
       <div className={ styles.details }>
         <span className={ styles.name }>{ member.name }</span>
         <span className={ styles.title }>{ member.title }</span>
-        { member.tel && (
-          <span className={ styles.tel }>
+        { member.phone && (
+          <span className={ styles.phone }>
             <Icon name="phone" fixedWidth={ true }/>
-            <PhoneNumber address={ member.tel } />
+            <PhoneNumber address={ member.phone } />
           </span>
         )
         }
@@ -29,7 +29,7 @@ const TeamItem = ({ member }) => {
         { member.vcard && (
           <span className={ styles.vcard }>
             <Icon name="vcard-o" fixedWidth={ true }/>
-            <a href={ member.vcard }>vcard</a>
+            <a href={ member.vcard }>vCard</a>
           </span>
         )}
       </div>
@@ -42,7 +42,7 @@ TeamItem.propTypes = {
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    tel: PropTypes.string,
+    phone: PropTypes.string,
     email: PropTypes.string,
     vcard: PropTypes.string,
   }),

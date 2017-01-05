@@ -43,7 +43,7 @@ const Footer = (props, context) => {
               <p>
                 <span>
                   <Icon name="phone" fixedWidth={ true } />
-                  <PhoneNumber address={ ContactData.data.contact.tel } />
+                  <PhoneNumber address={ ContactData.data.contact.phone } />
                 </span><br/>
                 <span>
                   <Icon name="fax" fixedWidth={ true } />
