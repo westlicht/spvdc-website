@@ -7,6 +7,9 @@
     "fr",
     "en"
   ],
+  "gmaps": {
+    "key": "AIzaSyBYyj0vwPlxPakSIxBHMKkLUtrJpg1TF2s"
+  },
   "twitter": "",
   "repository": "git@github.com:westlicht/spvdc-website.git",
   "scripts": {

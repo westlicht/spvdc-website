@@ -3,11 +3,9 @@ import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
-// import GoogleMap from "../../components/GoogleMap2"
-// import GoogleMap from "../../components/GoogleMap3"
-// import GoogleMap from "google-map-react"
 import TeamList from "../../components/TeamList"
-import { Gmaps, InfoWindow } from "react-gmaps"
+import GoogleMap from "../../components/GoogleMap"
+// import { Gmaps, Marker, InfoWindow } from "react-gmaps"
 
 import ContactData from "../../data/ContactData"
 
@@ -23,36 +21,7 @@ const Contact = (props, context) => {
         <BodyContainer>{ props.body }</BodyContainer>
         <TeamList members={ ContactData.members(context.locale) } />
       </Section>
-      <div className={ styles.map }>
-        <Gmaps
-          width="100%"
-          height="100%"
-          lat={47.1846479}
-          lng={7.3993568}
-          zoom={14}
-          // zoomControl={false}
-          mapTypeControl={false}
-          loadingMessage={'Be happy'}
-          params={{key: 'AIzaSyBYyj0vwPlxPakSIxBHMKkLUtrJpg1TF2s'}}
-
-          disableDefaultUI={true}
-          draggable={false}
-          scrollwheel={false}
-          // styles={require("../../components/GoogleMap/styles.json")}
-        >
-          {/* <Marker
-            lat={47.1847479}
-            lng={7.3999568}
-            draggable={false}
-            // onDragEnd={this.onDragEnd}
-          /> */}
-          <InfoWindow
-            lat={47.1847479}
-            lng={7.3999568}
-            content={ address }
-          />
-        </Gmaps>
-      </div>
+      <GoogleMap className={ styles.map }/>
     </PageWrapper>
   )
 }
