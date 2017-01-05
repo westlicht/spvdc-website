@@ -3,6 +3,7 @@ import { Icon } from "react-fa"
 
 import PhoneNumber from "../PhoneNumber"
 import EmailAddress from "../EmailAddress"
+import GoogleMap from "../GoogleMap"
 
 import ContactData from "../../data/ContactData"
 
@@ -45,6 +46,12 @@ const Footer = (props, context) => {
                   <a href={ "http://" + ContactData.data.contact.www }>{ ContactData.data.contact.www }</a>
                 </span><br/>
               </p>
+            </div>
+            <div className="col">
+              <h1>Opening Hours</h1>
+            </div>
+            <div className="col">
+              <GoogleMap className="map"/>
             </div>
           </div>
         </section>

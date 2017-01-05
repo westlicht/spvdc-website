@@ -30,7 +30,7 @@ class GoogleMap extends React.Component {
 
   render() {
     return (
-      <a href="https://www.google.ch/maps/place/swiss-PVD+Coating+AG/@47.184648,7.3977163,17z/data=!3m1!4b1!4m5!3m4!1s0x478e20ee68f689df:0x6b0770bf8d20eafa!8m2!3d47.184648!4d7.399905">
+      <a href="https://www.google.ch/maps/place/swiss-PVD+Coating+AG/@47.184648,7.3977163,17z/data=!3m1!4b1!4m5!3m4!1s0x478e20ee68f689df:0x6b0770bf8d20eafa!8m2!3d47.184648!4d7.399905" target="_blank">
       <div className={ this.props.className }>
         <Gmaps { ...this.props }
           // ref={(map) => { this.map = map }}
