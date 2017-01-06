@@ -24,7 +24,7 @@ const Homepage = (props, context) => {
     url: item.__url,
     title: item.title,
     date: item.date,
-    body: "", // TODO
+    body: item.description,
   }))
   .slice(0, numberOfLatestPosts)
 
