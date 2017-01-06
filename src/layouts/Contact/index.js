@@ -3,9 +3,8 @@ import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
-import TeamList from "../../components/TeamList"
+import PersonList from "../../components/PersonList"
 import GoogleMap from "../../components/GoogleMap"
-// import { Gmaps, Marker, InfoWindow } from "react-gmaps"
 
 import ContactData from "../../data/ContactData"
 
@@ -13,13 +12,11 @@ import styles from "./index.css"
 
 const Contact = (props, context) => {
 
-  // const address = ContactData.address(context.locale).join("<br>")
-
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/contact.jpg">
       <Section>
         <BodyContainer>{ props.body }</BodyContainer>
-        <TeamList members={ ContactData.members(context.locale) } />
+        <PersonList persons={ ContactData.persons(context.locale) } />
       </Section>
       <GoogleMap className={ styles.map }/>
     </PageWrapper>

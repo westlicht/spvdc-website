@@ -19,8 +19,8 @@ class ContactData {
     })
   }
 
-  static members(locale) {
-    return ContactData.data.members.map(item => ({
+  static persons(locale) {
+    return ContactData.data.persons.map(item => ({
       image: item.image || "/assets/img/team/placeholder.jpg",
       name: item.firstName + " " + item.lastName,
       title: translatedString(item.title, locale),

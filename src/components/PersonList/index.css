@@ -1,8 +1,19 @@
+@import "../../css/site/_root.css";
+
+.list {
+  list-style-type: none;
+  margin-left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .item {
-  /*@neat-span-columns 6;
-  @neat-omega 2n;*/
-  /*width: 30rem;*/
-  /*min-width: 30rem;*/
+  padding: 0;
+  margin: 0;
+}
+
+.container {
   display: flex;
   flex-flow: row wrap;
   padding-top: 2rem;

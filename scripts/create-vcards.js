@@ -19,14 +19,14 @@ function translatedString(item, locale) {
 }
 
 package.locales.map(locale => {
-  contact.members.map(member => {
+  contact.persons.map(person => {
       v = vCard()
-      v.firstName = member.firstName
-      v.lastName = member.lastName
+      v.firstName = person.firstName
+      v.lastName = person.lastName
       v.organization = translatedString(address.name, locale)
-      v.title = translatedString(member.title, locale)
-      v.workEmail = member.email
-      v.workPhone = member.phone
+      v.title = translatedString(person.title, locale)
+      v.workEmail = person.email
+      v.workPhone = person.phone
       v.workFax = contact.fax
       v.workUrl = contact.url
 
@@ -37,7 +37,7 @@ package.locales.map(locale => {
       v.workAddress.postalCode = address.zipCode.toString()
       v.workAddress.countryRegion = translatedString(address.country, locale)
 
-      const filename = "./content/assets/" + locale + "/contact/" + lowerCase(member.firstName) + "-" + lowerCase(member.lastName) + ".vcf"
+      const filename = "./content/assets/" + locale + "/contact/" + lowerCase(person.firstName) + "-" + lowerCase(person.lastName) + ".vcf"
       console.log("Creating " + filename + " ...")
 
       const dir = path.dirname(filename)
