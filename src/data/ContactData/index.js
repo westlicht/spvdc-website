@@ -13,6 +13,12 @@ class ContactData {
     ]
   }
 
+  static times(locale) {
+    return translatedString(ContactData.data.times, locale).split("\n").map(line => {
+      return line
+    })
+  }
+
   static members(locale) {
     return ContactData.data.members.map(item => ({
       image: item.image || "/assets/img/team/placeholder.jpg",

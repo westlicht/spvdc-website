@@ -24,7 +24,7 @@ const Footer = (props, context) => {
     <div id="footer">
       <div className="container">
         <section>
-          <div className="row">
+          {/* <div className="row"> */}
             <div className="col">
               <h1>Adresse</h1>
               <p>
@@ -56,13 +56,22 @@ const Footer = (props, context) => {
               </p>
             </div>
             <div className="col">
-              <h1>Opening Hours</h1>
+              <h1>Anliefer- und Abholzeiten</h1>
+              <p>
+                {
+                  ContactData.times(context.locale).map((line, id) => (
+                    <span key={ id }>
+                      {line}
+                      <br/>
+                    </span>
+                  ))
+                }
+              </p>
             </div>
-            <div className="col">
-              <GoogleMap className="map"/>
-            </div>
-          </div>
         </section>
+      </div>
+      <GoogleMap className="map"/>
+      <div className="container2">
         <NavigationMenu id="nav-footer" items={ navigationItems } />
       </div>
     </div>
