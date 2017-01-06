@@ -1,2 +1,38 @@
-.preview {
+@import "../../css/site/_root.css";
+
+.container {
+  display: block;
+  /*width: 100%;*/
+  color: black;
+
+  .date {
+    display: block;
+  }
+
+  .title {
+    display: block;
+    font-weight: bold;
+    color: var(--color-link);
+  }
+
+  .content {
+    margin: 0;
+  }
+
+  &:visited {
+    color: black;
+
+    .title,
+    .date {
+      color: var(--color-link);
+    }
+  }
+
+  &:hover {
+    color: black;
+    .title,
+    .date {
+      color: var(--color-link-hover);
+    }
+  }
 }

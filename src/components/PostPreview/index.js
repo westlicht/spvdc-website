@@ -2,16 +2,17 @@ import React, { PropTypes } from "react"
 import { Link } from "react-router"
 import { FormattedDate } from "react-intl"
 
-// import styles from "./index.css"
+import styles from "./index.css"
 
-const PostPreview = ({ __url, title, date }) => {
+const PostPreview = ({ url, title, date, content }) => {
   const pageDate = date ? new Date(date) : null
 
   return (
-    <div>
-      {
-        pageDate &&
-        <div>
+      <Link className={ styles.container } to={ url }>
+        <span className={ styles.title }>
+          { title }
+        </span>
+        <span className={ styles.date }>
           { " " }
           <FormattedDate
             value={new Date(pageDate)}
@@ -19,28 +20,21 @@ const PostPreview = ({ __url, title, date }) => {
             month='long'
             day='2-digit'
           />
-        </div>
-      }
-      <Link to={ __url }>
-        { title }
+        </span>
+        { content && (
+          <p className={ styles.content }>
+            { content }
+          </p>
+        )}
       </Link>
-      {/* {
-        pageDate &&
-        <small>
-          { " " }
-          <time key={ pageDate.toISOString() }>
-            { pageDate.toDateString() }
-          </time>
-        </small>
-      } */}
-    </div>
   )
 }
 
 PostPreview.propTypes = {
-  __url: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  date: PropTypes.string,
+  date: PropTypes.string.isRequired,
+  content: PropTypes.string,
 }
 
 export default PostPreview

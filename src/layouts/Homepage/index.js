@@ -20,7 +20,11 @@ const Homepage = (props, context) => {
     filter: item => item.layout === "Post" && localeFromURL(item.__url) === context.locale,
     sort: "date",
     reverse: true,
-  })
+  }).map(item => ({
+    url: item.__url,
+    title: item.title,
+    date: item.date,
+  }))
   .slice(0, numberOfLatestPosts)
 
   return (
