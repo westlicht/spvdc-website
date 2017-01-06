@@ -46,10 +46,6 @@ const Footer = (props, context) => {
                   <PhoneNumber address={ ContactData.data.contact.phone } />
                 </span><br/>
                 <span>
-                  <Icon name="fax" fixedWidth={ true } />
-                  <PhoneNumber address={ ContactData.data.contact.fax } link={ false } />
-                </span><br/>
-                <span>
                   <Icon name="envelope-o" fixedWidth={ true } />
                   <EmailAddress address={ ContactData.data.contact.email } />
                 </span><br/>
