@@ -37,10 +37,7 @@ const Homepage = (props, context) => {
           </LeftColumn>
           <RightColumn>
             <h3>
-              <FormattedMessage
-                  id="homepage.latestPosts"
-                  defaultMessage="Latest Posts"
-              />
+              <FormattedMessage id="homepage.latestPosts" defaultMessage="Latest Posts" />
             </h3>
             <PostPreviewList posts={ latestPosts } />
           </RightColumn>

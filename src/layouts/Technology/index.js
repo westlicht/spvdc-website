@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import { FormattedMessage } from "react-intl"
 import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
@@ -15,7 +16,9 @@ const Service = (props) => {
             <BodyContainer>{ props.body }</BodyContainer>
           </LeftColumn>
           <RightColumn>
-            <h3>Partners</h3>
+            <h3>
+              <FormattedMessage id="technology.partners" defaultMessage="Our partners" />
+            </h3>
             <PartnerList partners={ props.head.partners } />
           </RightColumn>
         </TwoColumns>

@@ -2,3 +2,9 @@ locale: en
 homepage:
   latestPosts: "Latest Posts"
   noPosts: "No entries yet."
+footer:
+  address: "Address"
+  contact: "Contact"
+  times: "Delivery and pickup times"
+technology:
+  partners: "Our partners"

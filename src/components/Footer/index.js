@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react"
 import { Icon } from "react-fa"
+import { FormattedMessage } from "react-intl"
 
 import PhoneNumber from "../PhoneNumber"
 import EmailAddress from "../EmailAddress"
@@ -26,7 +27,9 @@ const Footer = (props, context) => {
         <section>
           {/* <div className="row"> */}
             <div className="col">
-              <h1>Adresse</h1>
+              <h1>
+                <FormattedMessage id="footer.address" defaultMessage="Address" />
+              </h1>
               <p>
                 {
                   ContactData.address(context.locale).map((line, id) => (
@@ -39,7 +42,9 @@ const Footer = (props, context) => {
               </p>
             </div>
             <div className="col">
-              <h1>Kontakt</h1>
+              <h1>
+                <FormattedMessage id="footer.contact" defaultMessage="Contact" />
+              </h1>
               <p>
                 <span>
                   <Icon name="phone" fixedWidth={ true } />
@@ -56,7 +61,9 @@ const Footer = (props, context) => {
               </p>
             </div>
             <div className="col">
-              <h1>Anliefer- und Abholzeiten</h1>
+              <h1>
+                <FormattedMessage id="footer.times" defaultMessage="Times" />
+              </h1>
               <p>
                 {
                   ContactData.times(context.locale).map((line, id) => (
