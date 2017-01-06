@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react"
-import { Gmaps, Marker, InfoWindow } from "react-gmaps"
+// import { Gmaps, Marker, InfoWindow } from "react-gmaps"
+import { Gmaps, Marker } from "react-gmaps"
 
 // import styles from "./index.css"
 

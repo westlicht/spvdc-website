@@ -71,7 +71,7 @@ export default (config = {}) => {
             context: path.join(__dirname, config.source),
             plugins: [
               ...require("phenomic/lib/loader-preset-markdown").default,
-              ...require("phenomic/lib/loader-plugin-markdown-init-head.description-property-from-content").default,
+              ...require("phenomic/lib/loader-plugin-markdown-init-head.description-property-from-content"),
               // require("./src/loader-plugin-transform-md-head-property-to-html").default,
               // require("./src/plugins/loader-plugin-extract-locale").default,
             ],
