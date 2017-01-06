@@ -13,7 +13,7 @@ import styles from "./index.css"
 
 const Contact = (props, context) => {
 
-  const address = ContactData.address(context.locale).join("<br>")
+  // const address = ContactData.address(context.locale).join("<br>")
 
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/contact.jpg">

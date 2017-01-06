@@ -19,7 +19,7 @@ const PhoneNumber = ({ address, link = true }) => {
 
 PhoneNumber.propTypes = {
   address: PropTypes.string.isRequired,
-  link: PropTypes.boolean,
+  link: PropTypes.bool,
 }
 
 export default PhoneNumber

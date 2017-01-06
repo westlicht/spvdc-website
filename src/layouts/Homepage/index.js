@@ -51,7 +51,7 @@ const Homepage = (props, context) => {
 }
 
 Homepage.propTypes = {
-  body: PropTypes.string,
+  body: PropTypes.string.isRequired,
 }
 
 Homepage.contextTypes = {

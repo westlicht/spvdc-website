@@ -55,9 +55,9 @@ const PageWrapper = (props, context) => {
   return (
     <Container>
       {
-        translations.map(item => (
+        translations.map((item, id) => (
           <Helmet
-            key={ item.locale }
+            key={ id }
             link={ [
               { rel: "alternate", hreflang: item.locale, href: joinUri(context.metadata.pkg.homepage, item.__url) }
             ] }

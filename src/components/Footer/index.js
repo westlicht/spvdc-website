@@ -28,14 +28,14 @@ const Footer = (props, context) => {
             <div className="col">
               <h1>Adresse</h1>
               <p>
-                {ContactData.address(context.locale).map(function(line) {
-                  return (
-                    <span>
+                {
+                  ContactData.address(context.locale).map((line, id) => (
+                    <span key={ id }>
                       {line}
                       <br/>
                     </span>
-                  )
-                })}
+                  ))
+                }
               </p>
             </div>
             <div className="col">

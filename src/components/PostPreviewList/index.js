@@ -19,7 +19,7 @@ const PostPreviewList = ({ posts }) => {
 }
 
 PostPreviewList.propTypes = {
-  posts: PropTypes.arrayOf(PostPreviewItem.propTypes.partner),
+  posts: PropTypes.arrayOf(PostPreviewItem.propTypes.post),
 }
 
 export default PostPreviewList
