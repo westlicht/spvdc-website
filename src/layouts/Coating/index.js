@@ -63,7 +63,9 @@ const Coating = (props, { collection, locale }) => {
               <p>{ coatingData.description && coatingData.description[locale] }</p>
             </div>
             <div className={ styles.specs }>
-              <h3>Specification</h3>
+              <h3>
+                <FormattedMessage id="coatings.specification" defaultMessage="Specification" />
+              </h3>
               <SimpleTable rows={ specifications } />
               {
                 footnotes.map((footnote, index) => (
@@ -74,10 +76,7 @@ const Coating = (props, { collection, locale }) => {
           </LeftColumn>
           <RightColumn>
             <h3>
-              <FormattedMessage
-                  id="coatings.coatings"
-                  defaultMessage="Coating Index"
-              />
+              <FormattedMessage id="coatings.coatings" defaultMessage="Coatings" />
             </h3>
             <ul>
               {
