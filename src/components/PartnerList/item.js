@@ -13,9 +13,11 @@ const PartnerItem = ( { partner }) => {
   return (
     <a className={ styles.container } href={ url } target="_blank">
       <img className={ styles.image } src={ image } alt={ title }/>
-      <p className={ styles.body }>
-        { body }
-      </p>
+      { body && (
+        <p className={ styles.body }>
+          { body }
+        </p>
+      )}
     </a>
   )
 }

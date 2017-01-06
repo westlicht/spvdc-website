@@ -7,7 +7,7 @@ import { localeFromURL } from "../../intl"
 import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Section from "../../components/Section"
-import PostList from "../../components/PostList"
+import PostPreviewList from "../../components/PostPreviewList"
 
 // import styles from "./index.css"
 
@@ -24,6 +24,7 @@ const Homepage = (props, context) => {
     url: item.__url,
     title: item.title,
     date: item.date,
+    body: "", // TODO
   }))
   .slice(0, numberOfLatestPosts)
 
@@ -41,7 +42,7 @@ const Homepage = (props, context) => {
                   defaultMessage="Latest Posts"
               />
             </h3>
-            <PostList pages={ latestPosts } />
+            <PostPreviewList posts={ latestPosts } />
           </RightColumn>
         </TwoColumns>
       </Section>
