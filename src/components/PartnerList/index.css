@@ -1,0 +1,39 @@
+@import "../../css/site/_root.css";
+
+.list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.item {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.container {
+  display: block;
+  padding: 1rem;
+
+  background: var(--color-background-1);
+  border-top: 0.25rem solid var(--color-link);
+
+  .image {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    padding-bottom: 1rem;
+    filter: grayscale(80%);
+  }
+
+  .body {
+    color: black;
+  }
+
+  &:hover {
+    border-top: 0.25rem solid var(--color-link-hover);
+
+    .image {
+      filter: none;
+    }
+  }
+}

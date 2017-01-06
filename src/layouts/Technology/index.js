@@ -4,7 +4,7 @@ import { BodyContainer } from "phenomic"
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
-import PartnerItem from "../../components/PartnerItem"
+import PartnerList from "../../components/PartnerList"
 
 const Service = (props) => {
   return (
@@ -16,11 +16,7 @@ const Service = (props) => {
           </LeftColumn>
           <RightColumn>
             <h3>Partners</h3>
-            {
-              props.head.partners && props.head.partners.map(item => (
-                <PartnerItem key={ item.title } link={ item.link } image={ item.image } title={ item.title } body={ item.body }/>
-              ))
-            }
+            <PartnerList partners={ props.head.partners } />
           </RightColumn>
         </TwoColumns>
       </Section>

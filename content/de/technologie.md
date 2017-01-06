@@ -4,13 +4,13 @@ layout: Technology
 id: technology
 partners:
 -
-  link: http://www.new-arc.ch
+  url: http://www.new-arc.ch
   image: /assets/img/partners/new-arc.jpg
   title: new-arc AG
   body: |
     Dr. Ph. D. Hermann Curtins lanciert mit der EXON 1500 die dritte Generation von PVD Anlagen, in die zahlreiche innovative Ideen aus seiner langjährigen Entwicklungstätigkeit auf dem Gebiet der Oberflächentechnologie eingeflossen sind.
 -
-  link: http://www.swiss-pvd.ch
+  url: http://www.swiss-pvd.ch
   image: /assets/img/partners/swiss-pvd.jpg
   title: swiss-PVD SA
   body: |
