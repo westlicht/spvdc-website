@@ -9,13 +9,9 @@ import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns
 import Section from "../../components/Section"
 import PostPreviewList from "../../components/PostPreviewList"
 
-// import styles from "./index.css"
-
-const numberOfLatestPosts = 6
+const numberOfLatestPosts = 2
 
 const Homepage = (props, context) => {
-  // const locale = getLang(context)
-
   const latestPosts = enhanceCollection(context.collection, {
     filter: item => item.layout === "Post" && localeFromURL(item.__url) === context.locale,
     sort: "date",

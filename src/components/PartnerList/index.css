@@ -23,7 +23,7 @@
     width: 100%;
     max-width: 20rem;
     padding-bottom: 1rem;
-    filter: grayscale(80%);
+    filter: grayscale(50%);
   }
 
   .body {
