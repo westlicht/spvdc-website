@@ -33,9 +33,8 @@ const Footer = (props, context) => {
               <p>
                 {
                   ContactData.address(context.locale).map((line, id) => (
-                    <span key={ id }>
+                    <span key={ id } className="line">
                       {line}
-                      <br/>
                     </span>
                   ))
                 }
@@ -46,18 +45,18 @@ const Footer = (props, context) => {
                 <FormattedMessage id="footer.contact" defaultMessage="Contact" />
               </h1>
               <p>
-                <span>
+                <span className="line">
                   <Icon name="phone" fixedWidth={ true } />
                   <PhoneNumber address={ ContactData.data.contact.phone } />
-                </span><br/>
-                <span>
+                </span>
+                <span className="line">
                   <Icon name="envelope-o" fixedWidth={ true } />
                   <EmailAddress address={ ContactData.data.contact.email } />
-                </span><br/>
-                <span>
+                </span>
+                <span className="line">
                   <Icon name="globe" fixedWidth={ true } />
                   <a href={ "http://" + ContactData.data.contact.www }>{ ContactData.data.contact.www }</a>
-                </span><br/>
+                </span>
               </p>
             </div>
             <div className="col">
@@ -67,9 +66,8 @@ const Footer = (props, context) => {
               <p>
                 {
                   ContactData.times(context.locale).map((line, id) => (
-                    <span key={ id }>
+                    <span key={ id } className="line">
                       {line}
-                      <br/>
                     </span>
                   ))
                 }
