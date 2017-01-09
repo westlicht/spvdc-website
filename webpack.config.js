@@ -330,7 +330,7 @@ export default (config = {}) => {
         // webpack 2
         // DedupePlugin does not work correctly with Webpack 2, yet ;)
         // https://github.com/webpack/webpack/issues/2644
-        new webpack.optimize.DedupePlugin(),
+        // new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin(
           { compress: { warnings: false } }
         ),
