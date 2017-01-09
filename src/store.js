@@ -7,12 +7,41 @@ import * as reducers from "./redux/modules"
 import { browserHistory } from "phenomic/lib/client"
 import { syncHistoryWithStore } from "react-router-redux"
 
+
+// This middleware will just add the property "async dispatch"
+// to actions with the "async" propperty set to true
+const asyncDispatchMiddleware = store => next => action => {
+  let syncActivityFinished = false
+  let actionQueue = []
+
+  function flushQueue() {
+    actionQueue.forEach(a => store.dispatch(a)) // flush queue
+    actionQueue = []
+  }
+
+  function asyncDispatch(asyncAction) {
+    actionQueue = actionQueue.concat([asyncAction])
+    if (syncActivityFinished) {
+      flushQueue()
+    }
+  }
+
+  const actionWithAsyncDispatch = Object.assign({}, action, { asyncDispatch })
+
+  next(actionWithAsyncDispatch)
+  syncActivityFinished = true
+  flushQueue()
+}
+
+
+
 const store = createStore(
   combineReducers({
     ...phenomicReducers,
     ...reducers,
   }),
   { ...(typeof window !== "undefined") && window.__INITIAL_STATE__ },
+  [ asyncDispatchMiddleware ],
 )
 
 // webpack hot loading
