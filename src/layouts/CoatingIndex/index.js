@@ -2,13 +2,13 @@ import React, { PropTypes } from "react"
 import { FormattedMessage } from "react-intl"
 import { BodyContainer, Link } from "phenomic"
 import enhanceCollection from "phenomic/lib/enhance-collection"
+import isBrowser from "../../utils/isBrowser"
 
 import PageWrapper from "../PageWrapper"
 
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Section from "../../components/Section"
-import PuzzleContainer from "../../containers/PuzzleContainer"
-// import NavigationMenu from "../../components/NavigationMenu"
+import CoatingFinderContainer from "../../containers/CoatingFinderContainer"
 
 // import styles from "./index.css"
 
@@ -29,7 +29,10 @@ const CoatingIndex = (props, context) => {
         <TwoColumns>
           <LeftColumn>
             <BodyContainer>{ props.body }</BodyContainer>
-            <PuzzleContainer />
+            {/* { (typeof window !== "undefined") && ( */}
+            { isBrowser() && (
+              <CoatingFinderContainer />
+            )}
           </LeftColumn>
           <RightColumn>
             <h3>

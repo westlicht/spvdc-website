@@ -1,6 +1,7 @@
 import queryString from "query-string"
 
 import { LOCATION_CHANGE } from "react-router-redux"
+import { SET_COATING_FILTER } from "./coatings"
 
 // This initial state is *copied* from react-router-redux's
 // routerReducer (the property name 'locationBeforeTransitions' is
@@ -13,7 +14,15 @@ export default function reducer(state = initialState, action) {
     return { ...state, locationBeforeTransitions: action.payload }
   }
 
+  if (action.type === SET_COATING_FILTER) {
+    // console.log(action)
+    const { filter } = action
     let location = state.locationBeforeTransitions
+    const query = {
+      application: filter.application,
+      material: filter.material,
+    }
+    location = { ...location, search: "?" + queryString.stringify(query), action: 'PUSH' }
     return { ...state, locationBeforeTransitions: location }
   }
 
