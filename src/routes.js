@@ -2,10 +2,11 @@ import React from "react"
 import { Route } from "react-router"
 import { PageContainer as PhenomicPageContainer } from "phenomic"
 
+import isProduction from "./utils/isProduction"
+
 import AppContainer from "./AppContainer"
 import Entry from "./layouts/Entry"
 import PageError from "./layouts/PageError"
-import CoatingDatabase from "./layouts/CoatingDatabase"
 
 import PageWrapper from "./layouts/PageWrapper"
 import Page from "./layouts/Page"
@@ -19,25 +20,35 @@ import Coating from "./layouts/Coating"
 import Download from "./layouts/Download"
 import Contact from "./layouts/Contact"
 
+import CoatingDatabase from "./layouts/CoatingDatabase"
+
+const layoutsProduction = {
+  Entry,
+  PageError,
+
+  PageWrapper,
+  Page,
+
+  Homepage,
+  Post,
+  Technology,
+  Service,
+  CoatingIndex,
+  Coating,
+  Download,
+  Contact,
+}
+
+const layoutsDevelopment = isProduction() ? { } : {
+  CoatingDatabase,
+}
+
 const PageContainer = (props) => (
   <PhenomicPageContainer
     { ...props }
     layouts={{
-      Entry,
-      PageError,
-      CoatingDatabase,
-
-      PageWrapper,
-      Page,
-
-      Homepage,
-      Post,
-      Technology,
-      Service,
-      CoatingIndex,
-      Coating,
-      Download,
-      Contact,
+      ...layoutsProduction,
+      ...layoutsDevelopment,
     }}
   />
 )
