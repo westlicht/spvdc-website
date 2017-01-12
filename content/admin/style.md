@@ -1,0 +1,4 @@
+---
+title: Style
+layout: Style
+---

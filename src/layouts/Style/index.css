@@ -1,0 +1,22 @@
+
+.container {
+  padding: 1rem;
+}
+
+.colorContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colorItem {
+  padding: 1rem;
+  div {
+    width: 12rem;
+    height: 8rem;
+    outline: 1px solid black;
+  }
+  span {
+    display: block;
+    text-align: center;
+  }
+}

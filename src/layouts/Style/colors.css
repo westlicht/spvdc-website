@@ -1,0 +1,49 @@
+@import "../../css/site/_root.css";
+
+.color-primary {
+  background-color: var(--color-primary);
+}
+
+.color-primary-darker {
+  background-color: var(--color-primary-darker);
+}
+
+.color-primary-lighter {
+  background-color: var(--color-primary-lighter);
+}
+
+.color-secondary {
+  background-color: var(--color-secondary);
+}
+
+.color-secondary-darker {
+  background-color: var(--color-secondary-darker);
+}
+
+.color-secondary-lighter {
+  background-color: var(--color-secondary-lighter);
+}
+
+.color-background {
+  background-color: var(--color-background);
+}
+
+.color-font {
+  background-color: var(--color-font);
+}
+
+.color-background-1 {
+  background-color: var(--color-background-1);
+}
+
+.color-background-2 {
+  background-color: var(--color-background-2);
+}
+
+.color-link {
+  background-color: var(--color-link);
+}
+
+.color-link-hover {
+  background-color: var(--color-link-hover);
+}

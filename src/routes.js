@@ -21,6 +21,7 @@ import Download from "./layouts/Download"
 import Contact from "./layouts/Contact"
 
 import CoatingDatabase from "./layouts/CoatingDatabase"
+import Style from "./layouts/Style"
 
 const layoutsProduction = {
   Entry,
@@ -41,6 +42,7 @@ const layoutsProduction = {
 
 const layoutsDevelopment = isProduction() ? { } : {
   CoatingDatabase,
+  Style,
 }
 
 const PageContainer = (props) => (
