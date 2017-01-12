@@ -19,30 +19,29 @@ const CoatingFinder = (props, { locale }) => {
     onChangeCooling,
   } = props
 
-  const applicationItems = CoatingData.db.get("applications").value().map(item => ({
+  const applications = CoatingData.finder.applications
+  const applicationItems = applications.map(item => ({
     id: item.id,
     title: translatedString(item.title, locale),
   }))
 
-  const materialItems = CoatingData.db.get("materials").value().map(item => ({
+  const materials = CoatingData.finder.materials
+  const materialItems = materials.map(item => ({
     id: item.id,
     title: translatedString(item.title, locale),
   }))
 
-  const substrateItems = CoatingData.db.get("substrates").value().map(item => ({
+  const substrates = CoatingData.finder.substrates
+  const substrateItems = substrates.map(item => ({
     id: item.id,
     title: translatedString(item.title, locale),
   }))
 
-  const coolingItems = CoatingData.db.get("coolings").value().map(item => ({
+  const coolings = CoatingData.finder.coolings
+  const coolingItems = coolings.map(item => ({
     id: item.id,
     title: translatedString(item.title, locale),
   }))
-
-  // const temperatureItems = CoatingData.db.get("temperatures").value().map(item => ({
-  //   id: item.id,
-  //   title: translatedString(item.title, locale),
-  // }))
 
   const showMaterial = application != 0
   const showSubstrate = application != 0

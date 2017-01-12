@@ -11,6 +11,8 @@ import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns
 import Section from "../../components/Section"
 import SimpleTable from "../../components/SimpleTable"
 
+import CoatingData from "../../data/CoatingData"
+
 import styles from "./index.css"
 
 const Coating = (props, { collection, locale }) => {
@@ -24,16 +26,13 @@ const Coating = (props, { collection, locale }) => {
     url: item.__url,
   }))
 
-  // const locale = context.locale
   const id = props.head.id
-  const coatings = require("../../../content/coatings").default
-
-  const coatingTemplate = coatings.template
-  const coatingData = coatings.coatings[id]
+  const fields = CoatingData.fields
+  const coating = CoatingData.coatings[id]
 
   // create specification table
   let footnotes = []
-  const specifications = coatingTemplate.fields.map(field => {
+  const specifications = fields.map(field => {
     let title = field.title[locale]
     if (field.footnote) {
       footnotes.push(field.footnote[locale])
@@ -41,7 +40,7 @@ const Coating = (props, { collection, locale }) => {
     }
     title = (<RawHtml.span>{ transformMarkdown(title) }</RawHtml.span>)
 
-    const data = coatingData.fields[field.id]
+    const data = coating.fields[field.id]
     let value = data !== null && typeof(data) === "object" ? data[locale] : data
     if (field.units) {
       value += " " + field.units
@@ -57,10 +56,10 @@ const Coating = (props, { collection, locale }) => {
       <Section>
         <TwoColumns>
           <LeftColumn>
-            <h1>{ coatingData.name }</h1>
+            <h1>{ coating.name }</h1>
             <div className={ styles.info }>
-              <img className={ styles.image } src={ coatingData.images[0] }></img>
-              <p>{ coatingData.description && coatingData.description[locale] }</p>
+              <img className={ styles.image } src={ coating.images[0] }></img>
+              <p>{ coating.description && coating.description[locale] }</p>
             </div>
             <div className={ styles.specs }>
               <h3>

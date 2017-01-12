@@ -1,21 +1,24 @@
-require("lodash")
-const lowdb = require("lowdb")
+// require("lodash")
 
 class CoatingData {
 
-  static get db() {
-    var db = lowdb("db")
-    db.defaults({
-      "applications": require("../../../content/coatings/applications.yml"),
-      "materials": require("../../../content/coatings/materials.yml"),
-      "substrates": require("../../../content/coatings/substrates.yml"),
-      "coolings": require("../../../content/coatings/coolings.yml"),
-      "temperatures": require("../../../content/coatings/temperatures.yml"),
-    }).value()
-    return db
-  }
 }
 
-CoatingData.data = require("../../../content/contact/data.yml")
+CoatingData.fields = require("../../../content/coatings/fields.yml")
+
+CoatingData.coatings = {}
+let req = require.context("../../../content/coatings/catalog", false, /\.(yml$)/)
+req.keys().forEach(function(key) {
+  const data = req(key)
+  CoatingData.coatings[data.id] = data
+})
+
+CoatingData.finder = {}
+req = require.context("../../../content/coatings/finder", false, /\.(yml$)/)
+req.keys().forEach(function(key) {
+  const id = /(\w*)\.yml/.exec(key)[1]
+  const data = req(key)
+  CoatingData.finder[id] = data
+})
 
 export default CoatingData
