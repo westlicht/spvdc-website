@@ -6,8 +6,8 @@ const mapStateToProps = state => state.coatings
 
 const mapDispatchToProps = dispatch => {
   return {
-    onChangeApplication: value => dispatch(setApplication(value)),
-    onChangeMaterial: value => dispatch(setMaterial(value)),
+    onChangeApplication: id => dispatch(setApplication(id)),
+    onChangeMaterial: id => dispatch(setMaterial(id)),
   }
 }
 
