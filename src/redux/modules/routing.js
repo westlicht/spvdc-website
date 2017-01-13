@@ -19,8 +19,8 @@ export default function reducer(state = initialState, action) {
     const { filter } = action
     let location = state.locationBeforeTransitions
     const query = {
-      application: filter.application,
-      material: filter.material,
+      application: filter.applicationId,
+      material: filter.materialId,
     }
     location = { ...location, search: "?" + queryString.stringify(query), action: 'PUSH' }
     return { ...state, locationBeforeTransitions: location }

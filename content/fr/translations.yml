@@ -11,3 +11,9 @@ technology:
 coatings:
   coatings: "Revêtements"
   specification: "Spécification"
+  finder:
+    pleaseSelect: "Bitte wählen"
+    application: "Applikation"
+    material: "Material"
+    substrate: "Substrat"
+    cooling: "Kühlen"

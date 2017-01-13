@@ -1,15 +1,16 @@
 import React, { PropTypes } from "react"
+import { injectIntl, intlShape } from "react-intl"
 
 import styles from "./index.css"
 
-const Enum = ({ items, index, onChange }) => (
+const Enum = ({ items, index, onChange, intl }) => (
   <select
     className = { styles.enum }
     size={ 1 }
     value={ index }
     onChange={ e => onChange(Number(e.target.value)) }
   >
-    <option value={ 0 }>{ "Bitte auswählen" }</option>
+    <option value={ 0 }>{ intl.formatMessage({ id: "coatings.finder.pleaseSelect" }) }</option>
     {
       items.map(item => (
         <option key={ item.id } value={ item.id }>{ item.title }</option>
@@ -25,6 +26,7 @@ Enum.propTypes = {
   })),
   index: PropTypes.number,
   onChange: PropTypes.func,
+  intl: intlShape.isRequired,
 }
 
-export default Enum
+export default injectIntl(Enum)

@@ -7,28 +7,28 @@ export const SET_MATERIAL = "SET_MATERIAL"
 export const SET_COATING_FILTER = "SET_COATING_FILTER"
 
 const initialState = {
-  application: 0,
-  material: 0,
+  applicationId: 0,
+  materialId: 0,
 }
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case SET_APPLICATION:
-      state = Object.assign({}, state, { application: Number(action.value) })
-      if (state.application == 0) {
+      state = Object.assign({}, state, { applicationId: Number(action.id) })
+      if (state.applicationId == 0) {
         state = initialState
       }
       action.asyncDispatch({ type: SET_COATING_FILTER, filter: state })
       return state
     case SET_MATERIAL:
-      state = Object.assign({}, state, { material: Number(action.value) })
+      state = Object.assign({}, state, { materialId: Number(action.id) })
       action.asyncDispatch({ type: SET_COATING_FILTER, filter: state })
       return state
     case LOCATION_CHANGE: {
       const query = queryString.parse(action.payload.search)
       return Object.assign({}, state, {
-        application: Number(query.application),
-        material: Number(query.material),
+        applicationId: Number(query.application),
+        materialId: Number(query.material),
       })
     }
     default:
@@ -36,10 +36,10 @@ export default function reducer(state = initialState, action = {}) {
   }
 }
 
-export function setApplication(value) {
-  return { type: SET_APPLICATION, value }
+export function setApplication(id) {
+  return { type: SET_APPLICATION, id }
 }
 
-export function setMaterial(value) {
-  return { type: SET_MATERIAL, value }
+export function setMaterial(id) {
+  return { type: SET_MATERIAL, id }
 }

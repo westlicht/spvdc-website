@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import { injectIntl, intlShape } from "react-intl"
 
 import Enum from "./enum"
 import Filter from "./filter"
@@ -7,25 +8,32 @@ import CoatingData from "../../data/CoatingData"
 
 import translatedString from "../../utils/translatedString"
 
+const _ = require("lodash")
+
 const CoatingFinder = (props, { locale }) => {
   let {
-    application,
-    material,
-    substrate,
-    cooling,
+    applicationId,
+    materialId,
+    substrateId,
+    coolingId,
     onChangeApplication,
     onChangeMaterial,
     onChangeSubstrate,
     onChangeCooling,
+    intl,
   } = props
 
   const applications = CoatingData.finder.applications
+  const application = _(applications).filter({ id: applicationId }).first()
   const applicationItems = applications.map(item => ({
     id: item.id,
     title: translatedString(item.title, locale),
   }))
 
-  const materials = CoatingData.finder.materials
+  const materials = _(CoatingData.finder.materials).filter(
+    item => application && application.materials ? _(application.materials).includes(item.id) : true
+  ).value()
+  // const material = _(materials).filter({ id: materialId }).first()
   const materialItems = materials.map(item => ({
     id: item.id,
     title: translatedString(item.title, locale),
@@ -43,60 +51,56 @@ const CoatingFinder = (props, { locale }) => {
     title: translatedString(item.title, locale),
   }))
 
-  const showMaterial = application != 0
-  const showSubstrate = application != 0
-  const showCooling = application != 0
+  const showMaterial = applicationId != 0
+  const showSubstrate = applicationId != 0
+  const showCooling = applicationId != 0
 
   return (
     <div>
-      <p>{ JSON.stringify(props) }</p>
-      <Filter title="Applikation">
-        <Enum items={ applicationItems } index={ application } onChange={ onChangeApplication } />
+      {/* <p>{ JSON.stringify(props) }</p> */}
+      {/* <p>{ JSON.stringify(application) }</p> */}
+      <Filter title={ intl.formatMessage({ id: "coatings.finder.application"}) }>
+        <Enum items={ applicationItems } index={ applicationId } onChange={ onChangeApplication } />
       </Filter>
       {
         showMaterial && (
-          <Filter title="Material">
-            <Enum items={ materialItems } index={ material } onChange={ onChangeMaterial } />
+          <Filter title={ intl.formatMessage({ id: "coatings.finder.material"}) }>
+            <Enum items={ materialItems } index={ materialId } onChange={ onChangeMaterial } />
           </Filter>
         )
       }
       {
         showSubstrate && (
-          <Filter title="Substrat">
-            <Enum items={ substrateItems } index={ substrate } onChange={ onChangeSubstrate } />
+          <Filter title={ intl.formatMessage({ id: "coatings.finder.substrate"}) }>
+            <Enum items={ substrateItems } index={ substrateId } onChange={ onChangeSubstrate } />
           </Filter>
         )
       }
       {
         showCooling && (
-          <Filter title="Kühlen">
-            <Enum items={ coolingItems } index={ cooling } onChange={ onChangeCooling } />
+          <Filter title={ intl.formatMessage({ id: "coatings.finder.cooling"}) }>
+            <Enum items={ coolingItems } index={ coolingId } onChange={ onChangeCooling } />
           </Filter>
         )
       }
-      {/* <Filter title="Temperatur">
-        <Enum items={ temperatureItems } index={ cooling } onChange={ onChangeTemperature } />
-      </Filter> */}
     </div>
   )
-
-  //       {isCorrect && <span style={{color: 'green' }}>{tick}</span>}
-  //       {operation && !isCorrect && <span style={{color: 'red' }}>{cross}</span>}
 }
 
 CoatingFinder.propTypes = {
-  application: PropTypes.number,
-  material: PropTypes.number,
-  substrate: PropTypes.number,
-  cooling: PropTypes.number,
+  applicationId: PropTypes.number,
+  materialId: PropTypes.number,
+  substrateId: PropTypes.number,
+  coolingId: PropTypes.number,
   onChangeApplication: PropTypes.func,
   onChangeMaterial: PropTypes.func,
   onChangeSubstrate: PropTypes.func,
   onChangeCooling: PropTypes.func,
+  intl: intlShape.isRequired,
 }
 
 CoatingFinder.contextTypes = {
   locale: PropTypes.string.isRequired,
 }
 
-export default CoatingFinder
+export default injectIntl(CoatingFinder)
