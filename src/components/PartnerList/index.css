@@ -23,7 +23,7 @@
     width: 100%;
     max-width: 20rem;
     padding-bottom: 1rem;
-    filter: grayscale(50%);
+    filter: grayscale(75%);
   }
 
   .body {
@@ -31,7 +31,7 @@
   }
 
   &:hover {
-    border-top: 0.5rem solid var(--color-link-hover);
+    border-top: 0.25rem solid var(--color-link-hover);
 
     .image {
       filter: none;
