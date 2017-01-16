@@ -15,8 +15,9 @@ class GoogleAnalyticsTracker extends Component {
   }
 
   componentWillMount() {
+    const config = this.context.metadata.pkg.config.googleAnalytics
     if (isProduction && isBrowser) {
-      ga.initialize(this.context.metadata.pkg.config.googleAnalytics.ua, { debug: true })
+      ga.initialize(config.ua, { debug: config.debug })
     }
     this.logPageview()
   }

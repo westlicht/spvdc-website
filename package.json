@@ -12,7 +12,8 @@
       "key": "AIzaSyBYyj0vwPlxPakSIxBHMKkLUtrJpg1TF2s"
     },
     "googleAnalytics": {
-      "ua": "UA-90449204-1"
+      "ua": "UA-90449204-1",
+      "debug": false
     }
   },
   "twitter": "",
