@@ -11,7 +11,7 @@ const CoatingDatabase = () => {
       <h1>Coating Database</h1>
 
       <h4>Applications</h4>
-      <Table data={ CoatingData.db.get("applications").value().map(item => ({
+      <Table data={ CoatingData.finder.applications.map(item => ({
         id: item.id,
         de: item.title.de,
         fr: item.title.fr,
@@ -20,7 +20,7 @@ const CoatingDatabase = () => {
       })) } />
 
       <h4>Materials</h4>
-      <Table data={ CoatingData.db.get("materials").value().map(item => ({
+      <Table data={ CoatingData.finder.materials.map(item => ({
         id: item.id,
         de: item.title.de,
         fr: item.title.fr,
@@ -28,7 +28,7 @@ const CoatingDatabase = () => {
       })) } />
 
       <h4>Substrates</h4>
-      <Table data={ CoatingData.db.get("substrates").value().map(item => ({
+      <Table data={ CoatingData.finder.substrates.map(item => ({
         id: item.id,
         de: item.title.de,
         fr: item.title.fr,
