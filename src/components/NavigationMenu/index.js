@@ -10,7 +10,7 @@ const NavigationMenu = (props) => {
           return (
             <Link
               key={ item.url }
-              to={ item.url.replace(/\/$/g, '') }
+              to={ item.url }
               activeClassName="active"
               onClick={ boundClick }
             >

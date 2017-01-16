@@ -3,21 +3,21 @@ header:
     url: "/de/"
     name: "Home"
   -
-    url: "/de/technologie"
+    url: "/de/technologie/"
     name: "Technologie"
   -
-    url: "/de/service"
+    url: "/de/service/"
     name: "Service"
   -
-    url: "/de/beschichtungen"
+    url: "/de/beschichtungen/"
     name: "Beschichtungen"
   -
-    url: "/de/download"
+    url: "/de/download/"
     name: "Download"
   -
-    url: "/de/kontakt"
+    url: "/de/kontakt/"
     name: "Kontakt"
 footer:
   -
-    url: "/de/impressum"
+    url: "/de/impressum/"
     name: "Impressum"
