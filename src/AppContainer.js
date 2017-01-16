@@ -10,6 +10,8 @@ import flatten from "flat"
 
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
 
+import GoogleAnalyticsTracker from "./components/GoogleAnalyticsTracker"
+
 import "font-awesome/css/font-awesome.css"
 
 import "./css/site.global.css"
@@ -31,6 +33,7 @@ class AppContainer extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     location: PropTypes.object.isRequired,
+    params: PropTypes.object,
   }
 
   static contextTypes = {
@@ -69,12 +72,14 @@ class AppContainer extends React.Component {
       }
     }
     return (
-      <IntlProvider locale={ locale } messages={ messages[locale] }>
-        <div className={ className }>
-          <DefaultHeadMeta />
-          { this.props.children }
-        </div>
-      </IntlProvider>
+      <GoogleAnalyticsTracker params={ this.props.params }>
+        <IntlProvider locale={ locale } messages={ messages[locale] }>
+          <div className={ className }>
+            <DefaultHeadMeta />
+            { this.props.children }
+          </div>
+        </IntlProvider>
+      </GoogleAnalyticsTracker>
     )
   }
 }
