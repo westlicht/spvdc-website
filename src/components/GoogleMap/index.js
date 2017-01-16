@@ -41,7 +41,7 @@ class GoogleMap extends React.Component {
           lng={7.3993568}
           zoom={13}
           loadingMessage={'loading Google Maps ...'}
-          params={{ key: this.context.metadata.pkg.gmaps.key }}
+          params={{ key: this.context.metadata.pkg.config.googleMaps.key }}
 
           disableDefaultUI={true}
           draggable={false}

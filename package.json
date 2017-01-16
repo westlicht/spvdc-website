@@ -7,8 +7,13 @@
     "fr",
     "en"
   ],
-  "gmaps": {
-    "key": "AIzaSyBYyj0vwPlxPakSIxBHMKkLUtrJpg1TF2s"
+  "config": {
+    "googleMaps": {
+      "key": "AIzaSyBYyj0vwPlxPakSIxBHMKkLUtrJpg1TF2s"
+    },
+    "googleAnalytics": {
+      "ua": "UA-90449204-1"
+    }
   },
   "twitter": "",
   "repository": "git@github.com:westlicht/spvdc-website.git",
