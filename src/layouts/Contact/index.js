@@ -7,8 +7,6 @@ import PersonList from "../../components/PersonList"
 
 import ContactData from "../../data/ContactData"
 
-import styles from "./index.css"
-
 const Contact = (props, context) => {
 
   return (
