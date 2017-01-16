@@ -4,7 +4,6 @@ import { BodyContainer } from "phenomic"
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
 import PersonList from "../../components/PersonList"
-import GoogleMap from "../../components/GoogleMap"
 
 import ContactData from "../../data/ContactData"
 
@@ -18,7 +17,6 @@ const Contact = (props, context) => {
         <BodyContainer>{ props.body }</BodyContainer>
         <PersonList persons={ ContactData.persons(context.locale) } />
       </Section>
-      <GoogleMap className={ styles.map }/>
     </PageWrapper>
   )
 }
