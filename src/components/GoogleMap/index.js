@@ -1,20 +1,16 @@
 import React, { PropTypes } from "react"
-// import { Gmaps, Marker, InfoWindow } from "react-gmaps"
 import { Gmaps, Marker } from "react-gmaps"
 
-// import styles from "./index.css"
-
 import mapStyles from "./styles.json"
-
-const coords = {
-  lat: 47.1846479,
-  lng: 7.3993568,
-}
 
 class GoogleMap extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
+    url: PropTypes.string.isRequired,
+    lat: PropTypes.number.isRequired,
+    lng: PropTypes.number.isRequired,
+    zoom: PropTypes.number,
   }
 
   static contextTypes = {
@@ -24,23 +20,16 @@ class GoogleMap extends React.Component {
   onMapCreated(map) {
     if (typeof window !== "undefined") {
       window.addEventListener('resize', function() {
-        map.setCenter(coords)
-      })
+        map.setCenter({ lat: this.props.lat, lng: this.props.lng })
+      }.bind(this))
     }
   }
 
   render() {
     return (
-      <a className={ this.props.className } href="https://www.google.ch/maps/place/swiss-PVD+Coating+AG/@47.184648,7.3977163,17z/data=!3m1!4b1!4m5!3m4!1s0x478e20ee68f689df:0x6b0770bf8d20eafa!8m2!3d47.184648!4d7.399905" target="_blank">
+      <a className={ this.props.className } href={ this.props.url } target="_blank">
         <Gmaps { ...this.props }
-          // ref={(map) => { this.map = map }}
-
-          width="100%"
-          height="100%"
-          lat={47.1846479}
-          lng={7.3993568}
-          zoom={13}
-          loadingMessage={'loading Google Maps ...'}
+          loadingMessage={'Google Maps'}
           params={{ key: this.context.metadata.pkg.config.googleMaps.key }}
 
           disableDefaultUI={true}
@@ -48,11 +37,11 @@ class GoogleMap extends React.Component {
           scrollwheel={false}
           styles={ mapStyles }
 
-          onMapCreated={this.onMapCreated}
+          onMapCreated={ this.onMapCreated.bind(this) }
         >
           <Marker
-            lat={47.1847479}
-            lng={7.3999568}
+            lat={ this.props.lat }
+            lng={ this.props.lng }
             icon={{
               url: "/assets/icons/home.svg",
               scaledSize: {
@@ -65,15 +54,6 @@ class GoogleMap extends React.Component {
               }
             }}
           />
-          {/* <InfoWindow
-            lat={47.1847479}
-            lng={7.3999568}
-            content={ "<img width='150' src='/assets/img/logo.svg'>" }
-            pixelOffset={{ width: 0, height: -40 }}
-            boxStyle={{
-              opacity: 0.5
-            }}
-          /> */}
         </Gmaps>
       </a>
     )

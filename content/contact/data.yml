@@ -13,6 +13,11 @@ address:
     fr: Suisse
     en: Switzerland
 
+map:
+  lat: 47.1846479
+  lng: 7.3993568
+  zoom: 13
+
 contact:
   phone: +41 32 652 87 70
   email: info@swiss-pvd-coating.ch

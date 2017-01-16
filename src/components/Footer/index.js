@@ -75,7 +75,13 @@ const Footer = (props, context) => {
             </div>
         </section>
       </div>
-      <GoogleMap className="map"/>
+      <GoogleMap
+        className="map"
+        url={ "http://maps.google.ch?q=" + ContactData.shortAddress(context.locale) }
+        lat={ ContactData.data.map.lat }
+        lng={ ContactData.data.map.lng }
+        zoom={ ContactData.data.map.zoom }
+      />
       <div className="container2">
         <NavigationMenu id="nav-footer" items={ navigationItems } />
       </div>

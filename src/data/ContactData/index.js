@@ -13,6 +13,16 @@ class ContactData {
     ]
   }
 
+  static shortAddress(locale) {
+    const address = ContactData.data.address
+    return (
+      translatedString(address.name, locale) + ", " +
+      translatedString(address.street, locale) + ", " +
+      address.zipCode.toString() + " " + translatedString(address.city, locale) + ", " +
+      translatedString(address.country, locale)
+    )
+  }
+
   static times(locale) {
     return translatedString(ContactData.data.times, locale).split("\n").map(line => {
       return line
