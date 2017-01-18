@@ -25,6 +25,7 @@ const PageWrapper = (props, context) => {
   } = props
   let {
     metadata: { pkg },
+    locale,
   } = context
 
 
@@ -67,6 +68,7 @@ const PageWrapper = (props, context) => {
       <Helmet
         title={ metaTitle }
         meta={ meta }
+        htmlAttributes={{ lang: locale }}
       />
 
       <Header { ...props } />
@@ -99,6 +101,7 @@ PageWrapper.contextTypes = {
   metadata: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired,
   collection: PropTypes.array.isRequired,
+  locale: PropTypes.string.isRequired,
 }
 
 export default PageWrapper
