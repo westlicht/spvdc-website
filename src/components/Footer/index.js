@@ -62,7 +62,7 @@ const Footer = (props, context) => {
             <h1>
               <FormattedMessage id="footer.hours" defaultMessage="Hours" />
             </h1>
-            <table>
+            <table><tbody>
               {
                 ContactData.hours(context.locale).map((line, id) => (
                   <tr key={ id }>
@@ -76,7 +76,7 @@ const Footer = (props, context) => {
                   </tr>
                 ))
               }
-            </table>
+            </tbody></table>
           </div>
         </div>
       </div>
