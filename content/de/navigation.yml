@@ -3,6 +3,9 @@ header:
     url: "/de/"
     name: "Home"
   -
+    url: "/de/news/"
+    name: "News"
+  -
     url: "/de/technologie/"
     name: "Technologie"
   -

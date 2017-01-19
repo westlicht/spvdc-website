@@ -12,6 +12,7 @@ import PageWrapper from "./layouts/PageWrapper"
 import Page from "./layouts/Page"
 
 import Homepage from "./layouts/Homepage"
+import PostIndex from "./layouts/PostIndex"
 import Post from "./layouts/Post"
 import Technology from "./layouts/Technology"
 import Service from "./layouts/Service"
@@ -31,6 +32,7 @@ const layoutsProduction = {
   Page,
 
   Homepage,
+  PostIndex,
   Post,
   Technology,
   Service,
