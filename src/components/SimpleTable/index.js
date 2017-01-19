@@ -10,16 +10,16 @@ const SimpleTableRow = ({ title, value }) => (
 )
 
 SimpleTableRow.propTypes = {
-  title: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
+  value: PropTypes.node.isRequired,
 }
 
 const SimpleTable = ({ rows }) => {
   return (
     <div className={ styles.table }>
       {
-        rows.map(row => (
-          <SimpleTableRow title={ row.title } value={ row.value } />
+        rows.map((row, id) => (
+          <SimpleTableRow key={ id } title={ row.title } value={ row.value } />
         ))
       }
     </div>
@@ -27,7 +27,10 @@ const SimpleTable = ({ rows }) => {
 }
 
 SimpleTable.propTypes = {
-  rows: PropTypes.array.isRequired,
+  rows: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.node.isRequired,
+    value: PropTypes.node.isRequired,
+  }))
 }
 
 export default SimpleTable

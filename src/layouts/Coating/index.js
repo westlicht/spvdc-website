@@ -6,6 +6,8 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 import transformMarkdown from "../../transform-markdown"
 import RawHtml from "react-raw-html"
 
+import translatedString from "../../utils/translatedString"
+
 import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Section from "../../components/Section"
@@ -41,7 +43,7 @@ const Coating = (props, { collection, locale }) => {
     title = (<RawHtml.span>{ transformMarkdown(title) }</RawHtml.span>)
 
     const data = coating.fields[field.id]
-    let value = data !== null && typeof(data) === "object" ? data[locale] : data
+    let value = data ? translatedString(data) : ""
     if (field.units) {
       value += " " + field.units
     }
@@ -68,7 +70,7 @@ const Coating = (props, { collection, locale }) => {
               <SimpleTable rows={ specifications } />
               {
                 footnotes.map((footnote, index) => (
-                  <p>{ "*".repeat(index + 1) + " " + footnote }</p>
+                  <p key={ index }>{ "*".repeat(index + 1) + " " + footnote }</p>
                 ))
               }
             </div>
