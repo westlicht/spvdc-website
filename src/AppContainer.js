@@ -63,6 +63,7 @@ class AppContainer extends React.Component {
   }
 
   render() {
+    // TODO necessary anymore ?
     const locale = this.getLocale()
     let className = ""
     if (typeof window !== "undefined") {
@@ -71,10 +72,26 @@ class AppContainer extends React.Component {
         className = "ie9"
       }
     }
+
+    // old browser check
+    if (typeof window !== "undefined") {
+      const outdatedBrowserRework = require("outdated-browser-rework")
+      outdatedBrowserRework({
+          browserSupport: {
+              'Chrome': 37,
+              'IE': 10,
+              'Safari': 7,
+              'Mobile Safari': 7,
+              'Firefox': 28
+          }
+      })
+    }
+
     return (
       <GoogleAnalyticsTracker params={ this.props.params }>
         <IntlProvider locale={ locale } messages={ messages[locale] }>
           <div className={ className }>
+            <div id="outdated"></div>
             <DefaultHeadMeta />
             { this.props.children }
           </div>

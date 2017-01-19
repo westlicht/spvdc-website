@@ -1,0 +1,59 @@
+#outdated {
+  position: fixed;
+	display: none;
+	overflow: hidden;
+	left: 0;
+  top: 0;
+  width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 1500;
+  margin: 0;
+  padding: 0;
+
+	h6 {
+		font-size: 2rem;
+		line-height: 2rem;
+    padding: 1rem 2rem;
+    margin: 0;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1rem;
+    padding: 1rem 2rem;
+    margin: 0;
+	}
+
+	#buttonUpdateBrowser {
+		border: 0.25rem solid white;
+		cursor: pointer;
+		display: block;
+    margin: 1rem auto 0;
+		padding: 1rem;
+		position: relative;
+		text-decoration: none;
+		width: 230px;
+	}
+
+	.last {
+    position: absolute;
+    width: 2rem;
+		height: 2rem;
+		right: 0;
+		top: 0;
+    padding: 0;
+    margin: 0;
+	}
+
+	#buttonCloseUpdateBrowser {
+    color: white;
+		display: block;
+		font-size: 36px;
+		height: 100%;
+		line-height: 36px;
+		position: relative;
+		text-decoration: none;
+		width: 100%;
+	}
+}
