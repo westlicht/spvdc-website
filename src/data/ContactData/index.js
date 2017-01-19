@@ -23,9 +23,9 @@ class ContactData {
     )
   }
 
-  static times(locale) {
-    return translatedString(ContactData.data.times, locale).split("\n").map(line => {
-      return line
+  static hours(locale) {
+    return translatedString(ContactData.data.hours, locale).split("\n").map(line => {
+      return line.split(" ")
     })
   }
 

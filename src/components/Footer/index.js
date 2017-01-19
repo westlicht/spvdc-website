@@ -64,7 +64,7 @@ const Footer = (props, context) => {
             </h1>
             <table>
               {
-                ContactData.times(context.locale).map((line, id) => (
+                ContactData.hours(context.locale).map((line, id) => (
                   <tr key={ id }>
                     {
                       line.map((item, id) => (
