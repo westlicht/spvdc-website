@@ -9,7 +9,6 @@ import { addLocaleData, IntlProvider } from "react-intl"
 import flatten from "flat"
 
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
-
 import GoogleAnalyticsTracker from "./components/GoogleAnalyticsTracker"
 
 import "font-awesome/css/font-awesome.css"
