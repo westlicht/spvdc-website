@@ -5,7 +5,7 @@ homepage:
 footer:
   address: "Address"
   contact: "Contact"
-  times: "Delivery and pickup times"
+  hours: "Delivery and pickup times"
 technology:
   partners: "Our partners"
 coatings:
