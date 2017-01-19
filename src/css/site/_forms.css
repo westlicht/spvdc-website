@@ -9,9 +9,10 @@ input[type="password"],
 textarea,
 select {
   padding: 0.4rem 0.6rem;
-  background-color: var(--form-background-color);
+  background-color: var(--color-form-background);
+  color: var(--color-form-font);
   border: var(--form-border);
-  border-radius: var(--border-radius);
+  border-radius: var(--form-border-radius);
   box-shadow: none;
 }
 

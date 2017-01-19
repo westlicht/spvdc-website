@@ -1,18 +1,13 @@
 #breadcrumbs {
-  /*background: #eee;*/
-  /*border-bottom: 1px solid black;*/
-
   .container {
     @neat-outer-container;
     padding: 0.5rem 1rem;
 
     span {
-      /*font-size:rem;*/
-      color: #888;
-      /*padding-right: 1rem;*/
+      color: var(--color-font-lighter);
 
       a {
-        color: #888;
+        color: var(--color-font-lighter);
 
         &:hover {
           color: var(--color-primary);
@@ -21,8 +16,6 @@
     }
 
     span:last-child {
-      /*text-decoration: underline;*/
-
       &::after {
         display: none;
       }

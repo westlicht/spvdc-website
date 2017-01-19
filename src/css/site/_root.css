@@ -1,6 +1,5 @@
 :root {
   --color-primary: #0071bc;
-  /*--color-primary-darker: #283e4a;*/
   --color-primary-darker: #00436f;
   --color-primary-lighter: #66b3e2;
   --color-secondary: #bc6f00;
@@ -10,18 +9,22 @@
   --color-background-1: #f0f0f0;
   --color-background-2: #e0e0e0;
 
-  --font-family: "Arimo", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   --color-background: #fff;
   --color-font: #000;
+  --color-font-lighter: #aaa;
+
+  --color-inverted-background: #222;
+  --color-inverted-font: #fff;
 
   --color-link: var(--color-primary-darker);
   --color-link-hover: var(--color-primary);
 
-  --border-radius: 0.25rem;
+  --color-form-background: var(--color-background);
+  --color-form-font: var(--color-font);
 
-  --form-background-color: var(--color-background);
   --form-border: 1px solid grey;
   --form-border-enter: 2px solid black;
+  --form-border-radius: 0.25rem;
 
+  --font-family: "Arimo", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

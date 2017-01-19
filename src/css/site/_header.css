@@ -54,7 +54,7 @@
 
   a {
     padding: 0 0.5rem;
-    color: black;
+    color: var(--color-font);
     border-bottom: 0.15rem solid white;
 
     &:hover {
@@ -75,14 +75,14 @@
     font-size: 0.85rem;
     font-weight: bold;
     padding-left: 0.5rem;
-    color: #ccc;
+    color: var(--color-font-lighter);
 
     &:hover {
-      color: black;
+      color: var(--color-font);
     }
 
     &.active {
-      color: black;
+      color: var(--color-font);
     }
   }
 }
@@ -183,7 +183,7 @@
       display: block;
       padding: .5rem 0;
       width: 100%;
-      color: #000;
+      color: var(--color-font);
       text-align: center;
       text-decoration: none;
 

@@ -28,7 +28,7 @@
   }
 
   .body {
-    color: black;
+    color: var(--color-font);
     margin: 0;
   }
 
