@@ -16,6 +16,7 @@ const Entry = (props, context) => {
   if (browserHistory) {
     browserHistory.push("/" + locale)
   }
+
   return (
     <div></div>
   )
