@@ -18,8 +18,6 @@
   width: 20rem;
 }
 
-
-
 select {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
   background-color: white;
@@ -27,27 +25,13 @@ select {
   background-position: right 0.5rem top 0.5rem;
   background-size: 16px 16px;
 
-
   padding: 0.5rem;
   width: auto;
-  font-family: arial,tahoma;
-  /*font-size: 16px;*/
-  /*font-weight: bold;*/
   color: black;
-  text-align: center;
-  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
-  /*border-radius: 0.25rem;*/
   appearance: none;
-  border: 0;
   border: 0.125rem solid white;
   border-radius: 0;
   outline: 0;
-  /*-webkit-transition: 0.3s ease all;
-	   -moz-transition: 0.3s ease all;
-	    -ms-transition: 0.3s ease all;
-	     -o-transition: 0.3s ease all;*/
-  transition: 0.3s ease all;
-  /*height: 2rem;*/
 }
 
 select:focus,
