@@ -87,3 +87,8 @@ label > .label-body {
   margin-left: 0.5rem;
   font-weight: normal;
 }
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
