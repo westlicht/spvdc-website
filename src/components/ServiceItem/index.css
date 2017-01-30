@@ -41,6 +41,7 @@
 
   background: black;
   background-size: cover;
+  background-position: center;
   flex-grow: 1;
 }
 
