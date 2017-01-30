@@ -22,5 +22,9 @@ header:
     name: "Kontakt"
 footer:
   -
+    url: "/assets/de/download/AGB.pdf"
+    name: "AGB"
+    external: true
+  -
     url: "/de/impressum/"
     name: "Impressum"

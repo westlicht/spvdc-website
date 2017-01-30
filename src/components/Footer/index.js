@@ -16,10 +16,7 @@ const Footer = (props, context) => {
     de: require("../../../content/de/navigation.yml").footer,
     fr: require("../../../content/fr/navigation.yml").footer,
     en: require("../../../content/en/navigation.yml").footer,
-  }[context.locale].map(item => ({
-    name: item.name,
-    url: item.url,
-  }))
+  }[context.locale]
 
   return (
     <footer id="footer">

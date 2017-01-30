@@ -33,11 +33,7 @@ const Header = (props, context) => {
     de: require("../../../content/de/navigation.yml").header,
     fr: require("../../../content/fr/navigation.yml").header,
     en: require("../../../content/en/navigation.yml").header,
-  }[context.locale].map(item => ({
-    name: item.name,
-    url: item.url,
-  }))
-
+  }[context.locale]
 
   return (
   <div id="header">

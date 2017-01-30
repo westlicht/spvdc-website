@@ -7,7 +7,11 @@ const NavigationMenu = (props) => {
       {
         props.items.map((item) => {
           let boundClick = props.onClick && props.onClick.bind(this, item)
-          return (
+          return item.external ? (
+            <a href={ item.url }>
+              { item.name }
+            </a>
+          ) : (
             <Link
               key={ item.url }
               to={ item.url }
