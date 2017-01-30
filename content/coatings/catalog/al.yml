@@ -1,9 +1,9 @@
-id: 4
-name: AlTiN-MDT
+id: 8
+name: AL(L)
 images:
   - /assets/img/coatings/tin1.jpg
 fields:
-  coating: AlTiN-MDT
+  coating: AL(L)
   brands: Balinit B, X.CELL, SUPRAL, VARIANTIC
   color: gold-yellow
   composition: mono-layer

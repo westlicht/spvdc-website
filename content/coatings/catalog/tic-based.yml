@@ -1,9 +1,9 @@
-id: 9
-name: CrN
+id: 3
+name: TiC-based
 images:
   - /assets/img/coatings/tin1.jpg
 fields:
-  coating: TiN
+  coating: TiC-based
   brands: Balinit A
   color:
     de: goldgelb

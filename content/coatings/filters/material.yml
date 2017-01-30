@@ -1,0 +1,143 @@
+id: material
+order: 2
+title:
+  de: Material
+  fr: Material
+  en: Material
+items:
+-
+  id: 1
+  title:
+    de: Unlegierten Stahl
+    en: Unlegierten Stahl
+    fr: Unlegierten Stahl
+  optimal: [5,7,8]
+  available: [4]
+-
+  id: 2
+  title:
+    de: Stahl 1000N/mm2
+    en: Stahl 1000N/mm2
+    fr: Stahl 1000N/mm2
+  optimal: [7,8]
+  available: [4,5]
+-
+  id: 3
+  title:
+    de: Stahl >1000N/mm2
+    en: Stahl >1000N/mm2
+    fr: Stahl >1000N/mm2
+  optimal: [7,8]
+  available: [5]
+-
+  id: 4
+  title:
+    de: Stahl 45-56 HRC
+    en: Stahl 45-56 HRC
+    fr: Stahl 45-56 HRC
+  optimal: [7,8]
+  available: [5]
+-
+  id: 5
+  title:
+    de: Stahl > 56 HRC
+    en: Stahl > 56 HRC
+    fr: Stahl > 56 HRC
+  optimal: [7,8]
+  available: [5]
+-
+  id: 6
+  title:
+    de: Rostbeständiger Stahl
+    en: Rostbeständiger Stahl
+    fr: Rostbeständiger Stahl
+  optimal: [3,7,8]
+  available: [2,3]
+-
+  id: 7
+  title:
+    de: Gusseisen
+    en: Gusseisen
+    fr: Gusseisen
+  optimal: [7,8]
+  available: [4,5]
+-
+  id: 8
+  title:
+    de: Guss GGG, GGV, ADI
+    en: Guss GGG, GGV, ADI
+    fr: Guss GGG, GGV, ADI
+  optimal: [7,8]
+  available: [4,5]
+-
+  id: 9
+  title:
+    de: Al ohne Si; Magnesium
+    en: Al ohne Si; Magnesium
+    fr: Al ohne Si; Magnesium
+  optimal: [3,9]
+  available: [1,2,5,7]
+-
+  id: 10
+  title:
+    de: Al < 9% Si
+    en: Al < 9% Si
+    fr: Al < 9% Si
+  optimal: [3,9]
+  available: [2,5,7]
+-
+  id: 11
+  title:
+    de: Al > 9% Si
+    en: Al > 9% Si
+    fr: Al > 9% Si
+  optimal: [3,9]
+  available: [2,5,7]
+-
+  id: 12
+  title:
+    de: Titan
+    en: Titan
+    fr: Titan
+  optimal: [5,7,8]
+  available: [3,4]
+-
+  id: 13
+  title:
+    de: Nickellegierungen
+    en: Nickellegierungen
+    fr: Nickellegierungen
+  optimal: [7,8]
+  available: [4]
+-
+  id: 14
+  title:
+    de: Buntmetalle (Kupfer, Bronze, Messing)
+    en: Buntmetalle (Kupfer, Bronze, Messing)
+    fr: Buntmetalle (Kupfer, Bronze, Messing)
+  optimal: [3]
+  available: [9]
+-
+  id: 15
+  title:
+    de: Edelmetall
+    en: Edelmetall
+    fr: Edelmetall
+  optimal: [3]
+  available: []
+-
+  id: 16
+  title:
+    de: Grafit
+    en: Grafit
+    fr: Grafit
+  optimal: []
+  available: [3]
+-
+  id: 17
+  title:
+    de: Kohle-/Glasfaserverbundmaterial
+    en: Kohle-/Glasfaserverbundmaterial
+    fr: Kohle-/Glasfaserverbundmaterial
+  optimal: []
+  available: [3]

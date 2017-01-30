@@ -1,9 +1,9 @@
-id: 4
-name: AlTiN-MDT
+id: 6
+name: AlTiCrN
 images:
   - /assets/img/coatings/tin1.jpg
 fields:
-  coating: AlTiN-MDT
+  coating: AlTiCrN
   brands: Balinit B, X.CELL, SUPRAL, VARIANTIC
   color: gold-yellow
   composition: mono-layer

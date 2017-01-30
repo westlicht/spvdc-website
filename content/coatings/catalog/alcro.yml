@@ -1,9 +1,9 @@
-id: 4
-name: AlTiN-MDT
+id: 7
+name: AlCro
 images:
   - /assets/img/coatings/tin1.jpg
 fields:
-  coating: AlTiN-MDT
+  coating: AlCro
   brands: Balinit B, X.CELL, SUPRAL, VARIANTIC
   color: gold-yellow
   composition: mono-layer

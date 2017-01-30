@@ -21,16 +21,17 @@ TARGETS = [
 const processCoating = function(src) {
   const data = yaml.safeLoad(fs.readFileSync(src, "utf8"))
   console.log("Processing " + src + " ...")
+  const ref = path.parse(src).name
 
   TARGETS.forEach(({ locale, dir }) => {
     const content = `---
 title: ${data.name}
 layout: Coating
-id: ${data.id}
+id: ${ref}
 locale: ${locale}
 ---
 `
-    const dst = path.join(dir, data.id + ".md")
+    const dst = path.join(dir, ref + ".md")
     console.log("Writing " + dst + " ...")
     fs.writeFileSync(dst, content, "utf8")
   })

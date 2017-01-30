@@ -8,32 +8,30 @@ const CoatingDatabase = () => {
 
   return (
     <div>
-      <h1>Coating Database</h1>
+      <h1>Coatings</h1>
 
-      <h4>Applications</h4>
-      <Table data={ CoatingData.finder.applications.map(item => ({
-        id: item.id,
-        de: item.title.de,
-        fr: item.title.fr,
-        en: item.title.en,
-        materials: item.materials ? item.materials : "all",
-      })) } />
+      {
+        <Table data={ _.sortBy(Object.values(CoatingData.coatings), "id").map(coating => ({
+          id: coating.id,
+          title: coating.name,
+        }))} />
+      }
 
-      <h4>Materials</h4>
-      <Table data={ CoatingData.finder.materials.map(item => ({
-        id: item.id,
-        de: item.title.de,
-        fr: item.title.fr,
-        en: item.title.en,
-      })) } />
+      <h1>Filters</h1>
 
-      <h4>Substrates</h4>
-      <Table data={ CoatingData.finder.substrates.map(item => ({
-        id: item.id,
-        de: item.title.de,
-        fr: item.title.fr,
-        en: item.title.en,
-      })) } />
+      {
+        Object.values(CoatingData.filters).map(filter => (
+          <div>
+            <h6>{ filter.title.de }</h6>
+            <Table data={ filter.items.map(item => ({
+              id: item.id,
+              title: item.title.de,
+              optimal: item.optimal,
+              available: item.available,
+            }))} />
+          </div>
+        ))
+      }
     </div>
   )
 }
