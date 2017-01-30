@@ -34,6 +34,7 @@ class ContactData {
       image: item.image || "/assets/img/team/placeholder.jpg",
       name: item.firstName + " " + item.lastName,
       title: translatedString(item.title, locale),
+      language: translatedString(item.language, locale),
       email: item.email,
       phone: item.phone,
       vcard: "/assets/" + locale + "/contact/" + item.firstName.toLowerCase() + "-" + item.lastName.toLowerCase() + ".vcf",
