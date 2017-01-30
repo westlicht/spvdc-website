@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Herbert Mathies
+N;CHARSET=UTF-8:Mathies;Herbert;;;
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:herbert.mathies@swiss-pvd-coating.ch
+TEL;TYPE=WORK,VOICE:+41 79 506 52 26
+LABEL;CHARSET=UTF-8;TYPE=WORK:Work Address
+ADR;CHARSET=UTF-8;TYPE=WORK:;;Archstrasse 38;Grenchen;SO;2540;Suisse
+TITLE;CHARSET=UTF-8:Conseiller de clientèle
+ORG;CHARSET=UTF-8:swiss-PVD Coating AG
+REV:2017-01-30T12:17:39+01:00
+END:VCARD
