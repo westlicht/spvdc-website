@@ -32,31 +32,86 @@ hours: |
 
 persons:
 -
+  firstName: Herbert
+  lastName: Mathies
+  title:
+    de: Kundenberater
+    fr: Conseiller de clientèle
+    en: Customer consultant
+  language:
+    de: Deutsch
+    fr: Allemand
+    en: German
+  phone: +41 79 506 52 26
+  email: herbert.mathies@swiss-pvd-coating.ch
+  image: /assets/img/team/herbert-mathies.jpg
+-
+  firstName: Sophie
+  lastName: Le
+  title:
+    de: Verkaufsinnendienst
+    fr: Service commercial sédentaire
+    en: Internal sales
+  language:
+    de: Deutsch, Französisch, Englisch
+    fr: Allemand, Français, Anglais
+    en: German, French, English
+  phone: +41 32 652 87 70
+  email: info@swiss-pvd-coating.ch
+  image: /assets/img/team/sophie-le.jpg
+-
   firstName: Tina
   lastName: Curtins
   title:
-    de: Geschäftsführer
-    fr: Geschäftsführer
-    en: Geschäftsführer
+    de: Geschäftsführerin
+    fr: Directeur
+    en: Director
+  language:
+    de: Deutsch, Französisch, Englisch
+    fr: Allemand, Français, Anglais
+    en: German, French, English
   phone: +41 32 652 87 70
   email: tina.curtins@swiss-pvd-coating.ch
-  image: /assets/img/team/placeholder.jpg
+  image: /assets/img/team/tina-curtins.jpg
 -
   firstName: Rahel
   lastName: Kallweit
   title:
-    de: Geschäftsführer
-    fr: Geschäftsführer
-    en: Geschäftsführer
+    de: Stv. Geschäftsführerin
+    fr: Directeur adjoint
+    en: Vice director
+  language:
+    de: Deutsch, Französisch, Englisch
+    fr: Allemand, Français, Anglais
+    en: German, French, English
   phone: +41 32 652 87 70
   email: rahel.kallweit@swiss-pvd-coating.ch
-  image: /assets/img/team/placeholder.jpg
+  image: /assets/img/team/rahel-kallweit.jpg
 -
   firstName: Tin
   lastName: Curtins
   title:
     de: Produktionsleiter
-    fr: Produktionsleiter
-    en: Produktionsleiter
+    fr: Directeur de production
+    en: Production manager
+  language:
+    de: Deutsch, Englisch
+    fr: Allemand, Anglais
+    en: German, English
   phone: +41 32 652 87 70
   email: tin.curtins@swiss-pvd-coating.ch
+  image: /assets/img/team/placeholder.jpg
+-
+  firstName: Renate
+  lastName: Kunz
+  title:
+    de: Stv. Produktionsleiterin
+    fr: Directeur de production adjoint
+    en: Vice production manager
+  language:
+    de: Deutsch
+    fr: Allemand
+    en: German
+  phone: +41 32 652 87 70
+  email: renate.kunz@swiss-pvd-coating.ch
+  image: /assets/img/team/renate-kunz.jpg
