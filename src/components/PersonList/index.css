@@ -21,8 +21,8 @@
 }
 
 .portrait {
-  width: 8rem;
-  height: 10rem;
+  width: 10rem;
+  height: 13.3rem;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   background-position: center;
   background-size: cover;
@@ -47,6 +47,13 @@
   display: block;
   font-style: italic;
   padding-bottom: 1rem;
+}
+
+.language {
+  display: block;
+  span {
+    padding-right: 0.5rem;
+  }
 }
 
 .phone {

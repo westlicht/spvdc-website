@@ -11,6 +11,7 @@ const PersonItem = ( { person }) => {
     image,
     name,
     title,
+    language,
     phone,
     email,
     vcard,
@@ -22,6 +23,12 @@ const PersonItem = ( { person }) => {
       <div className={ styles.details }>
         <span className={ styles.name }>{ name }</span>
         <span className={ styles.title }>{ title }</span>
+        { language && (
+          <span className={ styles.language }>
+            <Icon name="comment-o" fixedWidth={ true }/>
+            <span>{ language }</span>
+          </span>
+        )}
         { phone && (
           <span className={ styles.phone }>
             <Icon name="phone" fixedWidth={ true }/>
@@ -51,6 +58,7 @@ PersonItem.propTypes = {
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    language: PropTypes.string.isRequired,
     phone: PropTypes.string,
     email: PropTypes.string,
     vcard: PropTypes.string,
