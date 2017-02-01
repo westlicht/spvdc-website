@@ -11,7 +11,8 @@ items:
     de: Bohren
     en: Bohren
     fr: Bohren
-  optimal: [3,8]
+  groups: [1]
+  recommended: [3,8]
   available: [2,4,5]
 -
   id: 2
@@ -19,7 +20,8 @@ items:
     de: Reiben
     en: Reiben
     fr: Reiben
-  optimal: [3,7,8]
+  groups: [1]
+  recommended: [3,7,8]
   available: [2,4,5]
 -
   id: 3
@@ -27,7 +29,8 @@ items:
     de: Gewinden
     en: Gewinden
     fr: Gewinden
-  optimal: [3,5,7]
+  groups: [1]
+  recommended: [3,5,7]
   available: [1,2,4,9]
 -
   id: 4
@@ -35,7 +38,8 @@ items:
     de: Fräsen
     en: Fräsen
     fr: Fräsen
-  optimal: [3,7,8]
+  groups: [1]
+  recommended: [3,7,8]
   available: [2,4,5]
 -
   id: 5
@@ -43,7 +47,8 @@ items:
     de: Drehen
     en: Drehen
     fr: Drehen
-  optimal: [3,7,8]
+  groups: [1]
+  recommended: [3,7,8]
   available: [2,4,5]
 -
   id: 6
@@ -51,7 +56,8 @@ items:
     de: Verzahnen
     en: Verzahnen
     fr: Verzahnen
-  optimal: [7]
+  groups: [1]
+  recommended: [7]
   available: [2,3,4,5,8]
 -
   id: 7
@@ -59,7 +65,8 @@ items:
     de: Räumen
     en: Räumen
     fr: Räumen
-  optimal: [3,7]
+  groups: [1]
+  recommended: [3,7]
   available: [2,4,5,8]
 -
   id: 8
@@ -67,7 +74,8 @@ items:
     de: Sägen
     en: Sägen
     fr: Sägen
-  optimal: [3,7]
+  groups: [1]
+  recommended: [3,7]
   available: [2,4,5,8]
 -
   id: 9
@@ -75,7 +83,8 @@ items:
     de: Feinstanzen/Prägen
     en: Feinstanzen/Prägen
     fr: Feinstanzen/Prägen
-  optimal: [3,5,7]
+  groups: [1]
+  recommended: [3,5,7]
   available: [2,4]
 -
   id: 10
@@ -83,7 +92,8 @@ items:
     de: Walzprofilieren
     en: Walzprofilieren
     fr: Walzprofilieren
-  optimal: [3,5,7]
+  groups: [1]
+  recommended: [3,5,7]
   available: [2,4]
 -
   id: 11
@@ -91,7 +101,8 @@ items:
     de: Tiefziehen
     en: Tiefziehen
     fr: Tiefziehen
-  optimal: [5,7,9]
+  groups: [1]
+  recommended: [5,7,9]
   available: [2,3,4]
 -
   id: 12
@@ -99,7 +110,8 @@ items:
     de: Umformen
     en: Umformen
     fr: Umformen
-  optimal: [5,7,9]
+  groups: [1]
+  recommended: [5,7,9]
   available: [2,3,4]
 -
   id: 13
@@ -107,7 +119,8 @@ items:
     de: Warmumformen
     en: Warmumformen
     fr: Warmumformen
-  optimal: [7]
+  groups: [1]
+  recommended: [7]
   available: [4]
 -
   id: 14
@@ -115,7 +128,8 @@ items:
     de: Druckguss
     en: Druckguss
     fr: Druckguss
-  optimal: []
+  groups: [1]
+  recommended: []
   available: [5,7]
 -
   id: 15
@@ -123,5 +137,6 @@ items:
     de: Kunstoffspritzen
     en: Kunstoffspritzen
     fr: Kunstoffspritzen
-  optimal: [3,7,9]
+  groups: [1]
+  recommended: [3,7,9]
   available: [2]

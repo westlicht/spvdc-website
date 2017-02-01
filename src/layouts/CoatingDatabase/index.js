@@ -22,11 +22,12 @@ const CoatingDatabase = () => {
       {
         Object.values(CoatingData.filters).map(filter => (
           <div>
-            <h6>{ filter.title.de }</h6>
+            <h3>{ filter.title.de }</h3>
             <Table data={ filter.items.map(item => ({
               id: item.id,
               title: item.title.de,
-              optimal: item.optimal,
+              groups: item.groups,
+              recommended: item.recommended,
               available: item.available,
             }))} />
           </div>
