@@ -21,21 +21,24 @@ function translatedString(item, locale) {
 package.locales.map(locale => {
   contact.persons.map(person => {
       v = vCard()
+      // v.photo.embedFromFile(path.join("./content", person.image))
       v.firstName = person.firstName
       v.lastName = person.lastName
       v.organization = translatedString(address.name, locale)
       v.title = translatedString(person.title, locale)
       v.workEmail = person.email
       v.workPhone = person.phone
-      v.workFax = contact.fax
+      // v.workFax = contact.fax
       v.workUrl = contact.url
 
-      v.workAddress.label = 'Work Address' // TODO
+      // v.workAddress.label = 'Work Address' // TODO
       v.workAddress.street = translatedString(address.street, locale)
       v.workAddress.city = translatedString(address.city, locale)
       v.workAddress.stateProvince = translatedString(address.province, locale)
       v.workAddress.postalCode = address.zipCode.toString()
       v.workAddress.countryRegion = translatedString(address.country, locale)
+
+      v.logo.embedFromFile("./content/assets/img/logo.png")
 
       const filename = "./content/assets/" + locale + "/contact/" + lowerCase(person.firstName) + "-" + lowerCase(person.lastName) + ".vcf"
       console.log("Creating " + filename + " ...")
