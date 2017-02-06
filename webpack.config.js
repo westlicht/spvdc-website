@@ -67,7 +67,7 @@ export default (config = {}) => {
           // phenomic requirement
           test: /\.(md|markdown)$/,
           ...config.production ? {
-            exclude: /\/admin\//
+            exclude: path.resolve(__dirname, "content/admin")
           } : {},
           loader: phenomicLoader,
           query: {
