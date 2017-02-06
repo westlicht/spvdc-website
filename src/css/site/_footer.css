@@ -74,6 +74,7 @@
   }
 
   a {
+    text-decoration: underline;
     color: var(--color-inverted-font);
 
     &:hover {
