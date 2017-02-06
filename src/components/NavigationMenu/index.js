@@ -1,19 +1,23 @@
 import React, { PropTypes } from "react"
 import { Link } from "phenomic"
+// import Link from "../Link"
 
 const NavigationMenu = (props) => {
   return (
     <nav id={ props.id }>
       {
-        props.items.map((item) => {
+        props.items.map((item, itemIndex) => {
           let boundClick = props.onClick && props.onClick.bind(this, item)
           return item.external ? (
-            <a href={ item.url }>
+            <a
+              key={ itemIndex }
+              href={ item.url }
+            >
               { item.name }
             </a>
           ) : (
             <Link
-              key={ item.url }
+              key={ itemIndex }
               to={ item.url }
               activeClassName="active"
               onClick={ boundClick }
