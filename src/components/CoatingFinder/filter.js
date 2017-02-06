@@ -4,8 +4,10 @@ import styles from "./index.css"
 
 const Filter = (props) => (
   <div className={ styles.filter }>
-    <span className={ styles.title }>{ props.title }</span>
-    { props.children }
+    <div className={ styles.container }>
+      <span className={ styles.title }>{ props.title }</span>
+      { props.children }
+    </div>
   </div>
 )
 

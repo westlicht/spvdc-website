@@ -23,12 +23,6 @@ class ContactData {
     )
   }
 
-  static hours(locale) {
-    return translatedString(ContactData.data.hours, locale).split("\n").map(line => {
-      return line.split(" ")
-    })
-  }
-
   static persons(locale) {
     return ContactData.data.persons.map(item => ({
       image: item.image || "/assets/img/team/placeholder.jpg",

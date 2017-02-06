@@ -1,8 +1,12 @@
 import React, { PropTypes } from "react"
+import enhanceCollection from "phenomic/lib/enhance-collection"
 import { injectIntl, intlShape } from "react-intl"
 
 import Enum from "./enum"
 import Filter from "./filter"
+
+import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
+import CoatingList from "../../components/CoatingList"
 
 import CoatingData from "../../data/CoatingData"
 
@@ -10,96 +14,84 @@ import translatedString from "../../utils/translatedString"
 
 const _ = require("lodash")
 
-const CoatingFinder = (props, { locale }) => {
+const CoatingFinder = (props, { collection, locale }) => {
   let {
-    applicationId,
-    materialId,
-    substrateId,
-    coolingId,
-    onChangeApplication,
-    onChangeMaterial,
-    onChangeSubstrate,
-    onChangeCooling,
+    filterState,
+    onChangeFilter,
     intl,
   } = props
 
-  const applications = CoatingData.finder.applications
-  const application = _(applications).filter({ id: applicationId }).first()
-  const applicationItems = applications.map(item => ({
-    id: item.id,
-    title: translatedString(item.title, locale),
-  }))
+  // check if filtering is active
+  const filterActive = !_.isEqual(filterState, CoatingData.initialFilterState())
 
-  const materials = _(CoatingData.finder.materials).filter(
-    item => application && application.materials ? _(application.materials).includes(item.id) : true
-  ).value()
-  // const material = _(materials).filter({ id: materialId }).first()
-  const materialItems = materials.map(item => ({
-    id: item.id,
-    title: translatedString(item.title, locale),
-  }))
+  // get recommended and available coatings
+  const recommendedCoatings = CoatingData.recommendedCoatings(filterState)
+  const availableCoatings = CoatingData.availableCoatings(filterState)
 
-  const substrates = CoatingData.finder.substrates
-  const substrateItems = substrates.map(item => ({
-    id: item.id,
-    title: translatedString(item.title, locale),
-  }))
+  // get collection of coating pages
+  const coatingCollection = enhanceCollection(collection, {
+    filter: { layout: "Coating", locale: locale },
+  })
 
-  const coolings = CoatingData.finder.coolings
-  const coolingItems = coolings.map(item => ({
-    id: item.id,
-    title: translatedString(item.title, locale),
-  }))
-
-  const showMaterial = applicationId != 0
-  const showSubstrate = applicationId != 0
-  const showCooling = applicationId != 0
+  // create a list of coatings for display
+  const coatings = _.sortBy(coatingCollection.map(item => {
+    const id = CoatingData.coatingIdByRef(item.id)
+    const coating = CoatingData.coatings[item.id]
+    return {
+      name: item.title,
+      order: coating.order,
+      image: coating.images[0],
+      url: item.__url,
+      state: !filterActive ? 'default' : recommendedCoatings.includes(id) ? 'recommended' : availableCoatings.includes(id) ? 'available' : 'unavailable',
+    }
+  }), "order")
 
   return (
-    <div>
-      {/* <p>{ JSON.stringify(props) }</p> */}
-      {/* <p>{ JSON.stringify(application) }</p> */}
-      <Filter title={ intl.formatMessage({ id: "coatings.finder.application"}) }>
-        <Enum items={ applicationItems } index={ applicationId } onChange={ onChangeApplication } />
-      </Filter>
-      {
-        showMaterial && (
-          <Filter title={ intl.formatMessage({ id: "coatings.finder.material"}) }>
-            <Enum items={ materialItems } index={ materialId } onChange={ onChangeMaterial } />
-          </Filter>
-        )
-      }
-      {
-        showSubstrate && (
-          <Filter title={ intl.formatMessage({ id: "coatings.finder.substrate"}) }>
-            <Enum items={ substrateItems } index={ substrateId } onChange={ onChangeSubstrate } />
-          </Filter>
-        )
-      }
-      {
-        showCooling && (
-          <Filter title={ intl.formatMessage({ id: "coatings.finder.cooling"}) }>
-            <Enum items={ coolingItems } index={ coolingId } onChange={ onChangeCooling } />
-          </Filter>
-        )
-      }
-    </div>
+    <TwoColumns>
+      <LeftColumn>
+        {/* <p>groups: {JSON.stringify(CoatingData.availableGroups(filterState))}</p> */}
+        <CoatingList coatings={ coatings } />
+      </LeftColumn>
+      <RightColumn>
+        {
+          CoatingData.filtersSorted.map((filter, filterIndex) => {
+            const items = [
+              // only show "please select" if no default value is set
+              ...(filter.default === undefined ? [{
+                id: 0,
+                title: intl.formatMessage({ id: "coatings.finder.pleaseSelect" }),
+              }] : []),
+              // only show feasible filter options
+              ...filter.items.map(item => ({
+                id: item.id,
+                title: translatedString(item.title, locale),
+              })).filter(item => (CoatingData.isFilterItemFeasible(filterState, filter.id, item.id)))
+            ]
+            return (
+              <Filter key={ filterIndex } title={ translatedString(filter.title, locale) }>
+                <Enum
+                  items={ items }
+                  index={ filterState[filter.id] }
+                  hidePleaseSelect={ filter.default != undefined }
+                  onChange={ index => onChangeFilter(filter.id, index) }
+                />
+              </Filter>
+            )
+          })
+        }
+      </RightColumn>
+    </TwoColumns>
   )
 }
 
 CoatingFinder.propTypes = {
-  applicationId: PropTypes.number,
-  materialId: PropTypes.number,
-  substrateId: PropTypes.number,
-  coolingId: PropTypes.number,
-  onChangeApplication: PropTypes.func,
-  onChangeMaterial: PropTypes.func,
-  onChangeSubstrate: PropTypes.func,
-  onChangeCooling: PropTypes.func,
+  filterState: PropTypes.object, // TODO
+  onChangeFilter: PropTypes.func,
   intl: intlShape.isRequired,
 }
 
 CoatingFinder.contextTypes = {
+  collection: PropTypes.array.isRequired,
   locale: PropTypes.string.isRequired,
 }
 

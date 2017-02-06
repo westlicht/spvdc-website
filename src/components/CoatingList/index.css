@@ -1,0 +1,106 @@
+@import "../../css/site/_root.css";
+
+.list {
+  list-style-type: none;
+
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.item {
+  display: block;
+  width: 12rem;
+  height: 12rem;
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+
+  &:empty {
+    height: 0;
+    padding-bottom: 0;
+  };
+}
+
+.container {
+  cursor: pointer;
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+  .overlay {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .unavailable {
+    background: color(#888 a(50%));
+    transition: background 0.5s;
+  }
+
+  .available {
+    background: color(orange a(25%));
+    transition: background 0.5s;
+  }
+
+  .recommended {
+    background: color(green a(25%));
+    transition: background 0.5s;
+  }
+
+  .title {
+    display: table-cell;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    background: color(var(--color-link) a(90%));
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  &:hover {
+    .title {
+      background: color(var(--color-link-hover) a(90%));
+    }
+
+    .image {
+      filter: none;
+    }
+  }
+}
+
+.selected {
+  background: red;
+}
+
+@media (width <= 65em) {
+  .item {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (width <= 55em) {
+  .item {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (width <= 50em) {
+  .list {
+    justify-content: space-around;
+  }
+}
