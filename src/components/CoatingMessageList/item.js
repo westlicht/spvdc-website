@@ -1,5 +1,4 @@
 import React, { PropTypes } from "react"
-import { Link } from "phenomic"
 import { Icon } from "react-fa"
 
 import transformMarkdown from "../../transform-markdown"
