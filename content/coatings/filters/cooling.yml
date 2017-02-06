@@ -1,0 +1,26 @@
+id: cooling
+order: 3
+title:
+  de: Kühlen
+  fr: Kühlen
+  en: Kühlen
+default: 1
+items:
+-
+  id: 1
+  title:
+    de: Nass
+    en: Nass
+    fr: Nass
+  groups: []
+  recommended: [1,2,3,4,5,6,7,8,9]
+  available: [1,2,3,4,5,6,7,8,9]
+-
+  id: 2
+  title:
+    de: Trocken / MMS
+    en: Trocken / MMS
+    fr: Trocken / MMS
+  groups: []
+  recommended: [4,5,6,7,8]
+  available: [4,5,6,7,8]

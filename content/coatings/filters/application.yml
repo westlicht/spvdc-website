@@ -38,7 +38,7 @@ items:
     de: Fräsen
     en: Fräsen
     fr: Fräsen
-  groups: [1]
+  groups: [2]
   recommended: [3,7,8]
   available: [2,4,5]
 -
@@ -47,7 +47,7 @@ items:
     de: Drehen
     en: Drehen
     fr: Drehen
-  groups: [1]
+  groups: [2]
   recommended: [3,7,8]
   available: [2,4,5]
 -
@@ -56,7 +56,7 @@ items:
     de: Verzahnen
     en: Verzahnen
     fr: Verzahnen
-  groups: [1]
+  groups: [2]
   recommended: [7]
   available: [2,3,4,5,8]
 -
@@ -65,7 +65,7 @@ items:
     de: Räumen
     en: Räumen
     fr: Räumen
-  groups: [1]
+  groups: [2]
   recommended: [3,7]
   available: [2,4,5,8]
 -
@@ -74,7 +74,7 @@ items:
     de: Sägen
     en: Sägen
     fr: Sägen
-  groups: [1]
+  groups: [2]
   recommended: [3,7]
   available: [2,4,5,8]
 -
@@ -83,7 +83,7 @@ items:
     de: Feinstanzen/Prägen
     en: Feinstanzen/Prägen
     fr: Feinstanzen/Prägen
-  groups: [1]
+  groups: [3]
   recommended: [3,5,7]
   available: [2,4]
 -
@@ -92,7 +92,7 @@ items:
     de: Walzprofilieren
     en: Walzprofilieren
     fr: Walzprofilieren
-  groups: [1]
+  groups: [3]
   recommended: [3,5,7]
   available: [2,4]
 -
@@ -101,7 +101,7 @@ items:
     de: Tiefziehen
     en: Tiefziehen
     fr: Tiefziehen
-  groups: [1]
+  groups: [3]
   recommended: [5,7,9]
   available: [2,3,4]
 -
@@ -110,7 +110,7 @@ items:
     de: Umformen
     en: Umformen
     fr: Umformen
-  groups: [1]
+  groups: [3]
   recommended: [5,7,9]
   available: [2,3,4]
 -
@@ -119,7 +119,7 @@ items:
     de: Warmumformen
     en: Warmumformen
     fr: Warmumformen
-  groups: [1]
+  groups: [3]
   recommended: [7]
   available: [4]
 -
@@ -128,7 +128,7 @@ items:
     de: Druckguss
     en: Druckguss
     fr: Druckguss
-  groups: [1]
+  groups: [4]
   recommended: []
   available: [5,7]
 -
@@ -137,6 +137,6 @@ items:
     de: Kunstoffspritzen
     en: Kunstoffspritzen
     fr: Kunstoffspritzen
-  groups: [1]
+  groups: [5]
   recommended: [3,7,9]
   available: [2]

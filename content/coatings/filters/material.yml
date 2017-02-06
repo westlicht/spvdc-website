@@ -11,7 +11,7 @@ items:
     de: Unlegierten Stahl
     en: Unlegierten Stahl
     fr: Unlegierten Stahl
-  groups: [1]
+  groups: [1,2,3]
   recommended: [5,7,8]
   available: [4]
 -
@@ -20,7 +20,7 @@ items:
     de: Stahl 1000N/mm2
     en: Stahl 1000N/mm2
     fr: Stahl 1000N/mm2
-  groups: [1]
+  groups: [1,2]
   recommended: [7,8]
   available: [4,5]
 -
@@ -29,7 +29,7 @@ items:
     de: Stahl >1000N/mm2
     en: Stahl >1000N/mm2
     fr: Stahl >1000N/mm2
-  groups: [1]
+  groups: [1,2]
   recommended: [7,8]
   available: [5]
 -
@@ -38,7 +38,7 @@ items:
     de: Stahl 45-56 HRC
     en: Stahl 45-56 HRC
     fr: Stahl 45-56 HRC
-  groups: [1]
+  groups: [1,2]
   recommended: [7,8]
   available: [5]
 -
@@ -47,7 +47,7 @@ items:
     de: Stahl > 56 HRC
     en: Stahl > 56 HRC
     fr: Stahl > 56 HRC
-  groups: [1]
+  groups: [1,2]
   recommended: [7,8]
   available: [5]
 -
@@ -56,7 +56,7 @@ items:
     de: Rostbeständiger Stahl
     en: Rostbeständiger Stahl
     fr: Rostbeständiger Stahl
-  groups: [1]
+  groups: [1,2,3]
   recommended: [3,7,8]
   available: [2,3]
 -
@@ -65,7 +65,7 @@ items:
     de: Gusseisen
     en: Gusseisen
     fr: Gusseisen
-  groups: [1]
+  groups: [1,2]
   recommended: [7,8]
   available: [4,5]
 -
@@ -74,7 +74,7 @@ items:
     de: Guss GGG, GGV, ADI
     en: Guss GGG, GGV, ADI
     fr: Guss GGG, GGV, ADI
-  groups: [1]
+  groups: [1,2]
   recommended: [7,8]
   available: [4,5]
 -
@@ -83,7 +83,7 @@ items:
     de: Al ohne Si; Magnesium
     en: Al ohne Si; Magnesium
     fr: Al ohne Si; Magnesium
-  groups: [1]
+  groups: [1,2,3,4]
   recommended: [3,9]
   available: [1,2,5,7]
 -
@@ -92,7 +92,7 @@ items:
     de: Al < 9% Si
     en: Al < 9% Si
     fr: Al < 9% Si
-  groups: [1]
+  groups: [1,2,3,4]
   recommended: [3,9]
   available: [2,5,7]
 -
@@ -101,7 +101,7 @@ items:
     de: Al > 9% Si
     en: Al > 9% Si
     fr: Al > 9% Si
-  groups: [1]
+  groups: [1,2,3,4]
   recommended: [3,9]
   available: [2,5,7]
 -
@@ -110,7 +110,7 @@ items:
     de: Titan
     en: Titan
     fr: Titan
-  groups: [1]
+  groups: [1,2,3]
   recommended: [5,7,8]
   available: [3,4]
 -
@@ -119,7 +119,7 @@ items:
     de: Nickellegierungen
     en: Nickellegierungen
     fr: Nickellegierungen
-  groups: [1]
+  groups: [1,2]
   recommended: [7,8]
   available: [4]
 -
@@ -128,7 +128,7 @@ items:
     de: Buntmetalle (Kupfer, Bronze, Messing)
     en: Buntmetalle (Kupfer, Bronze, Messing)
     fr: Buntmetalle (Kupfer, Bronze, Messing)
-  groups: [1]
+  groups: [1,2,3]
   recommended: [3]
   available: [9]
 -
@@ -137,7 +137,7 @@ items:
     de: Edelmetall
     en: Edelmetall
     fr: Edelmetall
-  groups: [1]
+  groups: [1,2]
   recommended: [3]
   available: []
 -
@@ -146,7 +146,7 @@ items:
     de: Grafit
     en: Grafit
     fr: Grafit
-  groups: [1]
+  groups: [1,2]
   recommended: []
   available: [3]
 -
@@ -155,6 +155,6 @@ items:
     de: Kohle-/Glasfaserverbundmaterial
     en: Kohle-/Glasfaserverbundmaterial
     fr: Kohle-/Glasfaserverbundmaterial
-  groups: [1]
+  groups: [1,2]
   recommended: []
   available: [3]
