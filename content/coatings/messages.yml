@@ -1,0 +1,13 @@
+-
+  filters:
+    application: [1,2,3]
+  message: Bohren, Reiben, *Gewinden* Message, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+-
+  filters:
+    material: [1]
+  message: Stahl Message
+-
+  filters:
+    application: [2]
+    material: [12]
+  message: Reiben & Titan Message
