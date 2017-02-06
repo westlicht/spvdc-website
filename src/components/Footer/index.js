@@ -2,6 +2,11 @@ import React, { PropTypes } from "react"
 import { Icon } from "react-fa"
 import { FormattedMessage } from "react-intl"
 
+import transformMarkdown from "../../transform-markdown"
+import RawHtml from "react-raw-html"
+
+import translatedString from "../../utils/translatedString.js"
+
 import PhoneNumber from "../PhoneNumber"
 import EmailAddress from "../EmailAddress"
 import GoogleMap from "../GoogleMap"
@@ -59,21 +64,7 @@ const Footer = (props, context) => {
             <h1>
               <FormattedMessage id="footer.hours" defaultMessage="Hours" />
             </h1>
-            <table><tbody>
-              {
-                ContactData.hours(context.locale).map((line, id) => (
-                  <tr key={ id }>
-                    {
-                      line.map((item, id) => (
-                        <td key={ id }>
-                          { item }
-                        </td>
-                      ))
-                    }
-                  </tr>
-                ))
-              }
-            </tbody></table>
+            <RawHtml.p>{ transformMarkdown(translatedString(ContactData.data.hours, context.locale)) }</RawHtml.p>
           </div>
         </div>
       </div>
