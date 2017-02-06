@@ -1,5 +1,7 @@
 var _ = require('lodash')
 
+import translatedString from "../../utils/translatedString.js"
+
 class CoatingData {
 
   // returns the initial coating filter state
@@ -89,6 +91,23 @@ class CoatingData {
   static coatingIdByRef(ref) {
     return CoatingData.coatings[ref].id
   }
+
+  static activeMessages(filterState, locale) {
+    let messages = []
+    CoatingData.messages.forEach(item => {
+      var active = true
+      // messages.push(item.message)
+      _.forEach(item.filters, (value, key) => {
+        if (!value.includes(filterState[key])) {
+          active = false
+        }
+      })
+      if (active) {
+        messages.push(translatedString(item.message, locale))
+      }
+    })
+    return messages
+  }
 }
 
 CoatingData.fields = require("../../../content/coatings/fields.yml")
@@ -113,12 +132,6 @@ req.keys().forEach(function(key) {
 
 CoatingData.filtersSorted = _.sortBy(CoatingData.filters, "order")
 
-CoatingData.finder = {}
-req = require.context("../../../content/coatings/finder", false, /\.(yml$)/)
-req.keys().forEach(function(key) {
-  const ref = /(\w*)\.yml/.exec(key)[1]
-  const data = req(key)
-  CoatingData.finder[ref] = data
-})
+CoatingData.messages = require("../../../content/coatings/messages.yml")
 
 export default CoatingData

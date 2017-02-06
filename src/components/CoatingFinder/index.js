@@ -7,6 +7,7 @@ import Filter from "./filter"
 
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import CoatingList from "../../components/CoatingList"
+import CoatingMessageList from "../../components/CoatingMessageList"
 
 import CoatingData from "../../data/CoatingData"
 
@@ -46,10 +47,20 @@ const CoatingFinder = (props, { collection, locale }) => {
     }
   }), "order")
 
+  // create a list of messages for display
+  const messages = CoatingData.activeMessages(filterState, locale).map(item => {
+    return {
+      body: item
+    }
+  })
+
   return (
     <TwoColumns>
       <LeftColumn>
         {/* <p>groups: {JSON.stringify(CoatingData.availableGroups(filterState))}</p> */}
+        { messages.length > 0 && (
+          <CoatingMessageList messages={ messages } />
+        )}
         <CoatingList coatings={ coatings } />
       </LeftColumn>
       <RightColumn>

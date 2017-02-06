@@ -1,0 +1,26 @@
+@import "../../css/site/_root.css";
+
+.list {
+  list-style-type: none;
+  margin: 0;
+}
+
+.item {
+  display: block;
+  width: 100%;
+  color: var(--color-secondary-darker);
+}
+
+.container {
+  display: block;
+
+  p {
+    margin: 0;
+  }
+}
+
+.icon {
+  float: left;
+  padding-right: 0.5rem;
+  margin-top: 0.25rem;
+}
