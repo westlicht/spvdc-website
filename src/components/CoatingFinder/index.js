@@ -58,9 +58,6 @@ const CoatingFinder = (props, { collection, locale }) => {
     <TwoColumns>
       <LeftColumn>
         {/* <p>groups: {JSON.stringify(CoatingData.availableGroups(filterState))}</p> */}
-        { messages.length > 0 && (
-          <CoatingMessageList messages={ messages } />
-        )}
         <CoatingList coatings={ coatings } />
       </LeftColumn>
       <RightColumn>
@@ -90,6 +87,9 @@ const CoatingFinder = (props, { collection, locale }) => {
             )
           })
         }
+        { messages.length > 0 && (
+          <CoatingMessageList messages={ messages } />
+        )}
       </RightColumn>
     </TwoColumns>
   )
