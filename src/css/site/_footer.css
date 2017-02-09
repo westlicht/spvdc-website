@@ -95,6 +95,10 @@
   }
 }
 
+#qrcode {
+    display: none;
+}
+
 /*@media screen and (width <= 50em) {
   #footer {
   }

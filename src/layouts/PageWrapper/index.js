@@ -2,6 +2,7 @@ import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import invariant from "invariant"
 import { joinUri } from "phenomic"
+import QRCode from "qrcode.react"
 
 import translatedPages from "../../utils/translatedPages"
 
@@ -80,6 +81,9 @@ const PageWrapper = (props, context) => {
         }
       </Content>
       <Footer />
+      <div id="qrcode">
+        <QRCode value={ joinUri(process.env.PHENOMIC_USER_URL, __url) } size={ 64 } />
+      </div>
     </Container>
   )
 }
