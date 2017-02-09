@@ -1,10 +1,6 @@
 address:
   name: swiss-PVD Coating AG
   street: Archstrasse 38
-  lockBox:
-    de: Postfach 1003
-    fr: Postfach 1003
-    en: Postfach 1003
   zipCode: 2540
   city: Grenchen
   province: SO
