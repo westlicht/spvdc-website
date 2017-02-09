@@ -1,7 +1,6 @@
 
 #footer {
   background-color: var(--color-inverted-background);
-  /*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);*/
   z-index: 1;
   color: var(--color-inverted-font);
 
@@ -25,14 +24,8 @@
     p {
       margin: 0;
 
-      span {
-        span {
-          padding-right: 0.5rem;
-        }
-      }
-
-      .line {
-        display: block;
+      span.fa {
+        padding-right: 0.5rem;
       }
     }
   }
