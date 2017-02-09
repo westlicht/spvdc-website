@@ -34,3 +34,9 @@
   padding: 1rem;
   hyphens: auto;
 }
+
+@media print {
+  .item {
+    page-break-inside: avoid;
+  }
+}

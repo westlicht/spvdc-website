@@ -5,7 +5,7 @@
 .left {
   @neat-span-columns 8;
 
-  @media (width <= 50em) {
+  @media screen and (width <= 50em) {
     @neat-span-columns 12;
   }
 }
@@ -13,7 +13,7 @@
 .right {
   @neat-span-columns 4;
 
-  @media (width <= 50em) {
+  @media screen and (width <= 50em) {
     @neat-span-columns 12;
   }
 }

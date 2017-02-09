@@ -57,3 +57,9 @@
 .item:last-child > .arrow {
   display: none;
 }
+
+@media print {
+  .item {
+    page-break-inside: avoid;
+  }
+}

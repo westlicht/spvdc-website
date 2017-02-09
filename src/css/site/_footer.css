@@ -120,6 +120,21 @@
     .map {
       height: 16rem;
     }
+  }
+}
 
+@media print {
+  #footer {
+    display: none;
+  }
+
+  #nav-footer {
+    display: none;
+  }
+
+  #qrcode {
+    display: block;
+    padding: 1rem;
+    text-align: center;
   }
 }

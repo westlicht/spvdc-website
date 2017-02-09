@@ -4,15 +4,21 @@
   background-size: cover;
 }
 
-@media (width <= 50em) {
+@media screen and (width <= 50em) {
   #banner {
     height: 10em;
   }
 }
 
-@media (width <= 40em) {
+@media screen and (width <= 40em) {
   #banner {
     height: 8em;
     background-size: 150%;
+  }
+}
+
+@media print {
+  #banner {
+    display: none;
   }
 }

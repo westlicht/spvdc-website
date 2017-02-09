@@ -36,3 +36,9 @@
     border-top: 0.25rem solid var(--color-link-hover);
   }
 }
+
+@media print {
+  .item {
+    page-break-inside: avoid;
+  }
+}

@@ -10,6 +10,8 @@ import currentPageId from "../../utils/currentPageId"
 
 import NavigationMenu from "../NavigationMenu"
 
+import ContactData from "../../data/ContactData"
+
 const Header = (props, context) => {
 
   // collect translation items
@@ -39,6 +41,26 @@ const Header = (props, context) => {
   <div id="header">
     <div className="container">
       <div className="wrapper">
+        <div className="address">
+          <p>
+            {
+              ContactData.address(context.locale).reduce((r, line) =>
+                r.concat(
+                  (<span>{line}</span>),
+                  (<br/>)
+                )
+              , [])
+            }
+          </p>
+        </div>
+        <div className="contact">
+          <p>
+            { ContactData.data.contact.phone }<br/>
+            { ContactData.data.contact.email }<br/>
+            { ContactData.data.contact.www }<br/>
+            { ContactData.data.contact.mwst}<br/>
+          </p>
+        </div>
         <div className="logo">
           <Link to={ "/" + context.locale }>
             <img src="/assets/img/logo.svg" />

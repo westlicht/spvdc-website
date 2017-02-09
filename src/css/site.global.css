@@ -12,26 +12,30 @@
 @import "./site/_breadcrumbs.css";
 @import "./site/_outdated.css";
 
-/*#wrapper {
-}*/
-
 #content {
   padding-top: 6rem;
   width: 100%;
 }
 
-@media (width <= 50em) {
+@media screen and (width <= 50em) {
   #content {
     padding-top: 5rem;
   }
 }
 
-@media (width <= 40em) {
+@media screen and (width <= 40em) {
   #content {
     padding-top: 4rem;
   }
 }
 
-.phenomic-HeadingAnchor {
-  display: none;
+@media print {
+  @page  {
+    size: auto;
+    margin: 13mm;
+  }
+
+  body {
+    margin: 0;  /* the margin on the content before printing */
+  }
 }
