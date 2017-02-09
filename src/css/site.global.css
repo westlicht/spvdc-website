@@ -38,4 +38,8 @@
   body {
     margin: 0;  /* the margin on the content before printing */
   }
+
+  #content {
+    padding-top: 0;
+  }
 }
