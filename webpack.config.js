@@ -73,8 +73,11 @@ export default (config = {}) => {
           query: {
             context: path.join(__dirname, config.source),
             plugins: [
-              ...require("phenomic/lib/loader-preset-markdown").default,
-              ...require("phenomic/lib/loader-plugin-markdown-init-head.description-property-from-content"),
+              // ...require("phenomic/lib/loader-preset-markdown").default,
+              ...require("phenomic/lib/loader-preset-default").default,
+              require("phenomic/lib/loader-plugin-markdown-init-head.description-property-from-content").default,
+              // require("phenomic/lib/loader-plugin-markdown-transform-body-property-to-html").default,
+              require("./src/loader-plugin-markdown-transform-body-property-to-html").default,
               // require("./src/loader-plugin-transform-md-head-property-to-html").default,
               // require("./src/plugins/loader-plugin-extract-locale").default,
             ],
