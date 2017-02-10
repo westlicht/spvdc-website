@@ -1,11 +1,11 @@
 import React, { PropTypes } from "react"
-import { BodyContainer } from "phenomic"
 import isBrowser from "../../utils/isBrowser"
 
 import PageWrapper from "../PageWrapper"
 
 import Section from "../../components/Section"
 import HeaderContainer from "../../components/HeaderContainer"
+import BodyContainer from "../../components/BodyContainer"
 import CoatingFinderContainer from "../../containers/CoatingFinderContainer"
 
 // import styles from "./index.css"

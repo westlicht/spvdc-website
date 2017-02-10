@@ -1,10 +1,10 @@
 import React, { PropTypes } from "react"
 import { FormattedMessage } from "react-intl"
-import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
 import HeaderContainer from "../../components/HeaderContainer"
+import BodyContainer from "../../components/BodyContainer"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import PartnerList from "../../components/PartnerList"
 

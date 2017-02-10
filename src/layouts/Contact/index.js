@@ -1,9 +1,9 @@
 import React, { PropTypes } from "react"
-import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
 import HeaderContainer from "../../components/HeaderContainer"
+import BodyContainer from "../../components/BodyContainer"
 import PersonList from "../../components/PersonList"
 
 import ContactData from "../../data/ContactData"

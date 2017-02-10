@@ -1,5 +1,4 @@
 import React, { PropTypes } from "react"
-import { BodyContainer } from "phenomic"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import { localeFromURL } from "../../intl"
 
@@ -7,6 +6,7 @@ import PageWrapper from "../PageWrapper"
 
 import Section from "../../components/Section"
 import HeaderContainer from "../../components/HeaderContainer"
+import BodyContainer from "../../components/BodyContainer"
 import PostPreviewList from "../../components/PostPreviewList"
 
 // import styles from "./index.css"

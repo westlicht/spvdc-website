@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 import { FormattedMessage } from "react-intl"
-import { BodyContainer, Link } from "phenomic"
+import { Link } from "phenomic"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import { localeFromURL } from "../../intl"
 
@@ -8,6 +8,7 @@ import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Section from "../../components/Section"
 import HeaderContainer from "../../components/HeaderContainer"
+import BodyContainer from "../../components/BodyContainer"
 import PostPreviewList from "../../components/PostPreviewList"
 
 import styles from "./index.css"
