@@ -68,7 +68,7 @@ const Footer = (props, context) => {
       </div>
       <GoogleMap
         className="map"
-        url={ "http://maps.google.ch?q=" + ContactData.shortAddress(context.locale) }
+        url={ "http://maps.google.ch?q=" + ContactData.shortAddress(context.locale).replace(/\s/g, '+') }
         lat={ ContactData.data.map.lat }
         lng={ ContactData.data.map.lng }
         zoom={ ContactData.data.map.zoom }
