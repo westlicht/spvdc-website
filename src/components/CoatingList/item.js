@@ -9,7 +9,6 @@ const CoatingItem = ( { coating }) => {
     image,
     name,
     state,
-    // body,
   } = coating
 
 
@@ -21,7 +20,8 @@ const CoatingItem = ( { coating }) => {
   }[state]).join(" ")
 
   return (
-    <Link className={ styles.container } style={{ backgroundImage: "url(" + image + ")"}} to={ url }>
+    <Link className={ styles.container } to={ url }>
+      <img className={ styles.image } src={ image } />
       <div className={ overlayStyles }>
         <span className= { styles.title }>{ name }</span>
       </div>
@@ -35,7 +35,6 @@ CoatingItem.propTypes = {
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     state: PropTypes.oneOf(['default', 'unavailable', 'available', 'recommended']).isRequired,
-    // body: PropTypes.string.isRequired,
   }),
 }
 

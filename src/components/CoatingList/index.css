@@ -28,17 +28,25 @@
 .container {
   cursor: pointer;
   display: block;
+  position: relative;
 
   width: 100%;
   height: 100%;
-  background-size: contain;
-  background-position: center;
 
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
-  .overlay {
+  .image {
     display: block;
     position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
   }
@@ -85,22 +93,33 @@
   background: red;
 }
 
-@media (width <= 65em) {
+@media screen and (width <= 65em) {
   .item {
     width: 10rem;
     height: 10rem;
   }
 }
 
-@media (width <= 55em) {
+@media screen and (width <= 55em) {
   .item {
     width: 8rem;
     height: 8rem;
   }
 }
 
-@media (width <= 50em) {
+@media screen and (width <= 50em) {
   .list {
     justify-content: space-around;
+  }
+}
+
+@media print {
+  .list {
+    display: block;
+  }
+  .item {
+    float: left;
+    width: 10rem;
+    height: 10rem;
   }
 }
