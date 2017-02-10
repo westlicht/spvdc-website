@@ -19,7 +19,7 @@ const PersonItem = ( { person }) => {
 
   return (
     <div className={ styles.container }>
-      <div className={ styles.portrait } style={{ backgroundImage: "url(" + image + ")" }} />
+      <img className={ styles.portrait } src={ image } alt={ name } />
       <div className={ styles.details }>
         <span className={ styles.name }>{ name }</span>
         <span className={ styles.title }>{ title }</span>
