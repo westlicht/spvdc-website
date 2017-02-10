@@ -2,7 +2,6 @@ import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import invariant from "invariant"
 import { joinUri } from "phenomic"
-import QRCode from "qrcode.react"
 
 import translatedPages from "../../utils/translatedPages"
 
@@ -13,6 +12,7 @@ import Header from "../../components/Header"
 import Banner from "../../components/Banner"
 import Loading from "../../components/Loading"
 import BreadCrumbs from "../../components/BreadCrumbs"
+import QRCode from "../../components/QRCode"
 
 // import styles from "./index.css"
 
@@ -83,7 +83,7 @@ const PageWrapper = (props, context) => {
       </Content>
       <Footer />
       <div id="qrcode">
-        <QRCode value={ url } size={ 64 } />
+        <QRCode className="code" value={ url } size={ 256 } />
         <span>{ url }</span>
       </div>
     </Container>
