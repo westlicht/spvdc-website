@@ -5,23 +5,11 @@
     en: Coating material
     fr: Revêtement matériel
 -
-  id: brands
-  title:
-    de: Bekannte Markennamen
-    en: Common brand names
-    fr: Noms de marque connu
--
   id: color
   title:
     de: Schichtfarbe
     en: Coating color
     fr: Revêtement couleur
--
-  id: composition
-  title:
-    de: Schichtaufbau
-    en: Schichtaufbau
-    fr: Schichtaufbau
 -
   id: thickness
   title:
@@ -29,6 +17,13 @@
     en: Schichtdickenbereich
     fr: Schichtdickenbereich
   units: "\u03bcm"
+-
+  id: temperatureCoating
+  title:
+    de: Beschichtungstemperatur
+    en: Beschichtungstemperatur
+    fr: Beschichtungstemperatur
+  units: °C
 -
   id: hardness
   title:
@@ -45,13 +40,6 @@
     de: Reibwert gegen Stahl (trocken)
     en: Reibwert gegen Stahl (trocken)
     fr: Reibwert gegen Stahl (trocken)
--
-  id: temperatureCoating
-  title:
-    de: Beschichtungstemperatur
-    en: Beschichtungstemperatur
-    fr: Beschichtungstemperatur
-  units: °C
 -
   id: temperatureUsage
   title:

@@ -4,18 +4,13 @@ name: TiC-based
 images:
   - /assets/img/coatings/tin1.jpg
 fields:
-  coating: TiC-based
-  brands: Balinit A
-  color:
-    de: goldgelb
-    en: golden yellow
-    fr: jaune d'or
-  composition: monolayer
-  thickness: 4
-  hardness: 30 ± 3
-  friction: 0.6
+  coating: basierend auf TiC
+  color: grau
+  thickness: bis 3
   temperatureCoating: < 500
-  temperatureUsage: 600
+  hardness: 42 ± 4
+  friction:
+  temperatureUsage: 400
 description:
   de: CrN eignet sich sehr gut für die Bearbeitung von Sondermetallen (Kupfer, Messing, verzinkte bzw. verzinnte Bleche, Titan-Legierungen). Auch im Alu- und Zinkdruckguss, der Halbwarmumformung von Stahl und Messing hat sich CrN bewährt. CrN ist aufgrund seiner hervorragenden Anti-Klebeeigenschaften die beste metallische Schicht für den Kunststoff-Spritzguss. Für die Zerspanung von Sondermetallen (Kupfer, Titan-Legierungen). Wegen des nahezu gleichen thermischen Ausdehnungskoeffzienten wie Stahl gut geeignet im Aluminium- und Zinkdruckguss und in der Halbwarmumformung von Stahl und  Messing. Beste PVD-Schicht gegen Korrosion, besonders ab einer Dicke von 10µm.
   en: CrN eignet sich sehr gut für die Bearbeitung von Sondermetallen (Kupfer, Messing, verzinkte bzw. verzinnte Bleche, Titan-Legierungen). Auch im Alu- und Zinkdruckguss, der Halbwarmumformung von Stahl und Messing hat sich CrN bewährt. CrN ist aufgrund seiner hervorragenden Anti-Klebeeigenschaften die beste metallische Schicht für den Kunststoff-Spritzguss. Für die Zerspanung von Sondermetallen (Kupfer, Titan-Legierungen). Wegen des nahezu gleichen thermischen Ausdehnungskoeffzienten wie Stahl gut geeignet im Aluminium- und Zinkdruckguss und in der Halbwarmumformung von Stahl und  Messing. Beste PVD-Schicht gegen Korrosion, besonders ab einer Dicke von 10µm.

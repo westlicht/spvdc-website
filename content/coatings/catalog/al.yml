@@ -4,12 +4,13 @@ name: AL(L)
 images:
   - /assets/img/coatings/tin1.jpg
 fields:
-  coating: AL(L)
-  brands: Balinit B, X.CELL, SUPRAL, VARIANTIC
-  color: gold-yellow
-  composition: mono-layer
-  thickness: 4
-  hardness: 30 +/- 3
+  coating: basierend auf AlTiN+TiSiN
+  color: rot-braun
+  thickness: bis 3
+  temperatureCoating: < 500
+  hardness: 40 ± 3
+  friction:
+  temperatureUsage: 1000
 description:
   de: Diese "modernen" Verschleiss-Schutz-Schichten zeichnen sich durch hohe und höchste Warmhärte und Oxidationsbeständigkeit aus und bieten den Werkzeugen Schutz gegen Wärmeeindringung. Dieses Eigenschaftsprofil prädestiniert diese Schichten für thermisch belastete Werkzeuge- und Bauteile. Feinkorn Hartmetallwerkzeuge für „high speed cutting“, die Hart- und Trocken-(MMS)-bearbeitung, sowie zum Tieflochbohren werden praktisch nur noch mit diesen Schichten versehen. Diese schwierigen Applikationen sind geprägt durch einen enormen Werkzeugverschleiss, begleitet von häufigen Frühausfällen der teuren Werkzeuge und stellen höchste Anforderungen an die Auswahl der richtigen Hartmetallsorte, an die Werkzeugausführung sowie die Beschichtung. Aus diesen Gründen sollten solche Werkzeuge niemals ohne entsprechende Vor- und Nachbehandlung eingesetzt werden, die entweder beimWerkzeughersteller selbst oder beim Beschichter ausgeführt werden. Bei der Vorbehandlung werden je nach Anwendung die Werkzeugoberflächen aufpoliert, die Schneidkanten stabilisiert und gegebenenfalls gezielt verrundet. Bei der Nachbehandlung werden die beschichteten Werkzeuge wieder aufgeglänzt (tribo-gefinished), um zumindest technologiebedingte Schmelzspritzer zu entfernen, im Idealfall um die ursprüngliche Oberflächenqualität wieder herzustellen.
   en: Diese "modernen" Verschleiss-Schutz-Schichten zeichnen sich durch hohe und höchste Warmhärte und Oxidationsbeständigkeit aus und bieten den Werkzeugen Schutz gegen Wärmeeindringung. Dieses Eigenschaftsprofil prädestiniert diese Schichten für thermisch belastete Werkzeuge- und Bauteile. Feinkorn Hartmetallwerkzeuge für „high speed cutting“, die Hart- und Trocken-(MMS)-bearbeitung, sowie zum Tieflochbohren werden praktisch nur noch mit diesen Schichten versehen. Diese schwierigen Applikationen sind geprägt durch einen enormen Werkzeugverschleiss, begleitet von häufigen Frühausfällen der teuren Werkzeuge und stellen höchste Anforderungen an die Auswahl der richtigen Hartmetallsorte, an die Werkzeugausführung sowie die Beschichtung. Aus diesen Gründen sollten solche Werkzeuge niemals ohne entsprechende Vor- und Nachbehandlung eingesetzt werden, die entweder beimWerkzeughersteller selbst oder beim Beschichter ausgeführt werden. Bei der Vorbehandlung werden je nach Anwendung die Werkzeugoberflächen aufpoliert, die Schneidkanten stabilisiert und gegebenenfalls gezielt verrundet. Bei der Nachbehandlung werden die beschichteten Werkzeuge wieder aufgeglänzt (tribo-gefinished), um zumindest technologiebedingte Schmelzspritzer zu entfernen, im Idealfall um die ursprüngliche Oberflächenqualität wieder herzustellen.
