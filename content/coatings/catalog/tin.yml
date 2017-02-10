@@ -2,7 +2,8 @@ id: 1
 order: 9
 name: TiN
 images:
-  - /assets/img/coatings/tin1.jpg
+  - /assets/img/coatings/IMG_2856.jpg
+  - /assets/img/coatings/IMG_2859.jpg
 fields:
   coating: TiN (Titannitrid)
   color: gold-gelb

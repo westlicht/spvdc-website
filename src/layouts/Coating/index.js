@@ -64,10 +64,11 @@ const Coating = (props, { locale }) => {
           <div className={ styles.right }>
             <div className={ styles.image }>
               <Carousel showArrows={ false }  showStatus={ false } showThumbs={ false }>
-                <img src={ coating.images[0] } />
-                <img src={ coating.images[0] } />
-                <img src={ coating.images[0] } />
-                <img src={ coating.images[0] } />
+                {
+                  coating.images.map(image => (
+                    <img src={ image } />
+                  ))
+                }
               </Carousel>
             </div>
           </div>

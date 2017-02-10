@@ -2,7 +2,8 @@ id: 3
 order: 7
 name: TiC-based
 images:
-  - /assets/img/coatings/tin1.jpg
+  - /assets/img/coatings/IMG_2850.jpg
+  - /assets/img/coatings/IMG_2851.jpg
 fields:
   coating: basierend auf TiC
   color: grau

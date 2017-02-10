@@ -2,7 +2,9 @@ id: 6
 order: 4
 name: AlTiCrN
 images:
-  - /assets/img/coatings/tin1.jpg
+  - /assets/img/coatings/IMG_2837.jpg
+  - /assets/img/coatings/IMG_2838.jpg
+  - /assets/img/coatings/IMG_2840.jpg
 fields:
   coating: AlTiCrN (Aluminiumtitanchromnitrid)
   color: hellgrau

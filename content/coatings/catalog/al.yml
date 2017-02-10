@@ -2,7 +2,9 @@ id: 8
 order: 1
 name: AL(L)
 images:
-  - /assets/img/coatings/tin1.jpg
+  - /assets/img/coatings/IMG_2809.jpg
+  - /assets/img/coatings/IMG_2810.jpg
+  - /assets/img/coatings/IMG_2812.jpg
 fields:
   coating: basierend auf AlTiN+TiSiN
   color: rot-braun

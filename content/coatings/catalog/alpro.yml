@@ -2,7 +2,9 @@ id: 5
 order: 3
 name: AlPro
 images:
-  - /assets/img/coatings/tin1.jpg
+  - /assets/img/coatings/IMG_2828.jpg
+  - /assets/img/coatings/IMG_2831.jpg
+  - /assets/img/coatings/IMG_2836.jpg
 fields:
   coating: basierend auf AlTiN
   color: anthrazit

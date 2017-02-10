@@ -2,7 +2,9 @@ id: 9
 order: 6
 name: CrN
 images:
-  - /assets/img/coatings/tin1.jpg
+  - /assets/img/coatings/IMG_2844.jpg
+  - /assets/img/coatings/IMG_2845.jpg
+  - /assets/img/coatings/IMG_2848.jpg
 fields:
   coating: CrN (Chromnitrid)
   color: silbergrau

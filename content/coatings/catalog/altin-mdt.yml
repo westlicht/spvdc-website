@@ -2,7 +2,8 @@ id: 4
 order: 5
 name: AlTiN-MDT
 images:
-  - /assets/img/coatings/tin1.jpg
+  - /assets/img/coatings/IMG_2842.jpg
+  - /assets/img/coatings/IMG_2843.jpg
 fields:
   coating: AlTiN (Aluminiumtitannitrid)
   color: anthrazit
