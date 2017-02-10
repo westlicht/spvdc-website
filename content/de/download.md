@@ -2,8 +2,6 @@
 title: Download
 layout: Download
 id: download
-banner:
-  image: /assets/img/banner/download.jpg
 downloads:
 -
   description: Allgemeine Geschäftsbedingungen.

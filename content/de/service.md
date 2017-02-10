@@ -2,16 +2,6 @@
 title: Service
 layout: Service
 id: service
-banner:
-  image: /assets/img/banner/service.jpg
-  text: "Just a test"
-headline: Ihr Beschichtungspartner
-subline: Wir von der swiss-PVD Coating AG ...
-lead: |
-  Tina Curtins, Administration & Verkaufsinnendienst
-  Tin Curtins, Technologie & Produktion
-  Herbert Mathies, new-plas.com, Kundenberatung
-  ...brennen darauf, den technischen Fortschritt des neuen PVD Beschichtungssystems EXON 1500 kombi-ARC/Sputter an IHREN Werkzeugen und Komponenten unter Beweis zu stellen.
 sections:
 -
   icon: sign-in

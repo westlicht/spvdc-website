@@ -42,4 +42,10 @@
   #content {
     padding-top: 0;
   }
+
+  .carousel {
+    .control-dots {
+      display: none;
+    }
+  }
 }

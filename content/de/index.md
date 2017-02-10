@@ -2,8 +2,6 @@
 title: Home
 layout: Homepage
 id: index
-banner:
-  image: "/assets/img/stairs.jpg"
 ---
 # swiss-PVD Coating AG
 ## Ein µ härter, ein + schneller, ein :-) herzlicher

@@ -25,7 +25,7 @@ const Homepage = (props, context) => {
   .slice(0, numberOfLatestPosts)
 
   return (
-    <PageWrapper { ...props } bannerImage="/assets/img/stairs.jpg">
+    <PageWrapper { ...props } bannerImage="/assets/img/banner/home.jpg">
       <Section>
         <TwoColumns>
           <LeftColumn>
