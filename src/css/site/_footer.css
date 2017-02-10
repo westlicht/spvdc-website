@@ -15,7 +15,7 @@
     justify-content: space-between;
     padding-top: 1rem;
 
-    h1 {
+    h2 {
       font-size: 1.2rem;
       margin-bottom: 1rem;
       color: var(--color-secondary-lighter);
@@ -23,7 +23,6 @@
 
     p {
       margin: 0;
-
       span.fa {
         padding-right: 0.5rem;
       }
@@ -136,7 +135,7 @@
     display: block;
     padding: 1rem;
     text-align: center;
-    
+
     span {
       display: block;
       padding: 1rem;

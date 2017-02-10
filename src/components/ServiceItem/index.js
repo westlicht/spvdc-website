@@ -8,7 +8,7 @@ const ServiceItem = ({ icon, image, title, body }) => {
     <div className={ styles.item }>
       <div className={ styles.wrapper }>
         <div className={ styles.info }>
-          <h1><Icon name={ icon } size="lg" />{ title }</h1>
+          <h2><Icon name={ icon } size="lg" />{ title }</h2>
           <p>{ body }</p>
         </div>
         <div

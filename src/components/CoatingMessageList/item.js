@@ -14,7 +14,7 @@ const CoatingMessageItem = ( { message }) => {
   return (
     <div className={ styles.container }>
       <Icon className={ styles.icon } name="exclamation-circle" size="lg" />
-      <RawHtml.p>{ transformMarkdown(body) }</RawHtml.p>
+      <RawHtml.div>{ transformMarkdown(body) }</RawHtml.div>
     </div>
   )
 }

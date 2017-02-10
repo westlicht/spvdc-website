@@ -11,7 +11,7 @@ const NavigationMenu = (props) => {
           return item.external ? (
             <a
               key={ itemIndex }
-              href={ item.url }
+              href={ encodeURI(item.url) }
             >
               { item.name }
             </a>

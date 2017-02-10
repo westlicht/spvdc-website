@@ -28,9 +28,9 @@ const Footer = (props, context) => {
       <div className="container">
         <div className="infos">
           <div className="address">
-            <h1>
+            <h2>
               <FormattedMessage id="footer.address" defaultMessage="Address" />
-            </h1>
+            </h2>
             <p>
               {
                 ContactData.address(context.locale).reduce((r, line) =>
@@ -43,9 +43,9 @@ const Footer = (props, context) => {
             </p>
           </div>
           <div className="contact">
-            <h1>
+            <h2>
               <FormattedMessage id="footer.contact" defaultMessage="Contact" />
-            </h1>
+            </h2>
             <p>
               <Icon name="phone" fixedWidth={ true } />
               <PhoneNumber address={ ContactData.data.contact.phone } />
@@ -59,10 +59,10 @@ const Footer = (props, context) => {
             </p>
           </div>
           <div className="hours">
-            <h1>
+            <h2>
               <FormattedMessage id="footer.hours" defaultMessage="Hours" />
-            </h1>
-            <RawHtml.p>{ transformMarkdown(translatedString(ContactData.data.hours, context.locale)) }</RawHtml.p>
+            </h2>
+            <RawHtml.div>{ transformMarkdown(translatedString(ContactData.data.hours, context.locale)) }</RawHtml.div>
           </div>
         </div>
       </div>
