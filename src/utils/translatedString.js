@@ -1,7 +1,7 @@
 export default function(item, locale) {
-  if (typeof(item) === "string") {
-    return item
-  } else {
+  if (typeof(item) === "object") {
     return item[locale]
+  } else {
+    return item
   }
 }
