@@ -1,0 +1,31 @@
+.axis {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-linecap: round;
+}
+
+.ticks {
+  stroke: #aaa;
+  stroke-width: 1px;
+  stroke-linecap: round;
+}
+
+.title {
+  /*font-family: "Arimo";*/
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+
+.point {
+  /*stroke: red;*/
+  stroke-width: 0.75rem;
+  stroke-linecap: round;
+  /*stroke-opacity: 0.75;*/
+}
+
+.line {
+  /*stroke: red;*/
+  stroke-width: 2px;
+  stroke-linecap: round;
+  /*stroke-opacity: 0.75;*/
+}
