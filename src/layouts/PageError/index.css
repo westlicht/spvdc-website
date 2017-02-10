@@ -1,21 +1,53 @@
+@import "../../css/site/_root.css";
+
 .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
-  padding: 1rem 0;
+  flex-wrap: wrap;
+  text-align: center;
+
+  background: black;
+
+  a {
+    color: white;
+    &::hover {
+      color: white;
+    }
+  }
 }
 
-.oops {
-  font-size: 4rem;
-  line-height: 4rem;
-  color: #ddd;
+.icon {
+  font-size: 3rem;
+  color: var(--color-secondary-lighter);
 }
 
 .title {
-  margin: 4rem 0;
+  color: var(--color-secondary-lighter);
+  margin: 2rem 0;
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2rem;
   text-align: center;
+}
+
+.home {
+  font-size: 1.5rem;
+}
+
+@media screen and (width <= 40em) {
+  .icon {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .home {
+    font-size: 1rem;
+  }
 }
