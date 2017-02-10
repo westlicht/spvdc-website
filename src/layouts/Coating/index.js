@@ -1,7 +1,12 @@
 import React, { PropTypes } from "react"
 import { FormattedMessage } from "react-intl"
-import { Link } from "phenomic"
-import enhanceCollection from "phenomic/lib/enhance-collection"
+import { BodyContainer } from "phenomic"
+
+const Carousel = require('react-responsive-carousel').Carousel
+require("react-responsive-carousel/lib/styles/carousel.min.css")
+
+import isBrowser from "../../utils/isBrowser"
+
 
 import transformMarkdown from "../../transform-markdown"
 import RawHtml from "react-raw-html"
@@ -9,24 +14,16 @@ import RawHtml from "react-raw-html"
 import translatedString from "../../utils/translatedString"
 
 import PageWrapper from "../PageWrapper"
-import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Section from "../../components/Section"
+// import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import SimpleTable from "../../components/SimpleTable"
+import CoatingFinderContainer from "../../containers/CoatingFinderContainer"
 
 import CoatingData from "../../data/CoatingData"
 
 import styles from "./index.css"
 
-const Coating = (props, { collection, locale }) => {
-
-  const coatingsCollection = enhanceCollection(collection, {
-    filter: { layout: "Coating", locale: locale },
-  })
-
-  const coatingItems = coatingsCollection.map(item => ({
-    name: item.title,
-    url: item.__url,
-  }))
+const Coating = (props, { locale }) => {
 
   const id = props.head.id
   const fields = CoatingData.fields
@@ -43,7 +40,7 @@ const Coating = (props, { collection, locale }) => {
     title = (<RawHtml.span>{ transformMarkdown(title) }</RawHtml.span>)
 
     const data = coating.fields[field.id]
-    let value = data ? translatedString(data) : ""
+    let value = data ? translatedString(data) : "-"
     if (field.units) {
       value += " " + field.units
     }
@@ -56,13 +53,30 @@ const Coating = (props, { collection, locale }) => {
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/coatings.jpg">
       <Section>
-        <TwoColumns>
-          <LeftColumn>
-            <h1>{ coating.name }</h1>
-            <div className={ styles.info }>
-              <img className={ styles.image } src={ coating.images[0] }></img>
-              <p>{ coating.description && coating.description[locale] }</p>
+        <h1>{ coating.name }</h1>
+        <div className={ styles.container }>
+          <div className={ styles.left }>
+            <div className={ styles.image }>
+              <Carousel showArrows={ false }  showStatus={ false } showThumbs={ false }>
+                <img src={ coating.images[0] } />
+                <img src={ coating.images[0] } />
+                <img src={ coating.images[0] } />
+                <img src={ coating.images[0] } />
+              </Carousel>
             </div>
+          </div>
+          <div className={ styles.right }>
+            <div className={ styles.body }>
+              <BodyContainer>{ props.body }</BodyContainer>
+            </div>
+          </div>
+        </div>
+
+        <div className={ styles.container }>
+          <div className={ styles.left }>
+            <p></p>
+          </div>
+          <div className={ styles.right }>
             <div className={ styles.specs }>
               <h3>
                 <FormattedMessage id="coatings.specification" defaultMessage="Specification" />
@@ -74,23 +88,15 @@ const Coating = (props, { collection, locale }) => {
                 ))
               }
             </div>
-          </LeftColumn>
-          <RightColumn>
-            <h3>
-              <FormattedMessage id="coatings.coatings" defaultMessage="Coatings" />
-            </h3>
-            <ul>
-              {
-                coatingItems.map(item => (
-                  <li key={ item.name }>
-                    <Link to={ item.url } activeStyle={{ color:"red" }}>{ item.name }</Link>
-                  </li>
-                ))
-              }
-            </ul>
-            {/* <NavigationMenu items={ coatingItems } /> */}
-          </RightColumn>
-        </TwoColumns>
+          </div>
+        </div>
+        <div className={ styles.separator }></div>
+        <h2>
+          <FormattedMessage id="coatings.coatings" defaultMessage="Coatings" />
+        </h2>
+        { isBrowser() && (
+          <CoatingFinderContainer />
+        )}
       </Section>
     </PageWrapper>
   )
@@ -98,11 +104,11 @@ const Coating = (props, { collection, locale }) => {
 
 Coating.propTypes = {
   head: PropTypes.object.isRequired,
+  body: PropTypes.string,
 }
 
 Coating.contextTypes = {
   locale: PropTypes.string.isRequired,
-  collection: PropTypes.array.isRequired,
 }
 
 export default Coating
