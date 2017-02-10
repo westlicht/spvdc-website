@@ -56,6 +56,11 @@ const Coating = (props, { locale }) => {
         <h1>{ coating.name }</h1>
         <div className={ styles.container }>
           <div className={ styles.left }>
+            <div className={ styles.body }>
+              <BodyContainer>{ props.body }</BodyContainer>
+            </div>
+          </div>
+          <div className={ styles.right }>
             <div className={ styles.image }>
               <Carousel showArrows={ false }  showStatus={ false } showThumbs={ false }>
                 <img src={ coating.images[0] } />
@@ -65,18 +70,10 @@ const Coating = (props, { locale }) => {
               </Carousel>
             </div>
           </div>
-          <div className={ styles.right }>
-            <div className={ styles.body }>
-              <BodyContainer>{ props.body }</BodyContainer>
-            </div>
-          </div>
         </div>
 
         <div className={ styles.container }>
           <div className={ styles.left }>
-            <p></p>
-          </div>
-          <div className={ styles.right }>
             <div className={ styles.specs }>
               <h3>
                 <FormattedMessage id="coatings.specification" defaultMessage="Specification" />
@@ -89,14 +86,18 @@ const Coating = (props, { locale }) => {
               }
             </div>
           </div>
+          <div className={ styles.right }>
+            <p></p>
+          </div>
         </div>
-        <div className={ styles.separator }></div>
-        <h2>
-          <FormattedMessage id="coatings.coatings" defaultMessage="Coatings" />
-        </h2>
-        { isBrowser() && (
-          <CoatingFinderContainer />
-        )}
+        <div className={ styles.finder }>
+          <h2>
+            <FormattedMessage id="coatings.coatings" defaultMessage="Coatings" />
+          </h2>
+          { isBrowser() && (
+            <CoatingFinderContainer />
+          )}
+        </div>
       </Section>
     </PageWrapper>
   )

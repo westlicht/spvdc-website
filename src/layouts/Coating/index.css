@@ -1,9 +1,11 @@
+@import "../../css/site/_root.css";
+
 .container {
   @neat-outer-container;
 }
 
 .left {
-  @neat-span-columns 4;
+  @neat-span-columns 8;
 
   @media screen and (width <= 50em) {
     @neat-span-columns 12;
@@ -11,7 +13,7 @@
 }
 
 .right {
-  @neat-span-columns 8;
+  @neat-span-columns 4;
 
   @media screen and (width <= 50em) {
     @neat-span-columns 12;
@@ -29,6 +31,13 @@
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
   margin-right: 2rem;
   margin-bottom: 2rem;
+  /*margin-top: 5rem;*/
+}
+
+@media screen and (width <= 50em) {
+  .image {
+    margin: 1rem auto;
+  }
 }
 
 .specs {
@@ -40,7 +49,22 @@
 }
 
 .separator {
-  border-bottom: 1px solid black;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.finder {
+  border-top: 1px solid black;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+@media print {
+  .image {
+    border: 1px solid var(--color-background-2);
+    box-shadow: none;
+  }
+  .finder {
+    display: none;
+  }
 }
