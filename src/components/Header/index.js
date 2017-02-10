@@ -63,7 +63,7 @@ const Header = (props, context) => {
         </div>
         <div className="logo">
           <Link to={ "/" + context.locale }>
-            <img src="/assets/img/logo.svg" />
+            <img src="/assets/img/logo.svg" alt="Logo" />
           </Link>
         </div>
         <div className="spacer" />
