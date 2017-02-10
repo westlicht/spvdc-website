@@ -19,7 +19,7 @@ const DownloadList = ({ downloads }) => {
 }
 
 DownloadList.propTypes = {
-  downloads: PropTypes.arrayOf(DownloadItem.propTypes.partner),
+  downloads: PropTypes.arrayOf(DownloadItem.propTypes.download),
 }
 
 export default DownloadList
