@@ -1,9 +1,5 @@
-.logo {
-  /*width: 100%;*/
-  height: 4em;
+.allPosts {
+  display: block;
   width: 100%;
-  margin: auto;
-  /*background: transparent url("/assets/img/logo.svg") no-repeat center top;*/
-  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-
+  text-align: center;
 }

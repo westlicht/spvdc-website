@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 import { FormattedMessage } from "react-intl"
-import { BodyContainer } from "phenomic"
+import { BodyContainer, Link } from "phenomic"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import { localeFromURL } from "../../intl"
 
@@ -8,6 +8,8 @@ import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Section from "../../components/Section"
 import PostPreviewList from "../../components/PostPreviewList"
+
+import styles from "./index.css"
 
 const numberOfLatestPosts = 2
 
@@ -24,6 +26,10 @@ const Homepage = (props, context) => {
   }))
   .slice(0, numberOfLatestPosts)
 
+  const urlPostIndex = enhanceCollection(context.collection, {
+    filter: item => item.layout === "PostIndex" && localeFromURL(item.__url) === context.locale,
+  })[0].__url
+
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/home.jpg">
       <Section>
@@ -35,7 +41,14 @@ const Homepage = (props, context) => {
             <h3>
               <FormattedMessage id="homepage.latestPosts" defaultMessage="Latest Posts" />
             </h3>
-            <PostPreviewList posts={ latestPosts } />
+            { latestPosts.length > 0 ? (
+              [
+                (<PostPreviewList posts={ latestPosts } />),
+                (<Link className={ styles.allPosts } to={ urlPostIndex }><FormattedMessage id="homepage.allPosts" defaultMessage="All Posts" /></Link>)
+              ]
+            ) : (
+              <FormattedMessage id="homepage.noPosts" defaultMessage="No Posts" />
+            )}
           </RightColumn>
         </TwoColumns>
       </Section>

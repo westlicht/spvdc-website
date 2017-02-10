@@ -2,6 +2,7 @@ locale: de
 homepage:
   latestPosts: "Letzte Einträge"
   noPosts: "Noch keine Einträge."
+  allPosts: "Alle Einträge."
 footer:
   address: "Adresse"
   contact: "Kontakt"
