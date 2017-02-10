@@ -1,0 +1,36 @@
+@import "../../css/site/_root.css";
+
+.list {
+  list-style-type: none;
+  margin-left: 0;
+  background: var(--color-background-1);
+  padding: 1rem;
+}
+
+.item {
+  display: block;
+}
+
+.container {
+  display: block;
+
+  .icon {
+    padding-top: 0.25rem;
+    padding-right: 1rem;
+    display: block;
+    float: left;
+  }
+
+  .filename,
+  .description {
+    display: block;
+    margin-left: 2rem;
+    padding: 0;
+  }
+}
+
+@media print {
+  .item {
+    page-break-inside: avoid;
+  }
+}

@@ -18,6 +18,7 @@ import HeaderContainer from "../../components/HeaderContainer"
 import BodyContainer from "../../components/BodyContainer"
 // import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import SimpleTable from "../../components/SimpleTable"
+import DownloadList from "../../components/DownloadList"
 import CoatingFinderContainer from "../../containers/CoatingFinderContainer"
 
 import CoatingData from "../../data/CoatingData"
@@ -89,7 +90,16 @@ const Coating = (props, { locale }) => {
             </div>
           </div>
           <div className={ styles.right }>
-            <p></p>
+            { props.head.downloads ? (
+              <div className={ styles.downloads }>
+                <h3>
+                  <FormattedMessage id="general.downloads" defaultMessage="Downloads" />
+                </h3>
+                <DownloadList downloads={ props.head.downloads } />
+              </div>
+            ) : (
+              <div className={ styles.downloads }></div>
+            )}
           </div>
         </div>
         <div className={ styles.finder }>

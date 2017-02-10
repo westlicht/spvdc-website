@@ -1,4 +1,6 @@
 locale: fr
+general:
+  downloads: "Downloads"
 homepage:
   latestPosts: "Les derniers articles"
   noPosts: "Pas d'annonces."
