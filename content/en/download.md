@@ -2,6 +2,8 @@
 title: Download
 layout: Download
 id: download
+headline: Downloads
+subline: This is a subline
 downloads:
 -
   description: Allgemeine Geschäftsbedingungen.
@@ -19,6 +21,4 @@ downloads:
   description: Sie können folgendes Formular Ihren Beschichtungsteilen beilegen. Damit gewährleisten Sie die Beschichtung nach Ihren Wünschen.
   url: /assets/de/download/Beschichtungsauftrag.pdf
 ---
-# Downloads
-
-Some downloads ...
+Hier finden Sie einige Downloads ...

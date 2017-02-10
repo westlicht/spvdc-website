@@ -7,6 +7,7 @@ import { localeFromURL } from "../../intl"
 import PageWrapper from "../PageWrapper"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import Section from "../../components/Section"
+import HeaderContainer from "../../components/HeaderContainer"
 import PostPreviewList from "../../components/PostPreviewList"
 
 import styles from "./index.css"
@@ -35,6 +36,7 @@ const Homepage = (props, context) => {
       <Section>
         <TwoColumns>
           <LeftColumn>
+            <HeaderContainer { ...props } />
             <BodyContainer>{ props.body }</BodyContainer>
           </LeftColumn>
           <RightColumn>

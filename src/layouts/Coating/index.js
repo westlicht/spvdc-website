@@ -15,6 +15,7 @@ import translatedString from "../../utils/translatedString"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
+import HeaderContainer from "../../components/HeaderContainer"
 // import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import SimpleTable from "../../components/SimpleTable"
 import CoatingFinderContainer from "../../containers/CoatingFinderContainer"
@@ -53,7 +54,7 @@ const Coating = (props, { locale }) => {
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/coatings.jpg">
       <Section>
-        <h1>{ coating.name }</h1>
+        <HeaderContainer { ...props } />
         <div className={ styles.container }>
           <div className={ styles.left }>
             <div className={ styles.body }>

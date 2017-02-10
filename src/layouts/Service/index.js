@@ -3,12 +3,14 @@ import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
+import HeaderContainer from "../../components/HeaderContainer"
 import ServiceItem from "../../components/ServiceItem"
 
 const Service = (props) => {
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/service.jpg">
       <Section>
+        <HeaderContainer { ...props } />
         <BodyContainer>{ props.body }</BodyContainer>
         {
           props.head.sections.map(item => (

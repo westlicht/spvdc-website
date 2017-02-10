@@ -6,6 +6,7 @@ import { localeFromURL } from "../../intl"
 import PageWrapper from "../PageWrapper"
 
 import Section from "../../components/Section"
+import HeaderContainer from "../../components/HeaderContainer"
 import PostPreviewList from "../../components/PostPreviewList"
 
 // import styles from "./index.css"
@@ -26,6 +27,7 @@ const PostIndex = (props, context) => {
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/news.jpg">
       <Section>
+        <HeaderContainer { ...props } />
         <BodyContainer>{ props.body }</BodyContainer>
         <PostPreviewList posts={ posts }/>
       </Section>

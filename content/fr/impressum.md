@@ -2,9 +2,8 @@
 title: Impressum
 layout: Page
 id: impressum
+headline: Impressum
 ---
-# Impressum
-
 swiss-PVD Coating AG</br>
 Archstrasse 38</br>
 2540 Grenchen</br>

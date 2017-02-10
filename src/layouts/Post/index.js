@@ -4,15 +4,15 @@ import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
+import HeaderContainer from "../../components/HeaderContainer"
 
 import styles from "./index.css"
 
 const Post = (props) => {
-  // it's up to you to choose what to do with this layout ;)
   const pageDate = props.head.date ? new Date(props.head.date) : null
 
   return (
-    <PageWrapper { ...props } bannerImage="/assets/img/stairs.jpg">
+    <PageWrapper { ...props } bannerImage="/assets/img/banner/news.jpg">
       <Section>
         {
           pageDate && (
@@ -26,7 +26,8 @@ const Post = (props) => {
             </span>
           )
         }
-        <h1>{ props.head.title }</h1>
+
+        <HeaderContainer { ...props } />
         <BodyContainer>{ props.body }</BodyContainer>
       </Section>
     </PageWrapper>

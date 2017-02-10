@@ -12,6 +12,15 @@
 @import "./site/_breadcrumbs.css";
 @import "./site/_outdated.css";
 
+.headline {
+  /**/
+}
+
+.subline {
+  margin-top: -2rem;
+  color: var(--color-primary-darker);
+}
+
 #content {
   padding-top: 6rem;
   width: 100%;

@@ -2,6 +2,8 @@
 title: Service
 layout: Service
 id: service
+headline: Service
+subline: This is a subline
 sections:
 -
   icon: sign-in
@@ -62,9 +64,6 @@ sections:
   body: |
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 ---
-# This is a headline
-## This is a subline
-
 Ab Januar 2009 sind wir bereit, in unserem neugegründeten Beschichtungszentrum am Standort Grenchen (SO), interessierten Kunden aus dem Werkzeug- und Formenbau, der Maschinen- und Automobilindustrie sowie der Medizinaltechnik, PVD Beschichtungen in höchster Qualität, zu günstigen Preisen und innerhalb kürzester Lieferzeiten anzubieten.
 
 Unsere Kunden profitieren dabei vom synchronen Zusammenspiel der ARC und Sputter Technologien, welche so aufeinander abgestimmt sind, dass beliebige Hart- und Gleitstoffschichten mit höchster Haftfestigkeit und feinster Nano-Struktur in kurzen wirtschaftlichen Prozessen auf alle metallischen Substrate aufgebracht werden können.

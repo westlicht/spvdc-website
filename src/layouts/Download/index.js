@@ -3,12 +3,14 @@ import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
+import HeaderContainer from "../../components/HeaderContainer"
 import DownloadItem from "../../components/DownloadItem"
 
 const Download = (props) => {
   return (
     <PageWrapper { ...props } bannerImage="/assets/img/banner/download.jpg">
       <Section>
+        <HeaderContainer { ...props } />
         <BodyContainer>{ props.body }</BodyContainer>
         {
           props.head.downloads.map(item => (

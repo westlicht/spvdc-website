@@ -4,6 +4,7 @@ import { BodyContainer } from "phenomic"
 
 import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
+import HeaderContainer from "../../components/HeaderContainer"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import PartnerList from "../../components/PartnerList"
 
@@ -13,6 +14,7 @@ const Service = (props) => {
       <Section>
         <TwoColumns>
           <LeftColumn>
+            <HeaderContainer { ...props } />
             <BodyContainer>{ props.body }</BodyContainer>
           </LeftColumn>
           <RightColumn>

@@ -2,6 +2,8 @@
 title: Technologie
 layout: Technology
 id: technology
+headline: Technologie
+subline: Physikalische Gasphasenabscheiden mittels Lichtbogenverdampfen (PVD-arc)
 partners:
 -
   url: http://www.new-arc.ch
@@ -16,9 +18,6 @@ partners:
   body: |
     Für die Konzeption, Konstruktion und den Anlagenbau zeichnet sich Philippe Maire in engster Kooperation mit Dr. H. Curtins in La Chaux-de-Fonds verantwortlich . Das Team der swiss-PVD SA verfügt über eine langjährige und vielfältige Erfahrung im Anlagenbau von schlüsselfertigen PVD Systemen und hat unter anderem die M2, M4 und L4 Reihe in den Jahren 2000-2005 äusserst erfolgreich auf dem Weltmarkt platziert.
 ---
-# Technologie
-## Physikalische Gasphasenabscheiden mittels Lichtbogenverdampfen (PVD-arc)
-
 Unsere Dünnschichten werden mittels Lichtbogenverdampfen im Hochvakuum auf metallische Substrate (Werkzeuge, Uhrenteile, etc.) aufgetragen. Die Schichtdicken betragen üblicherweise 1-3 µm und weisen je nach Zusammensetzung eine Härte von 1000-4000 HV auf. Aufgrund der geringen Schichtdicke erfahren die Oberflächen keine Veränderung und wichtige Eigenschaften wie Schnittigkeit oder Oberflächenrauhigkeit bleiben erhalten. Unsere Standard-Prozesstemperaturen betragen optimalerweise 480°C, wir bieten jedoch auch Prozesse bei niedrigen Temperaturen bei heikleren Materialien an (min. 200°C).
 
 ## Beschichtungsanlagen
