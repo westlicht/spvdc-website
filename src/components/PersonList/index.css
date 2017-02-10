@@ -81,4 +81,7 @@
   .container {
     page-break-inside: avoid;
   }
+  .portrait {
+    box-shadow: none;
+  }
 }
