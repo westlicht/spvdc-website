@@ -136,5 +136,11 @@
     display: block;
     padding: 1rem;
     text-align: center;
+    
+    span {
+      display: block;
+      padding: 1rem;
+      text-align: center;
+    }
   }
 }

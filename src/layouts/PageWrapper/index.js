@@ -29,11 +29,12 @@ const PageWrapper = (props, context) => {
     locale,
   } = context
 
-
   invariant(
     typeof head.title === "string",
     `Your page '${ __filename }' needs a title`
   )
+
+  const url = joinUri(process.env.PHENOMIC_USER_URL, __url)
 
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
 
@@ -42,7 +43,7 @@ const PageWrapper = (props, context) => {
     { property: "og:title", content: metaTitle },
     {
       property: "og:url",
-      content: joinUri(process.env.PHENOMIC_USER_URL, __url),
+      content: url,
     },
     { property: "og:description", content: head.description },
     { name: "twitter:card", content: "summary" },
@@ -82,7 +83,8 @@ const PageWrapper = (props, context) => {
       </Content>
       <Footer />
       <div id="qrcode">
-        <QRCode value={ joinUri(process.env.PHENOMIC_USER_URL, __url) } size={ 64 } />
+        <QRCode value={ url } size={ 64 } />
+        <span>{ url }</span>
       </div>
     </Container>
   )
