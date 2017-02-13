@@ -7,6 +7,7 @@ import HeaderContainer from "../../components/HeaderContainer"
 import BodyContainer from "../../components/BodyContainer"
 import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import PartnerList from "../../components/PartnerList"
+import DownloadList from "../../components/DownloadList"
 
 const Service = (props) => {
   return (
@@ -24,6 +25,7 @@ const Service = (props) => {
             <PartnerList partners={ props.head.partners } />
           </RightColumn>
         </TwoColumns>
+        <DownloadList downloads={ props.head.downloads } />
       </Section>
     </PageWrapper>
   )

@@ -5,6 +5,7 @@ import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
 import HeaderContainer from "../../components/HeaderContainer"
 import BodyContainer from "../../components/BodyContainer"
+import DownloadList from "../../components/DownloadList"
 
 import styles from "./index.css"
 
@@ -29,6 +30,7 @@ const Post = (props) => {
 
         <HeaderContainer { ...props } />
         <BodyContainer>{ props.body }</BodyContainer>
+        <DownloadList downloads={ props.head.downloads } />
       </Section>
     </PageWrapper>
   )
