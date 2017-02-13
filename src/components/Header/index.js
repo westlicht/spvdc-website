@@ -46,7 +46,7 @@ const Header = (props, context) => {
             {
               ContactData.address(context.locale).reduce((r, line) =>
                 r.concat(
-                  (<span>{line}</span>),
+                  (<span>{ line }</span>),
                   (<br/>)
                 )
               , [])
