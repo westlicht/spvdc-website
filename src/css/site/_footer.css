@@ -88,7 +88,7 @@
 }
 
 #qrcode {
-    display: none;
+  display: none;
 }
 
 /*@media screen and (width <= 50em) {
@@ -136,9 +136,15 @@
     padding: 1rem;
     text-align: center;
 
+    canvas {
+      padding: 1rem;
+      width: 5rem;
+      height: 5rem;
+      image-rendering: pixelated;
+    }
+
     span {
       display: block;
-      padding: 1rem;
       text-align: center;
     }
   }
