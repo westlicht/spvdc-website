@@ -5,7 +5,7 @@ import DownloadItem from "./item.js"
 import styles from "./index.css"
 
 const DownloadList = ({ downloads }) => {
-  return (
+  return downloads ? (
     <ul className={ styles.list }>
       {
         downloads.map((download) => (
@@ -15,7 +15,7 @@ const DownloadList = ({ downloads }) => {
         ))
       }
     </ul>
-  )
+  ) : null
 }
 
 DownloadList.propTypes = {
