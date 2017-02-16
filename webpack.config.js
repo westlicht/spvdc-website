@@ -12,18 +12,9 @@ import pkg from "./package.json"
 
 export default (config = {}) => {
   const postcssPlugins = (webpack) => [
-    // require("postcss-import")({
-    //   addDependencyTo: webpack,
-    //   plugins: [
-    //     require("stylelint")({
-    //       config: require("./stylelint.config.js"),
-    //     }),
-    //   ],
-    // }),
     require("stylelint")({
       config: require("./stylelint.config.js"),
     }),
-    // require("postcss-normalize")(),
     require("postcss-partial-import")({
       addDependencyTo: webpack,
     }),
@@ -39,7 +30,6 @@ export default (config = {}) => {
     }),
     require("postcss-reporter")(),
     ...config.production ? [
-      // require("postcss-flexibility")(),
     ] : [
       require("postcss-browser-reporter")(),
     ],
