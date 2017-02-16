@@ -1,5 +1,16 @@
 .section {
   @neat-outer-container;
   padding: 1rem 1rem;
-  overflow-x: scroll;
+}
+
+@media screen and (width <= 40em) {
+  .section {
+    overflow-x: scroll;
+
+    -ms-overflow-style: none;
+    overflow-x: -moz-scrollbars-none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
