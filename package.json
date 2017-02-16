@@ -159,6 +159,7 @@
     "react-json-tree": "^0.10.0",
     "react-raw-html": "^0.4.0",
     "react-redux": "^4.0.0",
+    "react-responsive-carousel": "^3.0.22",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.7",
     "react-svg-inline": "^1.1.0",
