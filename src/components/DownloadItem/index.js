@@ -1,6 +1,7 @@
 import React, { PropTypes } from "react"
+import Markdown from "react-markdownit"
 
-import {Icon} from "react-fa"
+import { Icon } from "react-fa"
 
 import styles from "./index.css"
 
@@ -9,11 +10,10 @@ const DownloadItem = ({ description, url }) => {
   return (
     <div className={ styles.item }>
       <a className={ styles.link } href={ encodeURI(url) }>
-        {/* <Icon className={ styles.icon } name="file-pdf-o" /> */}
         <Icon className={ styles.icon } name="download" size="lg" />
         { filename }
       </a>
-      <span className={ styles.description }>{ description }</span>
+      <Markdown className={ styles.description }>{ description }</Markdown>
     </div>
   )
 }

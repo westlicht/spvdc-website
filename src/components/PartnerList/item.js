@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import Markdown from "react-markdownit"
 
 import styles from "./index.css"
 
@@ -13,11 +14,7 @@ const PartnerItem = ( { partner }) => {
   return (
     <a className={ styles.container } href={ url } target="_blank">
       <img className={ styles.image } src={ image } alt={ title }/>
-      { body && (
-        <p className={ styles.body }>
-          { body }
-        </p>
-      )}
+      <Markdown className={ styles.body }>{ body }</Markdown>
     </a>
   )
 }
