@@ -40,8 +40,25 @@
   }
 }
 
-.specs {
+.specification {
 /**/
+}
+
+.footnotes {
+  padding-top: 1rem;
+}
+
+.footnote {
+  font-size: 0.9rem;
+}
+
+.footnoteAnchor {
+  float: left;
+  width: 1.5rem;
+}
+
+.footnoteContent {
+  margin-left: 1.5rem;
 }
 
 .fields {

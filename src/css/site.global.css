@@ -26,15 +26,32 @@
   width: 100%;
 }
 
+.anchor::before {
+  content: "";
+  display: block;
+  height: 6rem;
+  margin: -6rem 0 0;
+}
+
 @media screen and (width <= 50em) {
   #content {
     padding-top: 5rem;
+  }
+
+  .anchor::before {
+    height: 5rem;
+    margin: -5rem 0 0;
   }
 }
 
 @media screen and (width <= 40em) {
   #content {
     padding-top: 4rem;
+  }
+
+  .anchor::before {
+    height: 4rem;
+    margin: -4rem 0 0;
   }
 }
 
