@@ -4,6 +4,7 @@
 @import "./site/_base.css";
 @import "./site/_typography.css";
 @import "./site/_lists.css";
+@import "./site/_tables.css";
 @import "./site/_forms.css";
 
 @import "./site/_header.css";
@@ -17,8 +18,13 @@
 }
 
 .subline {
-  margin-top: -2rem;
+  font-size: 1.5rem;
+  margin-top: -1rem;
   color: var(--color-primary-darker);
+}
+
+@media screen and (width <= 40em) {
+  font-size: 1.3rem;
 }
 
 #content {

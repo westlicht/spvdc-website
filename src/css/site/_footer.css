@@ -3,6 +3,7 @@
   background-color: var(--color-inverted-background);
   z-index: 1;
   color: var(--color-inverted-font);
+  margin-top: 1rem;
 
   .container {
     @neat-outer-container;
