@@ -5,10 +5,17 @@ images:
   - /assets/img/coatings/IMG_2853.jpg
   - /assets/img/coatings/IMG_2855.jpg
 fields:
-  coating: TiCN (Titancarbonnitrid)
-  color: rötlich
-  thickness: bis 3
-  temperatureCoating: < 500
-  hardness: 38 ± 3
+  coating:
+    value: TiCN (Titancarbonnitrid)
+  color:
+    value: rötlich
+  thickness:
+    value: bis 3
+  temperatureCoating:
+    value: < 500
+  hardness:
+    value: 38 ± 3
   friction:
-  temperatureUsage: 400
+    value:
+  temperatureUsage:
+    value: 400

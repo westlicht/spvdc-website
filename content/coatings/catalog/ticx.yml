@@ -1,0 +1,21 @@
+id: 3
+order: 7
+name: TiCX
+images:
+  - /assets/img/coatings/IMG_2850.jpg
+  - /assets/img/coatings/IMG_2851.jpg
+fields:
+  coating:
+    value: basierend auf TiC
+  color:
+    value: grau
+  thickness:
+    value: bis max. 3
+  temperatureCoating:
+    value: < 500
+  hardness:
+    value: 42 ± 4
+  friction:
+    value:
+  temperatureUsage:
+    value: 400

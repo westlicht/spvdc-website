@@ -1,7 +1,7 @@
 ---
-title: AlTiN-MDT
+title: AlTiN
 layout: Coating
-id: altin-mdt
+id: altin
 locale: de
 ---
 AlTiN-MDT verfügt über eine hohe Warmhärte und Oxidationsbeständigkeit, sowie eine sehr gute Zähigkeit und einer glatten Oberflächenqualität dank seiner feinen Nanostruktur. Daher ist diese Schicht ideal für thermisch belastete Werkzeuge und Bauteile. Bei Anwendungen mit hohen Schnittgeschwindigkeiten und auch für die Hart- und Trockenbearbeitung (MMS) ist AlTiN-MDT eine gute Wahl.

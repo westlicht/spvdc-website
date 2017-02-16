@@ -6,10 +6,17 @@ images:
   - /assets/img/coatings/IMG_2810.jpg
   - /assets/img/coatings/IMG_2812.jpg
 fields:
-  coating: basierend auf AlTiN+TiSiN
-  color: rot-braun
-  thickness: bis 3
-  temperatureCoating: < 500
-  hardness: 40 ± 3
+  coating:
+    value: basierend auf AlTiN+TiSiN
+  color:
+    value: rotbraun
+  thickness:
+    value: bis 3
+  temperatureCoating:
+    value: < 500
+  hardness:
+    value: 40 ± 3
   friction:
-  temperatureUsage: 1000
+    value:
+  temperatureUsage:
+    value: 1000

@@ -1,6 +1,6 @@
 ---
-title: TiC-based
+title: AlTiX
 layout: Coating
-id: tic-based
+id: altix
 locale: en
 ---

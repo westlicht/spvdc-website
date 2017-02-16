@@ -6,10 +6,17 @@ images:
   - /assets/img/coatings/IMG_2814.jpg
   - /assets/img/coatings/IMG_2826.jpg
 fields:
-  coating: basierend auf AlCrN
-  color: hellgrau
-  thickness: bis 4
-  temperatureCoating: < 500
-  hardness: 41 ± 4
+  coating:
+    value: basierend auf AlCrN
+  color:
+    value: hellgrau
+  thickness:
+    value: bis 4
+  temperatureCoating:
+    value: < 500
+  hardness:
+    value: 41 ± 4
   friction:
-  temperatureUsage: 1100
+    value:
+  temperatureUsage:
+    value: 1100

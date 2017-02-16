@@ -6,10 +6,25 @@ images:
   - /assets/img/coatings/IMG_2845.jpg
   - /assets/img/coatings/IMG_2848.jpg
 fields:
-  coating: CrN (Chromnitrid)
-  color: silbergrau
-  thickness: bis 41
-  temperatureCoating: < 200 - 5002
-  hardness: 21 ± 3
-  friction: 0.5
-  temperatureUsage: 700
+  coating:
+    value: CrN (Chromnitrid)
+  color:
+    value: silbergrau
+  thickness:
+    value: bis 4
+    footnote:
+      de: Sonderwünsche auf Anfrage.
+      fr: Sonderwünsche auf Anfrage.
+      en: Sonderwünsche auf Anfrage.
+  temperatureCoating:
+    value: < 200 - 500
+    footnote:
+      de: CrN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      fr: CrN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      en: CrN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+  hardness:
+    value: 21 ± 3
+  friction:
+    value: 0.5
+  temperatureUsage:
+    value: 700

@@ -1,6 +1,6 @@
 ---
-title: AlTiN-MDT
+title: TiCX
 layout: Coating
-id: altin-mdt
+id: ticx
 locale: fr
 ---

@@ -1,6 +1,6 @@
 ---
-title: TiC-based
+title: AlTiN
 layout: Coating
-id: tic-based
+id: altin
 locale: fr
 ---

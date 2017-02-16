@@ -6,10 +6,17 @@ images:
   - /assets/img/coatings/IMG_2838.jpg
   - /assets/img/coatings/IMG_2840.jpg
 fields:
-  coating: AlTiCrN (Aluminiumtitanchromnitrid)
-  color: hellgrau
-  thickness: bis 4
-  temperatureCoating: < 500
-  hardness: 37 ± 3
+  coating:
+    value: AlTiCrN (Aluminiumtitanchromnitrid)
+  color:
+    value: hellgrau
+  thickness:
+    value: bis 4
+  temperatureCoating:
+    value: < 500
+  hardness:
+    value: 37 ± 3
   friction:
-  temperatureUsage: 900
+    value:
+  temperatureUsage:
+    value: 900

@@ -5,10 +5,25 @@ images:
   - /assets/img/coatings/IMG_2856.jpg
   - /assets/img/coatings/IMG_2859.jpg
 fields:
-  coating: TiN (Titannitrid)
-  color: gold-gelb
-  thickness: bis 41
-  temperatureCoating: 200 - 5002
-  hardness: 27 ± 3
-  friction: 0.6
-  temperatureUsage: 600
+  coating:
+    value: TiN (Titannitrid)
+  color:
+    value: goldgelb
+  thickness:
+    value: bis 4
+    footnote:
+      de: Sonderwünsche auf Anfrage.
+      fr: Sonderwünsche auf Anfrage.
+      en: Sonderwünsche auf Anfrage.
+  temperatureCoating:
+    value: 200 - 500
+    footnote:
+      de: TiN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      fr: TiN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      en: TiN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+  hardness:
+    value: 27 ± 3
+  friction:
+    value: 0.6
+  temperatureUsage:
+    value: 600

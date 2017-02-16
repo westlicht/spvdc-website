@@ -1,6 +1,6 @@
 ---
-title: AlPro
+title: AlTiN
 layout: Coating
-id: alpro
+id: altin
 locale: en
 ---

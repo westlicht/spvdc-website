@@ -1,0 +1,22 @@
+id: 5
+order: 3
+name: AlTiX
+images:
+  - /assets/img/coatings/IMG_2828.jpg
+  - /assets/img/coatings/IMG_2831.jpg
+  - /assets/img/coatings/IMG_2836.jpg
+fields:
+  coating:
+    value: basierend auf AlTiN
+  color:
+    value: anthrazit
+  thickness:
+    value: bis 4
+  temperatureCoating:
+    value: < 500
+  hardness:
+    value: 38 ± 3
+  friction:
+    value:
+  temperatureUsage:
+    value: 900

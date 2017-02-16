@@ -1,6 +1,6 @@
 ---
-title: AlPro
+title: AlTiX
 layout: Coating
-id: alpro
+id: altix
 locale: fr
 ---
