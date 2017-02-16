@@ -23,13 +23,15 @@
   color: var(--color-primary-darker);
 }
 
-@media screen and (width <= 40em) {
-  font-size: 1.3rem;
-}
-
 #content {
   padding-top: 6rem;
   width: 100%;
+}
+
+.phenomic-BodyContainer img {
+  display: block;
+  width: 50%;
+  margin: auto;
 }
 
 .anchor::before {
@@ -40,8 +42,16 @@
 }
 
 @media screen and (width <= 50em) {
+  .subline {
+    font-size: 1.3rem;
+  }
+
   #content {
     padding-top: 5rem;
+  }
+
+  .phenomic-BodyContainer img {
+    width: 60%;
   }
 
   .anchor::before {
@@ -53,6 +63,10 @@
 @media screen and (width <= 40em) {
   #content {
     padding-top: 4rem;
+  }
+
+  .phenomic-BodyContainer img {
+    width: 75%;
   }
 
   .anchor::before {
@@ -68,7 +82,11 @@
   }
 
   body {
-    margin: 0;  /* the margin on the content before printing */
+    margin: 0;
+  }
+
+  .subline {
+    color: var(--color-font);
   }
 
   #content {
