@@ -62,16 +62,6 @@ class AppContainer extends React.Component {
   }
 
   render() {
-    // TODO necessary anymore ?
-    const locale = this.getLocale()
-    let className = ""
-    if (typeof window !== "undefined") {
-      const ie = require("ie-version")
-      if (ie.version && ie.version <= 9) {
-        className = "ie9"
-      }
-    }
-
     // old browser check
     if (typeof window !== "undefined") {
       const outdatedBrowserRework = require("outdated-browser-rework")
@@ -86,10 +76,11 @@ class AppContainer extends React.Component {
       })
     }
 
+    const locale = this.getLocale()
     return (
       <GoogleAnalyticsTracker params={ this.props.params }>
         <IntlProvider locale={ locale } messages={ messages[locale] }>
-          <div className={ className }>
+          <div>
             <div id="outdated"></div>
             <DefaultHeadMeta />
             { this.props.children }
