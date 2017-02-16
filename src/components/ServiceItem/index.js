@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react"
 import { Icon } from "react-fa"
+import Markdown from "react-markdownit"
 
 import styles from "./index.css"
 
@@ -9,7 +10,7 @@ const ServiceItem = ({ icon, image, title, body }) => {
       <div className={ styles.wrapper }>
         <div className={ styles.info }>
           <h2><Icon name={ icon } size="lg" />{ title }</h2>
-          <p>{ body }</p>
+          <Markdown>{ body }</Markdown>
         </div>
         <div
           className={ styles.image }

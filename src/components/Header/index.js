@@ -1,6 +1,7 @@
 // import React from "react"
 import React, { PropTypes } from "react"
 import { Link } from "phenomic"
+import Markdown from "react-markdownit"
 import cookie from "react-cookie"
 
 import { localeFromURL } from "../../intl"
@@ -42,16 +43,9 @@ const Header = (props, context) => {
     <div className="container">
       <div className="wrapper">
         <div className="address">
-          <p>
-            {
-              ContactData.address(context.locale).reduce((r, line) =>
-                r.concat(
-                  (<span>{ line }</span>),
-                  (<br/>)
-                )
-              , [])
-            }
-          </p>
+          <Markdown options={{ html: true }}>
+            { ContactData.address(context.locale).join("<br/>") }
+          </Markdown>
         </div>
         <div className="contact">
           <p>

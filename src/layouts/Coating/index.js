@@ -1,5 +1,7 @@
 import React, { PropTypes } from "react"
 import { FormattedMessage } from "react-intl"
+import Markdown from "react-markdownit"
+import RawHtml from "react-raw-html"
 
 import _ from "lodash"
 
@@ -7,9 +9,6 @@ const Carousel = require('react-responsive-carousel').Carousel
 require("react-responsive-carousel/lib/styles/carousel.min.css")
 
 import isBrowser from "../../utils/isBrowser"
-
-import transformMarkdown from "../../transform-markdown"
-import RawHtml from "react-raw-html"
 
 import translatedString from "../../utils/translatedString"
 
@@ -43,7 +42,7 @@ const Coating = (props, { locale }) => {
         key={ footnoteIndex }
       >
         <span className={ styles.footnoteAnchor }>{ "[" + footnoteIndex + "]" }</span>
-        <RawHtml.p className={ styles.footnoteContent }>{ transformMarkdown(body) }</RawHtml.p>
+        <Markdown className={ styles.footnoteContent }>{ body }</Markdown>
       </div>
     )
     return (<span key="footnote"><sup><a href={ "#footnote" + footnoteIndex }>{ footnoteIndex }</a></sup></span>)

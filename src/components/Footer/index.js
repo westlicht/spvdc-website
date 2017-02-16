@@ -1,9 +1,7 @@
 import React, { PropTypes } from "react"
 import { Icon } from "react-fa"
 import { FormattedMessage } from "react-intl"
-
-import transformMarkdown from "../../transform-markdown"
-import RawHtml from "react-raw-html"
+import Markdown from "react-markdownit"
 
 import translatedString from "../../utils/translatedString.js"
 
@@ -31,16 +29,9 @@ const Footer = (props, context) => {
             <h2>
               <FormattedMessage id="footer.address" defaultMessage="Address" />
             </h2>
-            <p>
-              {
-                ContactData.address(context.locale).reduce((r, line) =>
-                  r.concat(
-                    (<span>{line}</span>),
-                    (<br/>)
-                  )
-                , [])
-              }
-            </p>
+            <Markdown options={{ html: true,  }}>
+              { ContactData.address(context.locale).join("<br/>") }
+            </Markdown>
           </div>
           <div className="contact">
             <h2>
@@ -62,7 +53,7 @@ const Footer = (props, context) => {
             <h2>
               <FormattedMessage id="footer.hours" defaultMessage="Hours" />
             </h2>
-            <RawHtml.div>{ transformMarkdown(translatedString(ContactData.data.hours, context.locale)) }</RawHtml.div>
+            <Markdown options={{ html: true }}>{ translatedString(ContactData.data.hours, context.locale) }</Markdown>
           </div>
         </div>
       </div>

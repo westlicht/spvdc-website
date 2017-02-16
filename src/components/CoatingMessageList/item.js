@@ -1,8 +1,6 @@
 import React, { PropTypes } from "react"
 import { Icon } from "react-fa"
-
-import transformMarkdown from "../../transform-markdown"
-import RawHtml from "react-raw-html"
+import Markdown from "react-markdownit"
 
 import styles from "./index.css"
 
@@ -14,7 +12,7 @@ const CoatingMessageItem = ( { message }) => {
   return (
     <div className={ styles.container }>
       <Icon className={ styles.icon } name="exclamation-circle" size="lg" />
-      <RawHtml.div>{ transformMarkdown(body) }</RawHtml.div>
+      <Markdown>{ body }</Markdown>
     </div>
   )
 }
