@@ -1,4 +1,5 @@
 .section {
   @neat-outer-container;
   padding: 1rem 1rem;
+  overflow-x: scroll;
 }
