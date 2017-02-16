@@ -16,7 +16,6 @@ import PageWrapper from "../PageWrapper"
 import Section from "../../components/Section"
 import HeaderContainer from "../../components/HeaderContainer"
 import BodyContainer from "../../components/BodyContainer"
-// import { TwoColumns, LeftColumn, RightColumn } from "../../components/TwoColumns"
 import SimpleTable from "../../components/SimpleTable"
 import DownloadList from "../../components/DownloadList"
 import CoatingFinderContainer from "../../containers/CoatingFinderContainer"
@@ -28,10 +27,18 @@ import styles from "./index.css"
 const Coating = (props, { locale }) => {
 
   const id = props.head.id
-  const fields = CoatingData.fields
+  const specs = CoatingData.specs
+  const fields = specs.fields
   const coating = CoatingData.coatings[id]
 
-  let footnotes = []
+  let footnotes = [
+    (
+      <div className={ styles.footnote } key="general">
+        <Markdown className={ styles.footnoteContent }>{ translatedString(specs.footnote, locale) }</Markdown>
+      </div>
+    )
+  ]
+
   let footnoteIndex = 0
   const addFootnote = (body) => {
     footnoteIndex += 1
@@ -49,7 +56,12 @@ const Coating = (props, { locale }) => {
   }
 
   const titles = fields.map(field => {
-    const titleText = translatedString(field.title, locale)
+    // const titleText = translatedString(field.title, locale)
+    const titleText = [
+      translatedString(field.title, locale),
+      field.units ? "[" + field.units + "]" : null
+    ].join(" ")
+
     return [
       (<RawHtml.span key="value">{ titleText }</RawHtml.span>),
       field.footnote ? addFootnote(translatedString(field.footnote, locale)) : null,
@@ -58,10 +70,11 @@ const Coating = (props, { locale }) => {
 
   const values = fields.map(field => {
     const data = coating.fields[field.id]
-    const valueText = [
-      (data && data.value) ? String(translatedString(data.value, locale)) : "-",
-      field.units,
-    ].join(" ")
+    const valueText = (data && data.value) ? String(translatedString(data.value, locale)) : "-"
+    // const valueText = [
+    //   (data && data.value) ? String(translatedString(data.value, locale)) : "-",
+    //   field.units,
+    // ].join(" ")
     return [
       (<RawHtml.span key="value">{ valueText }</RawHtml.span>),
       (data && data.footnote) ? addFootnote(translatedString(data.footnote, locale)) : null,

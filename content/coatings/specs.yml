@@ -1,3 +1,8 @@
+footnote:
+  de: Alle Werte sind ungefähre Angaben und abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
+  en: Alle Werte sind ungefähre Angaben und abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
+  fr: Alle Werte sind ungefähre Angaben und abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
+fields:
 -
   id: coating
   title:
@@ -27,9 +32,10 @@
 -
   id: hardness
   title:
-    de: Schichthärte H<sub>IT</sub> (GPa)
-    en: Coating hardness H<sub>IT</sub> (GPa)
-    fr: Dureté de couche H<sub>IT</sub> (GPa)
+    de: Schichthärte H<sub>IT</sub>
+    en: Coating hardness H<sub>IT</sub>
+    fr: Dureté de couche H<sub>IT</sub>
+  units: GPa
   footnote:
     de: Gemessen durch Nanoeindringung nach ISO 14577. Bei Multilayer-Schichten kann die Härte der einzelnen Schichten variieren.
     en: Measured by nano indentation according to ISO 14577. For multilayers the hardness of the different layers varies.

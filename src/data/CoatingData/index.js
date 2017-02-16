@@ -96,7 +96,6 @@ class CoatingData {
     let messages = []
     CoatingData.messages.forEach(item => {
       var active = true
-      // messages.push(item.message)
       _.forEach(item.filters, (value, key) => {
         if (!value.includes(filterState[key])) {
           active = false
@@ -110,7 +109,7 @@ class CoatingData {
   }
 }
 
-CoatingData.fields = require("../../../content/coatings/fields.yml")
+CoatingData.specs = require("../../../content/coatings/specs.yml")
 
 CoatingData.coatings = {}
 let req = require.context("../../../content/coatings/catalog", false, /\.(yml$)/)
