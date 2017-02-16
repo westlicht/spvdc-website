@@ -1,5 +1,4 @@
-import React from "react"
-// import React, { PropTypes } from "react"
+import React, { PropTypes } from "react"
 import { Table } from "reactable"
 
 import DocPageWrapper from "../DocPageWrapper"
@@ -45,6 +44,10 @@ const DocCoatingDatabase = (props) => {
       </Section>
     </DocPageWrapper>
   )
+}
+
+DocCoatingDatabase.propTypes = {
+  body: PropTypes.string,
 }
 
 // DocCoatingDatabase.contextTypes = {

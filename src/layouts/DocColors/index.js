@@ -1,5 +1,4 @@
-import React from "react"
-// import React, { PropTypes } from "react"
+import React, { PropTypes } from "react"
 
 import DocPageWrapper from "../DocPageWrapper"
 import Section from "../../components/Section"
@@ -26,6 +25,10 @@ const DocColors = (props) => {
       </Section>
     </DocPageWrapper>
   )
+}
+
+DocColors.propTypes = {
+  body: PropTypes.string,
 }
 
 export default DocColors
