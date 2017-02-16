@@ -52,7 +52,7 @@ const Coating = (props, { locale }) => {
         <Markdown className={ styles.footnoteContent }>{ body }</Markdown>
       </div>
     )
-    return (<span key="footnote"><sup><a href={ "#footnote" + footnoteIndex }>{ footnoteIndex }</a></sup></span>)
+    return (<span key="footnote"><sup><a href={ "#footnote" + footnoteIndex }>{ "[" + footnoteIndex + "]" }</a></sup></span>)
   }
 
   const titles = fields.map(field => {
