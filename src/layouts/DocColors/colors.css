@@ -32,6 +32,10 @@
   background-color: var(--color-font);
 }
 
+.color-font-lighter {
+  background-color: var(--color-font-lighter);
+}
+
 .color-inverted-background {
   background-color: var(--color-inverted-background);
 }

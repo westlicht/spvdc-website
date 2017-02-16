@@ -21,8 +21,10 @@ import Coating from "./layouts/Coating"
 import Download from "./layouts/Download"
 import Contact from "./layouts/Contact"
 
-import CoatingDatabase from "./layouts/CoatingDatabase"
-import Style from "./layouts/Style"
+import DocPageWrapper from "./layouts/DocPageWrapper"
+import DocPage from "./layouts/DocPage"
+import DocColors from "./layouts/DocColors"
+import DocCoatingDatabase from "./layouts/DocCoatingDatabase"
 
 const layoutsProduction = {
   Entry,
@@ -43,8 +45,10 @@ const layoutsProduction = {
 }
 
 const layoutsDevelopment = isProduction() ? { } : {
-  CoatingDatabase,
-  Style,
+  DocPageWrapper,
+  DocPage,
+  DocColors,
+  DocCoatingDatabase,
 }
 
 const PageContainer = (props) => (
