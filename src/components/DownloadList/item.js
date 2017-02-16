@@ -19,7 +19,6 @@ const DownloadItem = ( { download }) => {
         <span className={ styles.filename }>{ filename }</span>
       </a>
       <Markdown className={ styles.description }>{ description }</Markdown>
-      {/* <span className={ styles.description }>{ description }</span> */}
     </div>
   )
 }
