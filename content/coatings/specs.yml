@@ -32,14 +32,10 @@ fields:
 -
   id: hardness
   title:
-    de: Schichthärte H<sub>IT</sub>
+    de: Nanohärte gemäss ISO 14577 H<sub>IT</sub>
     en: Coating hardness H<sub>IT</sub>
     fr: Dureté de couche H<sub>IT</sub>
   units: GPa
-  footnote:
-    de: Gemessen durch Nanoeindringung nach ISO 14577. Bei Multilayer-Schichten kann die Härte der einzelnen Schichten variieren.
-    en: Measured by nano indentation according to ISO 14577. For multilayers the hardness of the different layers varies.
-    fr: Mesuré par nanoindentation selon ISO 14577. Pour les revêtements multicouches, la dureté de chaque couche varie.
 -
   id: friction
   title:
