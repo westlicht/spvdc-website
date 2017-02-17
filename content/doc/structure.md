@@ -4,6 +4,8 @@ layout: DocPage
 ---
 [Documentation](/doc) | [Directory Structure](/doc/structure)
 
+***
+
 # Directory Structure
 
 - `content` - editable content of the website

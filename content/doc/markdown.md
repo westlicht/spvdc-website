@@ -4,6 +4,8 @@ layout: DocPage
 ---
 [Documentation](/doc) | [Markdown](/doc/markdown)
 
+***
+
 # Markdown
 
 All content is written in Markdown, a simple text-based syntax to control various aspects of text formatting. The following gives an overview of the available features.
