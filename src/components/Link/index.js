@@ -20,8 +20,6 @@ const customIsActive = (to, location, onlyActiveOnIndex) => {
   ) : (
     location.pathname.startsWith(to)
   )
-
-  console.log(to, location.pathname)
 }
 
 function Link(
@@ -32,7 +30,7 @@ function Link(
     children: any,
   },
   { router, location }: { router: Object, location: Object }
-): React$Element<any> {
+): React.Element<any> {
   const { to, ...otherProps } = props
 
   const simpleLink = (
