@@ -2,6 +2,7 @@ header:
   -
     url: "/en/"
     name: "Home"
+    onlyActiveOnIndex: true
   -
     url: "/en/technology/"
     name: "Technology"

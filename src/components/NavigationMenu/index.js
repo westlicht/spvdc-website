@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
-import { Link } from "phenomic"
-// import Link from "../Link"
+// import { Link } from "phenomic"
+import Link from "../Link"
 
 const NavigationMenu = (props) => {
   return (
@@ -20,6 +20,7 @@ const NavigationMenu = (props) => {
               key={ itemIndex }
               to={ item.url }
               activeClassName="active"
+              onlyActiveOnIndex={ item.onlyActiveOnIndex || false }
               onClick={ boundClick }
             >
               { item.name }
