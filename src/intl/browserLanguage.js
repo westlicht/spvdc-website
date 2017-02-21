@@ -1,4 +1,4 @@
-var uniq = require('uniq')
+import uniq from "uniq"
 
 var navigator = {}
 if (typeof window !== "undefined") {
@@ -47,7 +47,7 @@ var pick = function pick (proposedLanguages, defaultLanguage) {
     return result;
 };
 
-module.exports = {
+export default {
     first : first,
     list : list,
     pick : pick
