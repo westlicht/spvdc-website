@@ -98,10 +98,15 @@ const Coating = (props, { locale }) => {
           </div>
           <div className={ styles.right }>
             <div className={ styles.image }>
-              <Carousel showArrows={ false }  showStatus={ false } showThumbs={ false }>
+              <Carousel
+                showArrows={ false }
+                showStatus={ false }
+                showThumbs={ false }
+                showIndicators={ coating.images.length > 1 }
+              >
                 {
                   coating.images.map((image, index) => (
-                    <img src={ image } key={ index }/>
+                    <img src={ image } alt={ props.head.title } key={ index }/>
                   ))
                 }
               </Carousel>
