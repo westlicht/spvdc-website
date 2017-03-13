@@ -1,10 +1,8 @@
 id: 7
-order: 2
+order: 6
 name: AlCro
 images:
-  - /assets/img/coatings/IMG_2813.jpg
-  - /assets/img/coatings/IMG_2814.jpg
-  - /assets/img/coatings/IMG_2826.jpg
+  - /assets/img/coatings/alcro-1.jpg
 fields:
   coating:
     value: basierend auf AlCrN

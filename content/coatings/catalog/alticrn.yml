@@ -1,10 +1,8 @@
 id: 6
-order: 4
+order: 7
 name: AlTiCrN
 images:
-  - /assets/img/coatings/IMG_2837.jpg
-  - /assets/img/coatings/IMG_2838.jpg
-  - /assets/img/coatings/IMG_2840.jpg
+  - /assets/img/coatings/alticrn-1.jpg
 fields:
   coating:
     value: AlTiCrN (Aluminiumtitanchromnitrid)

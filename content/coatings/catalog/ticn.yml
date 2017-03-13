@@ -1,9 +1,8 @@
 id: 2
-order: 8
+order: 2
 name: TiCN
 images:
-  - /assets/img/coatings/IMG_2853.jpg
-  - /assets/img/coatings/IMG_2855.jpg
+  - /assets/img/coatings/ticn-1.jpg
 fields:
   coating:
     value: TiCN (Titancarbonnitrid)

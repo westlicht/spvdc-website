@@ -1,9 +1,8 @@
 id: 1
-order: 9
+order: 1
 name: TiN
 images:
-  - /assets/img/coatings/IMG_2856.jpg
-  - /assets/img/coatings/IMG_2859.jpg
+  - /assets/img/coatings/tin-1.jpg
 fields:
   coating:
     value: TiN (Titannitrid)

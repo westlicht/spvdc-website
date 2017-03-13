@@ -1,9 +1,8 @@
 id: 3
-order: 7
+order: 3
 name: TiCX
 images:
-  - /assets/img/coatings/IMG_2850.jpg
-  - /assets/img/coatings/IMG_2851.jpg
+  - /assets/img/coatings/ticx-1.jpg
 fields:
   coating:
     value: basierend auf TiC
