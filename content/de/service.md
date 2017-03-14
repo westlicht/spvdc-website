@@ -10,19 +10,19 @@ sections:
   image: /assets/img/service/incoming.jpg
   title: Wareneingang
   body: |
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Im Wareneingang werden neue Aufträge entgegengenommen, auf Vollständigkeit und Klarheit geprüft und die notwendigen Bearbeitungsschritte festgelegt. Kompetente und flexible Mitarbeiter prüfen Kundenwünsche und klären im Bedarfsfall Besonderheiten mit der Produktion und unseren Kunden ab. Im Wareneingang legen wir die Basis für eine rasche und fehlerfreie Umsetzung der Aufträge.
 -
   icon: magnet
   image: /assets/img/service/demagnetize.jpg
   title: Entmagnetisieren
   body: |
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Leitende Metalle neigen dazu magnetisch zu werden, wenn diese bearbeitet (Schleifen, Biegen, Zerspanen, Tiefziehen…) oder mit Magneten gehalten werden. Auch nach erfolgreicher Entmagnetisierung be im Kunden, können Teile während des Transports erneut magnetisch aufgeladen werden. Die Entmagnetisierung ist besonders bei Kleinstwerkzeugen wichtig, um deren Anziehungskraft für Späne und Staub zu reduzieren aber auch damit in der Beschichtung keine unerwünschten Dickenunterschiede auftreten.
 -
   icon: tint
   image: /assets/img/service/cleaning.jpg
   title: Reinigung
   body: |
-    Für eine optimale Haftung der Beschichtung ist eine gründliche Reinigung unabdingbar. Rückstände wie Öle verhindern eine chemische Anbindung der Schicht und können Abplatzungen zur Folge haben. In unseren vollautomatischen und mit Ultraschall betriebenen Reinigungslinien benutzen wir FCKW-freie, alkalische Reinigungsprodukte. Jede Linie verfügt über eine eigene Wasseraufbereitungsanlage, um konstante Reinigungsergebnisse zu sichern. Bei schwierig zu entfernenden Verschmutzungen (Diamantpaste, Kunststoffrückstände, etc.) empfehlen wir eine Vorreinigung mittels Nassdruckstrahlen.
+    Für eine optimale Haftung der Beschichtung ist eine gründliche Reinigung unabdingbar. Rückstände wie Öle verhindern eine chemische Anbindung der Schicht und können Abplatzungen zur Folge haben. In unseren vollautomatischen und mit Ultraschall betriebenen Reinigungslinien benutzen wir FCKW-freie, alkalische Reinigungsprodukte. Jede Linie verfügt über eine eigene Wasseraufbereitungsanlage, um konstante Reinigungsergebnisse zu sichern. Bei schwierig zu entfernenden Verschmutzungen (Diamantpaste, Kunststoffrückstände, etc.) empfehlen wir eine Vorreinigung mittels Nassdruckstrahlen [Vorbehandlung].
 -
   icon: undo
   image: /assets/img/service/decoating.jpg
