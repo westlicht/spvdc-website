@@ -126,7 +126,7 @@ export default (config = {}) => {
           // ),
           // webpack 2
           loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
+            fallback: "style-loader",
             loader: [
               {
                 loader: "css-loader",
@@ -161,7 +161,7 @@ export default (config = {}) => {
           // ),
           // webpack 2
           loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
+            fallback: "style-loader",
             loader: [
               "css-loader",
               {
@@ -186,7 +186,7 @@ export default (config = {}) => {
           // ),
           // webpack 2
           loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
+            fallback: "style-loader",
             loader: [
               "css-loader",
             ],
@@ -223,7 +223,7 @@ export default (config = {}) => {
           // for your own CSS. If so, uncomment the line below
           // include: path.resolve(__dirname, "node_modules"),
           loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
+            fallback: "style-loader",
             loader: [
               "css-loader",
               {
