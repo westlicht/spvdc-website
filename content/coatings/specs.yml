@@ -1,51 +1,51 @@
 footnote:
   de: Alle Werte sind ungefähre Angaben und abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
-  en: Alle Werte sind ungefähre Angaben und abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
-  fr: Alle Werte sind ungefähre Angaben und abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
+  en: All values are approximate and dependent on the application and on the ambient and test conditions.
+  fr: Toutes les valeurs sont des indications approximatives et dépendent de l'utilisation et des conditions environnantes et de test.
 fields:
 -
   id: coating
   title:
     de: Schichtmaterial
     en: Coating material
-    fr: Revêtement matériel
+    fr: Matériau de revêtement
 -
   id: color
   title:
     de: Schichtfarbe
-    en: Coating color
-    fr: Revêtement couleur
+    en: Colour
+    fr: Couleur
 -
   id: thickness
   title:
     de: Schichtdickenbereich
-    en: Schichtdickenbereich
-    fr: Schichtdickenbereich
+    en: Coating thickness
+    fr: Epaisseur de couche
   units: "\u03bcm"
 -
   id: temperatureCoating
   title:
     de: Beschichtungstemperatur
-    en: Beschichtungstemperatur
-    fr: Beschichtungstemperatur
+    en: Coating temperature
+    fr: Température d'enduction
   units: °C
 -
   id: hardness
   title:
     de: Nanohärte gemäss ISO 14577 H<sub>IT</sub>
-    en: Coating hardness H<sub>IT</sub>
-    fr: Dureté de couche H<sub>IT</sub>
+    en: Nanohardness according to ISO 14577 H<sub>IT</sub>
+    fr: Nanodureté conformément à ISO 14577 H<sub>IT</sub>
   units: GPa
 -
   id: friction
   title:
     de: Reibwert gegen Stahl (trocken)
-    en: Reibwert gegen Stahl (trocken)
-    fr: Reibwert gegen Stahl (trocken)
+    en: Coefficient of friction against steel (dry)
+    fr: Coefficient de friction acier (sec)
 -
   id: temperatureUsage
   title:
     de: Maximale Einsatztemperatur
-    en: Maximale Einsatztemperatur
-    fr: Maximale Einsatztemperatur
+    en: Max. application temperature
+    fr: Température max. d'utilisation
   units: °C

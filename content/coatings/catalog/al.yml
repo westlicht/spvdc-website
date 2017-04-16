@@ -1,15 +1,24 @@
 id: 8
-order: 8
+order: 7
 name: AL(L)
 images:
   - /assets/img/coatings/al-1.jpg
 fields:
   coating:
-    value: basierend auf AlTiN+TiSiN
+    value:
+      de: basierend auf AlTiN+TiSiN
+      fr: à base d'AlTiN+TiSiN
+      en: based on AlTiN+TiSiN
   color:
-    value: rotbraun
+    value:
+      de: rotbraun
+      fr: rouge brun
+      en: reddish brown
   thickness:
-    value: bis 3
+    value:
+      de: bis 3
+      fr: jusqu'à 3
+      en: up to 3
   temperatureCoating:
     value: < 500
   hardness:

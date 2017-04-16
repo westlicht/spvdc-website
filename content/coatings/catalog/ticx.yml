@@ -5,11 +5,20 @@ images:
   - /assets/img/coatings/ticx-1.jpg
 fields:
   coating:
-    value: basierend auf TiC
+    value:
+      de: basierend auf TiC
+      fr: à base de TiC
+      en: based on TiC
   color:
-    value: grau
+    value:
+      de: grau
+      fr: gris
+      en: grey
   thickness:
-    value: bis max. 3
+    value:
+      de: bis 3
+      fr: jusqu'à 3
+      en: up to 3
   temperatureCoating:
     value: < 500
   hardness:

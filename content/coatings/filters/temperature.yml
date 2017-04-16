@@ -1,17 +1,17 @@
 id: temperature
 order: 4
 title:
-  de: Temperatur
-  fr: Temperatur
-  en: Temperatur
+  de: Beschichtungstemperatur
+  fr: Température de déposition
+  en: Coating temperature
 default: 1
 items:
 -
   id: 1
   title:
     de: Stahl - Anlasstemperatur > 450°C
-    en: Stahl - Anlasstemperatur > 450°C
-    fr: Stahl - Anlasstemperatur > 450°C
+    en: steel - Annealing temperature > 450°C
+    fr: acier - Température de revient > 450°C
   groups: []
   recommended: [1,2,3,4,5,6,7,8,9]
   available: [1,2,3,4,5,6,7,8,9]
@@ -19,8 +19,8 @@ items:
   id: 2
   title:
     de: Stahl - Anlasstemperatur < 450°C
-    en: Stahl - Anlasstemperatur < 450°C
-    fr: Stahl - Anlasstemperatur < 450°C
+    en: steel - Annealing temperature < 450°C
+    fr: acier - Température de revient < 450°C
   groups: []
   recommended: [1,4,9]
   available: [1,4,9]

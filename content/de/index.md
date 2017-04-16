@@ -2,7 +2,7 @@
 title: Home
 layout: Homepage
 id: index
-headline: Herzlich Willkommen bei swiss-PVD Coating AG
+headline: Herzlich Willkommen
 subline: Ein µ härter, ein + schneller, ein :-) herzlicher
 ---
 Als unabhängiges Familienunternehmen bieten wir Ihnen hochwertige Beschichtungslösungen für den Verschleissschutz von Werkzeugen, für deko-funktionelle Anwendungen und den Medizinalbereich an.

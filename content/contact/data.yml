@@ -27,14 +27,14 @@ hours:
     weitere Zeiten auf telefonische Anfrage<br>
     [Beschichtungsauftrag](/assets/de/download/Beschichtungsauftrag.pdf)
   fr: |
-    Montag bis Freitag<br>
-    07:30 - 16:30 Uhr<br>
-    weitere Zeiten auf telefonische Anfrage<br>
+    Du lundi à vendredi<br>
+    de 07h30 à 16h30 Uhr<br>
+    autres horaires sur demande téléphonique<br>
     [Beschichtungsauftrag](/assets/de/download/Beschichtungsauftrag.pdf)
   en: |
-    Montag bis Freitag<br>
-    07:30 - 16:30 Uhr<br>
-    weitere Zeiten auf telefonische Anfrage<br>
+    Monday to Friday<br>
+    07:30 - 16:30 h<br>
+    further times by telephone agreement<br>
     [Beschichtungsauftrag](/assets/de/download/Beschichtungsauftrag.pdf)
 
 persons:
@@ -43,8 +43,8 @@ persons:
   lastName: Mathies
   title:
     de: Kundenberater
-    fr: Conseiller de clientèle
-    en: Customer consultant
+    fr: Conseiller clientèle
+    en: Client advisor
   language:
     de: Deutsch
     fr: Allemand
@@ -57,7 +57,7 @@ persons:
   lastName: Le
   title:
     de: Verkaufsinnendienst
-    fr: Service commercial sédentaire
+    fr: Service de vente interne
     en: Internal sales
   language:
     de: Deutsch, Französisch, Englisch
@@ -71,8 +71,8 @@ persons:
   lastName: Curtins
   title:
     de: Geschäftsführerin
-    fr: Directeur
-    en: Director
+    fr: Directrice
+    en: Managing director
   language:
     de: Deutsch, Französisch, Englisch
     fr: Allemand, Français, Anglais
@@ -85,8 +85,8 @@ persons:
   lastName: Kallweit
   title:
     de: Stv. Geschäftsführerin
-    fr: Directeur adjoint
-    en: Vice director
+    fr: Directrice adjointe
+    en: Deputy managing director
   language:
     de: Deutsch, Französisch, Englisch
     fr: Allemand, Français, Anglais
@@ -99,7 +99,7 @@ persons:
   lastName: Curtins
   title:
     de: Produktionsleiter
-    fr: Directeur de production
+    fr: Responsable de production
     en: Production manager
   language:
     de: Deutsch, Englisch
@@ -113,8 +113,8 @@ persons:
   lastName: Kunz
   title:
     de: Stv. Produktionsleiterin
-    fr: Directeur de production adjoint
-    en: Vice production manager
+    fr: Responsable de production adjoint
+    en: Deputy production manager
   language:
     de: Deutsch
     fr: Allemand

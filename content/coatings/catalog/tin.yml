@@ -5,21 +5,30 @@ images:
   - /assets/img/coatings/tin-1.jpg
 fields:
   coating:
-    value: TiN (Titannitrid)
+    value:
+      de: TiN (Titannitrid)
+      fr: TiN (nitrure de titane)
+      en: TiN
   color:
-    value: goldgelb
+    value:
+      de: goldgelb
+      fr: goldgelb
+      en: golden yellow
   thickness:
-    value: bis 4
+    value:
+      de: bis 4
+      fr: jusqu'à 4
+      en: up to 4
     footnote:
       de: Sonderwünsche auf Anfrage.
-      fr: Sonderwünsche auf Anfrage.
-      en: Sonderwünsche auf Anfrage.
+      fr: Souhaits particuliers sur demande.
+      en: Special wishes on demand.
   temperatureCoating:
     value: 200 - 500
     footnote:
       de: TiN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
-      fr: TiN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
-      en: TiN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      fr: Le TiN peut être déposé dans une bonne qualité à des températures d'enduction de ≤ 200°C et peut donc être également utilisé pour des aciers d'outils avec de basses températures de revenu et/ou des aciers, sans devoir craindre des pertes de dureté ni des changements de masse.
+      en: TiN can be precipitated in good quality at coating temperatures of 200°C and can therefore also be used for tool steels with low annealing temperatures and/or stainless steels without having to fear and loss of hardness or changes in dimensions.
   hardness:
     value: 27 ± 3
   friction:

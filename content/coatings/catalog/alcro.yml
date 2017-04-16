@@ -5,11 +5,20 @@ images:
   - /assets/img/coatings/alcro-1.jpg
 fields:
   coating:
-    value: basierend auf AlCrN
+    value:
+      de: basierend auf AlCrN
+      fr: à base d'AlCrN
+      en: based on AlCrN
   color:
-    value: hellgrau
+    value:
+      de: hellgrau
+      fr: gris clair
+      en: light grey
   thickness:
-    value: bis 4
+    value:
+      de: bis 4
+      fr: jusqu'à 4
+      en: up to 4
   temperatureCoating:
     value: < 500
   hardness:

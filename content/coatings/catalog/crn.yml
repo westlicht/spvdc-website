@@ -1,25 +1,34 @@
 id: 9
-order: 9
+order: 8
 name: CrN
 images:
   - /assets/img/coatings/crn-1.jpg
 fields:
   coating:
-    value: CrN (Chromnitrid)
+    value:
+      de: CrN (Chromnitrid)
+      fr: CrN (nitrure de chrome)
+      en: CrN (chrome nitride)
   color:
-    value: silbergrau
+    value:
+      de: silbergrau
+      fr: gris argenté
+      en: silver grey
   thickness:
-    value: bis 4
+    value:
+      de: bis 4
+      fr: jusqu'à 4
+      en: up to 4
     footnote:
       de: Sonderwünsche auf Anfrage.
-      fr: Sonderwünsche auf Anfrage.
-      en: Sonderwünsche auf Anfrage.
+      fr: Souhaits particuliers sur demande.
+      en: Special wishes on demand.
   temperatureCoating:
     value: < 200 - 500
     footnote:
       de: CrN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
-      fr: CrN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
-      en: CrN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      fr: Le CrN peut être déposé dans une bonne qualité à des températures d'enduction de ≤ 200°C et peut donc être également utilisé pour des aciers d'outils avec de basses températures de revenu et/ou des aciers, sans devoir craindre des pertes de dureté ni des changements de masse.
+      en: CrN can be precipitated in good quality at coating temperatures of 200°C and can therefore also be used for tool steels with low annealing temperatures and/or stainless steels without having to fear and loss of hardness or changes in dimensions.
   hardness:
     value: 21 ± 3
   friction:

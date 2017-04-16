@@ -3,23 +3,33 @@ order: 4
 name: AlTiN
 images:
   - /assets/img/coatings/altin-1.jpg
+  - /assets/img/coatings/altin-2.jpg
 fields:
   coating:
-    value: AlTiN (Aluminiumtitannitrid)
+    value:
+      de: AlTiN (Aluminiumtitannitrid)
+      fr: AlTiN
+      en: AlTiN
   color:
-    value: anthrazit
+    value:
+      de: anthrazit
+      fr: anthracite
+      en: anthracite
   thickness:
-    value: bis 4
+    value:
+      de: bis 4
+      fr: jusqu'à 4
+      en: up to 4
     footnote:
       de: Sonderwünsche auf Anfrage.
-      fr: Sonderwünsche auf Anfrage.
-      en: Sonderwünsche auf Anfrage.
+      fr: Souhaits particuliers sur demande.
+      en: Special wishes on demand.
   temperatureCoating:
     value: 200 - 500
     footnote:
-      de: AlTiN-MDT kann bei Beschichtungstemperaturen ≤ 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
-      fr: AlTiN-MDT kann bei Beschichtungstemperaturen ≤ 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
-      en: AlTiN-MDT kann bei Beschichtungstemperaturen ≤ 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      de: AlTiN kann bei Beschichtungstemperaturen von 200°C in guter Qualität abgeschieden werden und ist daher auch für Werkzeugstähle mit tiefen Anlasstemperaturen und/oder Edelstähle anwendbar, ohne Härteverluste und Massänderungen befürchten zu müssen.
+      fr: L'AlTiN peut être déposé dans une bonne qualité à des températures d'enduction de ≤ 200°C et peut donc être également utilisé pour des aciers d'outils avec de basses températures de revenu et/ou des aciers, sans devoir craindre des pertes de dureté ni des changements de masse.
+      en: AlTiN can be precipitated in good quality at coating temperatures of 200°C and can therefore also be used for tool steels with low annealing temperatures and/or stainless steels without having to fear and loss of hardness or changes in dimensions.
   hardness:
     value: 37 ± 3
   friction:

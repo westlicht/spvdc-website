@@ -1,91 +1,91 @@
 id: material
 order: 2
 title:
-  de: Material
-  fr: Material
-  en: Material
+  de: Zu bearbeitendes Material
+  fr: Matériau à traiter
+  en: Material to be processed
 items:
 -
   id: 1
   title:
     de: Unlegierten Stahl
-    en: Unlegierten Stahl
-    fr: Unlegierten Stahl
+    en: unalloyed steel
+    fr: acier non-allié
   groups: [1,2,3]
-  recommended: [5,7,8]
-  available: [4]
+  recommended: [2,3,4,5,7,8]
+  available: [1,5,2,7,6,4,8,3]
 -
   id: 2
   title:
     de: Stahl 1000N/mm2
-    en: Stahl 1000N/mm2
-    fr: Stahl 1000N/mm2
+    en: steel 1000N/mm2
+    fr: acier 1000N/mm2
   groups: [1,2]
-  recommended: [7,8]
-  available: [4,5]
+  recommended: [2,3,4,5,7,8]
+  available: [1,5,2,7,6,4,8,3]
 -
   id: 3
   title:
     de: Stahl >1000N/mm2
-    en: Stahl >1000N/mm2
-    fr: Stahl >1000N/mm2
+    en: steel >1000N/mm2
+    fr: acier >1000N/mm2
   groups: [1,2]
-  recommended: [7,8]
-  available: [5]
+  recommended: [8,7,4,5,2]
+  available: [4,5,6,8,3]
 -
   id: 4
   title:
     de: Stahl 45-56 HRC
-    en: Stahl 45-56 HRC
-    fr: Stahl 45-56 HRC
+    en: steel 45-56 HRC
+    fr: acier 45-56 HRC
   groups: [1,2]
-  recommended: [7,8]
-  available: [5]
+  recommended: [8,7,4,5,2]
+  available: [4,5,6,8,3]
 -
   id: 5
   title:
     de: Stahl > 56 HRC
-    en: Stahl > 56 HRC
-    fr: Stahl > 56 HRC
+    en: steel > 56 HRC
+    fr: acier > 56 HRC
   groups: [1,2]
-  recommended: [7,8]
-  available: [5]
+  recommended: [8,5,7]
+  available: [4,5,6,7]
 -
   id: 6
   title:
     de: Rostbeständiger Stahl
-    en: Rostbeständiger Stahl
-    fr: Rostbeständiger Stahl
+    en: stainless steel
+    fr: acier résistant à la corrosion
   groups: [1,2,3]
-  recommended: [3,7,8]
-  available: [2,3]
+  recommended: [8,3,7,5]
+  available: [6,2,7,8]
 -
   id: 7
   title:
     de: Gusseisen
-    en: Gusseisen
-    fr: Gusseisen
+    en: cast iron
+    fr: fonte d'acier
   groups: [1,2]
-  recommended: [7,8]
-  available: [4,5]
+  recommended: [3,7,8,5,4,2]
+  available: [4,8,2,7,6,3]
 -
   id: 8
   title:
     de: Guss GGG, GGV, ADI
-    en: Guss GGG, GGV, ADI
-    fr: Guss GGG, GGV, ADI
+    en: cast iron SG, CGI, ADI
+    fr: fonte SG, CGI, ADI
   groups: [1,2]
-  recommended: [7,8]
-  available: [4,5]
+  recommended: [3,7,8,5,4,2]
+  available: [4,8,2,7,6,3]
 -
   id: 9
   title:
     de: Al ohne Si; Magnesium
-    en: Al ohne Si; Magnesium
-    fr: Al ohne Si; Magnesium
+    en: Al without Si; magnesium
+    fr: Al sans Si; magnésium
   groups: [1,2,3,4]
-  recommended: [3,9]
-  available: [1,2,5,7]
+  recommended: [3,8,2]
+  available: [2,7,9]
 -
   id: 10
   title:
@@ -93,8 +93,8 @@ items:
     en: Al < 9% Si
     fr: Al < 9% Si
   groups: [1,2,3,4]
-  recommended: [3,9]
-  available: [2,5,7]
+  recommended: [3,8,2]
+  available: [2,7,9]
 -
   id: 11
   title:
@@ -102,50 +102,50 @@ items:
     en: Al > 9% Si
     fr: Al > 9% Si
   groups: [1,2,3,4]
-  recommended: [3,9]
-  available: [2,5,7]
+  recommended: [3,8,2,5]
+  available: [2,7,8,4,3]
 -
   id: 12
   title:
     de: Titan
-    en: Titan
-    fr: Titan
+    en: Titanium
+    fr: Titane
   groups: [1,2,3]
-  recommended: [5,7,8]
-  available: [3,4]
+  recommended: [8,7,5,4,2]
+  available: [4,6]
 -
   id: 13
   title:
     de: Nickellegierungen
-    en: Nickellegierungen
-    fr: Nickellegierungen
+    en: nickel alloy
+    fr: alliage de nickel
   groups: [1,2]
-  recommended: [7,8]
-  available: [4]
+  recommended: [5,8,4,7]
+  available: [4,6,7,8]
 -
   id: 14
   title:
     de: Buntmetalle (Kupfer, Bronze, Messing)
-    en: Buntmetalle (Kupfer, Bronze, Messing)
-    fr: Buntmetalle (Kupfer, Bronze, Messing)
+    en: nonferrous metals (coppper, bronze, brass)
+    fr: métal non ferreux (cuivre, bronze, laiton)
   groups: [1,2,3]
-  recommended: [3]
-  available: [9]
+  recommended: [3,2,8,9]
+  available: [2,3,9]
 -
   id: 15
   title:
     de: Edelmetall
-    en: Edelmetall
-    fr: Edelmetall
+    en: Precious metal
+    fr: Métal précieux
   groups: [1,2]
-  recommended: [3]
-  available: []
+  recommended: [3,2,8]
+  available: [2,3]
 -
   id: 16
   title:
     de: Grafit
-    en: Grafit
-    fr: Grafit
+    en: Graphite
+    fr: Graphite
   groups: [1,2]
   recommended: []
   available: [3]
@@ -153,8 +153,8 @@ items:
   id: 17
   title:
     de: Kohle-/Glasfaserverbundmaterial
-    en: Kohle-/Glasfaserverbundmaterial
-    fr: Kohle-/Glasfaserverbundmaterial
+    en: Coal and fibreglass components
+    fr: Matérial à renfort de verre / charbon
   groups: [1,2]
   recommended: []
   available: [3]

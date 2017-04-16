@@ -8,15 +8,11 @@ homepage:
 footer:
   address: "Adresse"
   contact: "Contact"
-  hours: "Delivery and pickup times"
+  hours: "Horaires de livraison et de retrait"
 technology:
   partners: "Nos partenaires"
 coatings:
   coatings: "Revêtements"
   specification: "Spécification"
   finder:
-    pleaseSelect: "Bitte wählen"
-    application: "Applikation"
-    material: "Material"
-    substrate: "Substrat"
-    cooling: "Kühlen"
+    pleaseSelect: "Veuillez sélectionner"

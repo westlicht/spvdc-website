@@ -1,7 +1,7 @@
 id: application
 order: 1
 title:
-  de: Applikation
+  de: Anwendung
   fr: Application
   en: Application
 items:
@@ -9,134 +9,134 @@ items:
   id: 1
   title:
     de: Bohren
-    en: Bohren
-    fr: Bohren
+    en: Drilling
+    fr: Percer
   groups: [1]
-  recommended: [3,8]
-  available: [2,4,5]
+  recommended: [3,4,5,8]
+  available: [1,5,6,2,3]
 -
   id: 2
   title:
     de: Reiben
-    en: Reiben
-    fr: Reiben
+    en: Reaming
+    fr: Alésage
   groups: [1]
-  recommended: [3,7,8]
-  available: [2,4,5]
+  recommended: [8,5,3]
+  available: [1,6,4,8,2,3]
 -
   id: 3
   title:
     de: Gewinden
-    en: Gewinden
-    fr: Gewinden
+    en: Threat cutting
+    fr: Filetage
   groups: [1]
-  recommended: [3,5,7]
-  available: [1,2,4,9]
+  recommended: [3,7]
+  available: [2,7,6]
 -
   id: 4
   title:
     de: Fräsen
-    en: Fräsen
-    fr: Fräsen
+    en: Milling
+    fr: Fraisage
   groups: [2]
-  recommended: [3,7,8]
-  available: [2,4,5]
+  recommended: [7,4,5,3,8]
+  available: [4,6,8,5,7,2,3]
 -
   id: 5
   title:
     de: Drehen
-    en: Drehen
-    fr: Drehen
+    en: Turning
+    fr: Tournage
   groups: [2]
-  recommended: [3,7,8]
-  available: [2,4,5]
+  recommended: [5,4,7,3]
+  available: [4,8,5,7,2,3]
 -
   id: 6
   title:
     de: Verzahnen
-    en: Verzahnen
-    fr: Verzahnen
+    en: Gear hobbing
+    fr: Taillage
   groups: [2]
-  recommended: [7]
-  available: [2,3,4,5,8]
+  recommended: [7,5]
+  available: [4]
 -
   id: 7
   title:
     de: Räumen
-    en: Räumen
-    fr: Räumen
+    en: Broaching
+    fr: Brochage
   groups: [2]
-  recommended: [3,7]
-  available: [2,4,5,8]
+  recommended: [4,3]
+  available: [8,2]
 -
   id: 8
   title:
     de: Sägen
-    en: Sägen
-    fr: Sägen
+    en: Sawing
+    fr: Sciage
   groups: [2]
-  recommended: [3,7]
-  available: [2,4,5,8]
+  recommended: [2,4,8]
+  available: [3]
 -
   id: 9
   title:
     de: Feinstanzen/Prägen
-    en: Feinstanzen/Prägen
-    fr: Feinstanzen/Prägen
+    en: Fine blanking/Stamping
+    fr: Découpage fin/Formage
   groups: [3]
-  recommended: [3,5,7]
-  available: [2,4]
+  recommended: [9,3]
+  available: [2,3,7]
 -
   id: 10
   title:
     de: Walzprofilieren
-    en: Walzprofilieren
-    fr: Walzprofilieren
+    en: Roll forming
+    fr: Profilage
   groups: [3]
-  recommended: [3,5,7]
-  available: [2,4]
+  recommended: [3]
+  available: [9]
 -
   id: 11
   title:
     de: Tiefziehen
-    en: Tiefziehen
-    fr: Tiefziehen
+    en: Deep Drawing
+    fr: Emboutissage
   groups: [3]
-  recommended: [5,7,9]
-  available: [2,3,4]
+  recommended: [3]
+  available: [3,2,9,7]
 -
   id: 12
   title:
     de: Umformen
-    en: Umformen
-    fr: Umformen
+    en: Forming
+    fr: Écrouissage
   groups: [3]
-  recommended: [5,7,9]
-  available: [2,3,4]
+  recommended: [3,2,9]
+  available: [7,9,3]
 -
   id: 13
   title:
     de: Warmumformen
-    en: Warmumformen
-    fr: Warmumformen
+    en: Hot Forming
+    fr: Écrouissage à chaud
   groups: [3]
   recommended: [7]
-  available: [4]
+  available: []
 -
   id: 14
   title:
     de: Druckguss
-    en: Druckguss
-    fr: Druckguss
+    en: High Pressure Die Casting
+    fr: Moulage métallique
   groups: [4]
-  recommended: []
-  available: [5,7]
+  recommended: [5]
+  available: [4,7]
 -
   id: 15
   title:
     de: Kunstoffspritzen
-    en: Kunstoffspritzen
-    fr: Kunstoffspritzen
+    en: Injection moulding
+    fr: Moulage par injection
   groups: [5]
   recommended: [3,7,9]
   available: [2]

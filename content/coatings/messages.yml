@@ -1,13 +1,21 @@
 -
   filters:
-    application: [1,2,3]
-  message: Bohren, Reiben, *Gewinden* Message, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    application: [1]
+  message:
+    de: TiN ist bei Hartmetallbohrern nicht geeignet.
+    fr: TiN ist bei Hartmetallbohrern nicht geeignet.
+    en: TiN ist bei Hartmetallbohrern nicht geeignet.
 -
   filters:
-    material: [1]
-  message: Stahl Message
+    temperature: [2]
+  message:
+    de: Wir beschichten Ihre Werkzeuge auch bei Temperaturen unter 200°C.
+    fr: Wir beschichten Ihre Werkzeuge auch bei Temperaturen unter 200°C.
+    en: Wir beschichten Ihre Werkzeuge auch bei Temperaturen unter 200°C.
 -
   filters:
-    application: [2]
-    material: [12]
-  message: Reiben & Titan Message
+    application: [15]
+  message:
+    de: CrN zeichnet sich insbesondere durch gute Gleit- und Antiklebeigenschaften aus. Für glasfaser- und kohlefaserverstärkte Verbundmaterialien empfehlen wir den Einsatz von TiCN oder TiCX. Bei Auftreten von Heissgaskorrosion sollte AlCrO eingesetzt werden.
+    fr: CrN zeichnet sich insbesondere durch gute Gleit- und Antiklebeigenschaften aus. Für glasfaser- und kohlefaserverstärkte Verbundmaterialien empfehlen wir den Einsatz von TiCN oder TiCX. Bei Auftreten von Heissgaskorrosion sollte AlCrO eingesetzt werden.
+    en: CrN zeichnet sich insbesondere durch gute Gleit- und Antiklebeigenschaften aus. Für glasfaser- und kohlefaserverstärkte Verbundmaterialien empfehlen wir den Einsatz von TiCN oder TiCX. Bei Auftreten von Heissgaskorrosion sollte AlCrO eingesetzt werden.

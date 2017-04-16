@@ -3,13 +3,23 @@ order: 5
 name: AlTiX
 images:
   - /assets/img/coatings/altix-1.jpg
+  - /assets/img/coatings/altix-2.jpg
 fields:
   coating:
-    value: basierend auf AlTiN
+    value:
+      de: basierend auf AlTiN
+      fr: à base d'AlTiN
+      en: based on AlTiN
   color:
-    value: anthrazit
+    value:
+      de: anthrazit
+      fr: anthracite
+      en: anthracite
   thickness:
-    value: bis 4
+    value:
+      de: bis 4
+      fr: jusqu'à 4
+      en: up to 4
   temperatureCoating:
     value: < 500
   hardness:

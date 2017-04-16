@@ -5,11 +5,20 @@ images:
   - /assets/img/coatings/ticn-1.jpg
 fields:
   coating:
-    value: TiCN (Titancarbonnitrid)
+    value:
+      de: TiCN (Titancarbonnitrid)
+      fr: TiCN
+      en: TiCN
   color:
-    value: rötlich
+    value:
+      de: rötlich
+      fr: rougeâtre
+      en: reddish
   thickness:
-    value: bis 3
+    value:
+      de: bis 3
+      fr: jusqu'à 3
+      en: up to 3
   temperatureCoating:
     value: < 500
   hardness:

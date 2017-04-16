@@ -16,7 +16,3 @@ coatings:
   specification: "Spezifikation"
   finder:
     pleaseSelect: "Bitte wählen"
-    application: "Applikation"
-    material: "Material"
-    substrate: "Substrat"
-    cooling: "Kühlen"

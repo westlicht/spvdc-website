@@ -1,15 +1,24 @@
 id: 6
-order: 7
+order: 9
 name: AlTiCrN
 images:
   - /assets/img/coatings/alticrn-1.jpg
 fields:
   coating:
-    value: AlTiCrN (Aluminiumtitanchromnitrid)
+    value:
+      de: AlTiCrN (Aluminiumtitanchromnitrid)
+      fr: AlTiCrN
+      en: AlTiCrN
   color:
-    value: hellgrau
+    value:
+      de: hellgrau
+      fr: gris clair
+      en: light grey
   thickness:
-    value: bis 4
+    value:
+      de: bis 4
+      fr: jusqu'à 4
+      en: up to 4
   temperatureCoating:
     value: < 500
   hardness:
