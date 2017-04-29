@@ -22,8 +22,8 @@ const CoatingItem = ( { coating }) => {
   return (
     <Link className={ styles.container } to={ url }>
       <img className={ styles.image } src={ image } />
+      <span className= { styles.title }>{ name }</span>
       <div className={ overlayStyles }>
-        <span className= { styles.title }>{ name }</span>
       </div>
     </Link>
   )

@@ -19,6 +19,9 @@
   --color-link: var(--color-primary-darker);
   --color-link-hover: var(--color-primary);
 
+  --color-coating-available: var(--color-secondary-lighter);
+  --color-coating-recommended: #708d21;
+
   --color-form-background: var(--color-background);
   --color-form-font: var(--color-font);
 
