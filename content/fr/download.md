@@ -7,5 +7,4 @@ downloads:
 -
   description: Allgemeine Geschäftsbedingungen.
   url: /assets/de/download/AGB.pdf
--
 ---
