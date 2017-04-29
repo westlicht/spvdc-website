@@ -2,7 +2,7 @@ id: cooling
 order: 3
 title:
   de: Kühlen
-  fr: Refroidir
+  fr: Refroidissement
   en: Cooling
 default: 1
 items:

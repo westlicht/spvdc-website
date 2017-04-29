@@ -1,9 +1,8 @@
 ---
-title: Neuer Onlineauftritt
-date: 2017-03-22
+title: Unser Neuer Webauftritt
+date: 2017-05-01
 layout: Post
 id: first-post
-headline: Unsere neue Webseite
-subline: This is a subline
+headline: Unser neuer Webauftritt
 ---
-Herzlich Wilkommen auf unserer aktualisierten und überarbeiteten Webseite.
+Herzlich Willkommen auf unserer aktualisierten und überarbeiteten Webseite.

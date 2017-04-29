@@ -1,8 +1,8 @@
 ---
-title: Premier article
-date: 2016-01-22
+title: Nouvelle présence en ligne
+date: 2017-05-01
 layout: Post
 id: first-post
-headline: Premier article
+headline: Notre nouvelle présence en ligne
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Bienvenue sur la nouvelle site de swiss-PVD Coating.

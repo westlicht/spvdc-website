@@ -1,8 +1,21 @@
 ---
-title: Second article
-date: 2016-01-23
+title: Nouveau revêtements
+date: 2017-05-01
 layout: Post
 id: second-post
-headline: Second article
+headline: Nouveaux revêtements et changements
 ---
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Nos fiches techniques sur les revêtements ont été revus et mises à jour. Certaines adaptations ont également été réalisées au niveau des dénominations : Désormais, l'AlTiN-MDT est abbrégé en AlTiN.
+
+Nous sommes fiers de vous présenter les nouveaux revêtements suivants :
+
+| couche  | description |
+| ------- | ----------- |
+| TiCX    | Sur la base du TiC, une véritable alternative aux revêtements DLC |
+| AlTiX   | Sur la base de l'AlTiN, avec d'excellents résultats lors du perçage |
+| AlCrO   | Sur la base de l'AlCrN, pour une utilisation à des températures très élevées |
+
+Vous trouverez des informations complémentaires au sujet de nos revêtements sur notre site web. Bien entendu, nous serons également ravis de vous conseiller personnellement.
+
+Bien cordialement,
+Votre équipe de la société swiss-PVD Coating AG

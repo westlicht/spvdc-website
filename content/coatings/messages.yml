@@ -3,19 +3,26 @@
     application: [1]
   message:
     de: TiN ist bei Hartmetallbohrern nicht geeignet.
-    fr: TiN ist bei Hartmetallbohrern nicht geeignet.
-    en: TiN ist bei Hartmetallbohrern nicht geeignet.
+    fr: TiN n'est pas recommandé pour des forets en métal dur.
+    en: TiN is for carbid drills not suitable.
 -
   filters:
     temperature: [2]
   message:
     de: Wir beschichten Ihre Werkzeuge auch bei Temperaturen unter 200°C.
-    fr: Wir beschichten Ihre Werkzeuge auch bei Temperaturen unter 200°C.
-    en: Wir beschichten Ihre Werkzeuge auch bei Temperaturen unter 200°C.
+    fr: Nous revêtons aussi  vos outils à des températures inférieures à 200°C.
+    en: We also coat your tools at temperatures below 200°C.
 -
   filters:
     application: [15]
   message:
     de: CrN zeichnet sich insbesondere durch gute Gleit- und Antiklebeigenschaften aus. Für glasfaser- und kohlefaserverstärkte Verbundmaterialien empfehlen wir den Einsatz von TiCN oder TiCX. Bei Auftreten von Heissgaskorrosion sollte AlCrO eingesetzt werden.
-    fr: CrN zeichnet sich insbesondere durch gute Gleit- und Antiklebeigenschaften aus. Für glasfaser- und kohlefaserverstärkte Verbundmaterialien empfehlen wir den Einsatz von TiCN oder TiCX. Bei Auftreten von Heissgaskorrosion sollte AlCrO eingesetzt werden.
-    en: CrN zeichnet sich insbesondere durch gute Gleit- und Antiklebeigenschaften aus. Für glasfaser- und kohlefaserverstärkte Verbundmaterialien empfehlen wir den Einsatz von TiCN oder TiCX. Bei Auftreten von Heissgaskorrosion sollte AlCrO eingesetzt werden.
+    fr: CrN se distingue par des caractéristiques d'anti-collage et de glissement. Pour des matériaux renforcés en fibre de verre ou de carbone, nous recommandons les couches TiCN ou TiCX. Pour des applications utilisant des gaz corrosifs, il faudrait déposer une couche d' AlCrO.
+    en: CrN stand out for its good gliding and non-sticking properties. For glas and carbon fiber reinforced materials, we recommend the use of TiCN or TiCX. In case of hot gas corrosion, AlCrO should be used.
+-
+  filters:
+    material: [9]
+  message:
+    de: Bei Anwendungen für die Bearbeitung von Aluminium (ohne Siliziumanteil) sollte eine Schichtdicke von weniger als 1µm angestrebt werden.
+    fr: Pour l'usinage de l'aluminium (sans silicium), la couche adéquate doit être plus mince que 1µm.
+    en: With regards to applications of machining aluminium (without silicon), a coating thickness of less than 1µm should be used.

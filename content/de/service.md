@@ -28,7 +28,7 @@ sections:
   image: /assets/img/service/decoating.jpg
   title: Entschichtung
   body: |
-    In unseren chemischen Entschichtungsbädern können wir unerwünschte oder fehlerhafte PVD Beschichtungen auf Stahl und Hartmetall rückstandslos entfernen. (Problematisch ist leider die Entschichtung chromhaltiger Schichten, insbesondere auf Hartmetalloberflächen.) Die Werkzeuge bleiben glänzend und die Schneidkantengeometrie intakt. Für dekorativen Anwendungen empfehlen wir nach der Entschichtung ein Aufpolieren der Teile (re-avivage), da bereits kleinste Veränderungen der Oberfläche zu einem farblich leicht abweichenden Ergebnis führen können.
+    In unseren chemischen Entschichtungsbädern können wir unerwünschte oder fehlerhafte PVD Beschichtungen auf Stahl und Hartmetall rückstandslos entfernen. Problematisch ist leider die Entschichtung chromhaltiger Schichten, insbesondere auf Hartmetalloberflächen. Die Werkzeuge bleiben glänzend und die Schneidkantengeometrie intakt. Für dekorativen Anwendungen empfehlen wir nach der Entschichtung ein Aufpolieren der Teile (re-avivage), da bereits kleinste Veränderungen der Oberfläche zu einem farblich leicht abweichenden Ergebnis führen können.
 -
   icon: cogs
   image: /assets/img/service/preprocessing.jpg

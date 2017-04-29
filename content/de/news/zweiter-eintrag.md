@@ -1,6 +1,6 @@
 ---
 title: Neue Schichten
-date: 2017-03-23
+date: 2017-05-01
 layout: Post
 id: second-post
 headline: Neue Schichten
@@ -13,7 +13,7 @@ Wir sind stolz Ihnen folgende neu entwickelten Schichten vorstellen zu können:
 
 | Schicht | Bezeichnung |
 | ------- | ----------- |
-| TiCX    | Auf Basis von TiC, eine echte Alternative zu DLC Schichten |
+| TiCX    | Entwickelt auf Basis von TiC, eine echte Alternative zu DLC Schichten |
 | AlTiX   | Auf Basis von AlTiN, mit hervorragenden Resultaten beim Bohren |
 | AlCrO   | Auf Basis von AlCrN, für den Einsatz unter sehr hohen Einsatztemperaturen |
 

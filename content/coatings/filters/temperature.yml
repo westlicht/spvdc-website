@@ -2,7 +2,7 @@ id: temperature
 order: 4
 title:
   de: Beschichtungstemperatur
-  fr: Température de déposition
+  fr: Température d'application du revêtement
   en: Coating temperature
 default: 1
 items:

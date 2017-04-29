@@ -1,8 +1,8 @@
 ---
 title: Our new website
-date: 2016-01-22
+date: 2017-05-01
 layout: Post
 id: first-post
 headline: Our new website is online
 ---
-We are happy to present you our new website.
+Welcome to our new online presentation.

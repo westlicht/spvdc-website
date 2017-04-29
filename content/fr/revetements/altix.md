@@ -4,6 +4,6 @@ layout: Coating
 id: altix
 locale: fr
 ---
-L'AlTiX est un produit que nous avons récemment mis au point et qui possède une microstructure optimisée. Par rapport aux revêtements AlTiX conventionnels, celui-ci permet une densité, une dureté et une résistance nettement plus élevées, ainsi qu'une stabilité des arêtes coupantes et une résistance à l'abrasion améliorées. Ces optimisations se reconnaissent surtout pour les applications délicates et les types d'acier difficiles à travailler.
+L'AlTiX est un produit que nous avons récemment mis au point et qui possède une microstructure optimisée. Par rapport aux revêtements AlTiN conventionnels, celui-ci possède une densité, une dureté et une résistance à la fissuration nettement plus élevées. Ces propriétés permettent une usure lente, quasiment "atomique" et sans la moindre rupture des arêtes de coupe.
 
-L'AlTiX obtient d'énormes améliorations de performance sur les outils en métal dur à grainage fin destinés à la "découpe à grande vitesse", pour le traitement à dur et à sec (MMS), ainsi que pour les perçages en profondeur. L'AlTiX se distingue également, lors du découpage fin et de la fabrication de moules, par des durées de vie accrues. Son excellente adhérence, entre autres, très avantageuse pour les outils réaffutés, car ce critère est très souvent responsable qu'insuffisances en termes de qualité.
+L'AlTiX permet d'énormes améliorations de performance sur les outils en métal dur à grain fin destinés à la "l’usinage à grande vitesse" (UGV) et l’usinage à sec (MQL), ainsi que pour les perçages profonds. L'AlTiX permet aussi une durée de vie accrue lors du découpage fin et dans la fabrication des moules. La qualité de cette couche tient aussi dans son excellente adhérence même sur des outils réaffutés.

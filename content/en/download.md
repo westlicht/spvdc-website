@@ -3,7 +3,6 @@ title: Download
 layout: Download
 id: download
 headline: Downloads
-subline: This is a subline
 downloads:
 -
   description: Terms and Condition (in German only).

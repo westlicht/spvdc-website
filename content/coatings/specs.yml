@@ -1,14 +1,14 @@
 footnote:
-  de: Alle Werte sind ungefähre Angaben und abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
-  en: All values are approximate and dependent on the application and on the ambient and test conditions.
-  fr: Toutes les valeurs sont des indications approximatives et dépendent de l'utilisation et des conditions environnantes et de test.
+  de: Alle Werte sind abhängig von der Anwendung, der Umgebungs- und Testbedingungen.
+  en: All values dependent on the application, on the ambient environment and test conditions.
+  fr: Ces valeurs peuvent varier en fonction des conditions d'utilisations et de test.
 fields:
 -
   id: coating
   title:
     de: Schichtmaterial
     en: Coating material
-    fr: Matériau de revêtement
+    fr: Matériau
 -
   id: color
   title:
@@ -27,7 +27,7 @@ fields:
   title:
     de: Beschichtungstemperatur
     en: Coating temperature
-    fr: Température d'enduction
+    fr: Température de déposition
   units: °C
 -
   id: hardness
@@ -41,7 +41,7 @@ fields:
   title:
     de: Reibwert gegen Stahl (trocken)
     en: Coefficient of friction against steel (dry)
-    fr: Coefficient de friction acier (sec)
+    fr: Coefficient de frottement contre l'acier (sec)
 -
   id: temperatureUsage
   title:
