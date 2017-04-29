@@ -3,7 +3,6 @@ title: Service
 layout: Service
 id: service
 headline: Service
-subline: Unser Beschichtungsservice umfasst neben der Abscheidung von PVD-Schichten auch viele zusätzliche Dienstleistungen.
 sections:
 -
   icon: sign-in
@@ -60,3 +59,4 @@ sections:
   body: |
     Nach Freigabe der Qualitätssicherung werden die Einzelteile von der Beladestation (Karussell) entnommen und optisch kontrolliert (ggf. mit Hilfe eines Lichtmikroskops). Im Warenausgang wird zusätzlich überprüft ob alle Teile die gemäss Wareneingang geforderten Bearbeitungsschritte durchlaufen haben. Einwandfreie Teile werden falls notwendig gefettet und anschliessend verpackt. In der Regel wird das Verpackungsmaterial des Kunden für den Rückversand verwendet (dieses wird vom Kunden so ausgewählt, dass die Teile bestmöglich geschützt sind und es kann unnötiger Abfall vermieden werden). Je nach Kundenwunsch wird der Kunde zur Abholung avisiert oder das Paket dem entsprechenden Transportkanal zugeführt.
 ---
+Unser Beschichtungsservice umfasst neben der Abscheidung von PVD-Schichten auch viele zusätzliche Dienstleistungen.
