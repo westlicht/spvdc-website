@@ -6,17 +6,17 @@ headline: Downloads
 downloads:
 -
   description: Unsere Allgemeinen Geschäftsbedingungen
-  url: /assets/de/download/AGB.pdf
+  url: /assets/de/download/agb.pdf
 -
   description: Bitte lesen Sie unsere Hinweise vor einer ersten Bestellung sorgfältig durch.
-  url: /assets/de/download/Wichtige Hinweise für eine erfolgreiche Beschichtung nach dem PVD-Verfahren.pdf
+  url: /assets/de/download/wichtige-hinweise-pvd-verfahren.pdf
 -
   description: Ein ausgefülltes Formular sichert eine einwandfreie Abwicklung Ihres Beschichtungsauftrages.
-  url: /assets/de/download/Beschichtungsauftrag.pdf
+  url: /assets/de/download/beschichtungsauftrag.pdf
 -
   description: Word-Version unseres Beschichtungsauftrages.
-  url: /assets/de/download/Beschichtungsauftrag.docx
+  url: /assets/de/download/beschichtungsauftrag.docx
 -
   description: Formular für Anfragen zu Schichtempfehlung und Offerte.
-  url: /assets/de/download/Technische Angaben für Schichtempfehlung und Offerte.pdf
+  url: /assets/de/download/schichtempfehlung-und-offerte.pdf
 ---

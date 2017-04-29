@@ -6,5 +6,5 @@ headline: Downloads
 downloads:
 -
   description: Allgemeine Geschäftsbedingungen.
-  url: /assets/de/download/AGB.pdf
+  url: /assets/de/download/agb.pdf
 ---
