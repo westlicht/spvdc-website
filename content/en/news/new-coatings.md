@@ -2,7 +2,7 @@
 title: New Coatings
 date: 2017-05-01
 layout: Post
-id: second-post
+id: new-coatings
 headline: New Coatings
 ---
 Dear Customers,

@@ -1,8 +1,8 @@
 ---
 title: Nouvelle présence en ligne
-date: 2017-05-01
+date: 2017-04-30
 layout: Post
-id: first-post
+id: welcome
 headline: Notre nouvelle présence en ligne
 ---
 Bienvenue sur la nouvelle site de swiss-PVD Coating.

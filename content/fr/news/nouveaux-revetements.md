@@ -2,7 +2,7 @@
 title: Nouveau revêtements
 date: 2017-05-01
 layout: Post
-id: second-post
+id: new-coatings
 headline: Nouveaux revêtements et changements
 ---
 Nos fiches techniques sur les revêtements ont été revus et mises à jour. Certaines adaptations ont également été réalisées au niveau des dénominations : Désormais, l'AlTiN-MDT est abbrégé en AlTiN.

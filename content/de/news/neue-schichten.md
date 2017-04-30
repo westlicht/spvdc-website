@@ -2,7 +2,7 @@
 title: Neue Schichten
 date: 2017-05-01
 layout: Post
-id: second-post
+id: new-coatings
 headline: Neue Schichten
 ---
 Sehr geehrte Kunden
