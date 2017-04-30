@@ -1,5 +1,6 @@
 import React, { PropTypes } from "react"
 import isBrowser from "../../utils/isBrowser"
+import Markdown from "react-markdownit"
 
 import PageWrapper from "../PageWrapper"
 
@@ -19,6 +20,9 @@ const CoatingIndex = (props) => {
         <BodyContainer>{ props.body }</BodyContainer>
         { isBrowser() && (
           <CoatingFinderContainer />
+        )}
+        { props.head.footnote && (
+          <Markdown>{ props.head.footnote }</Markdown>
         )}
       </Section>
     </PageWrapper>
