@@ -20,6 +20,6 @@ partners:
 ---
 Our thin layers are applied to metallic substrates (tools, watch parts, etc.) using cathodic arc evaporation in a highly pressurised vacuum. The layer thicknesses generally range from 1-3 µm and, depending on the composition, have a hardness of 1000 to 4000 HV. Due to the low layer thicknesses, the surfaces are not changed and important properties such as cutting ability or surface roughness are retained. Our standard process temperatures are ideally 480°C, but we also offer processes at lower temperatures for more delicate materials (min. 200°C).
 
-## Coating machines
+### Coating machines
 
 Our ultramodern coating machines are manufactured by our sister company, [swiss-PVD Ltd.](http://www.swiss-pvd.ch), in Le Locle. Our machines have an ideal physical arrangement of the coating sources in the machine chamber. This optimum coating symmetry in combination with high-pulsed plasma power results in an extremely concentrated plasma density; the ideal precondition for very fine, hard and extremely resilient wear protection and anti-friction coatings. Our coating machines also have a segmented loading station (carousel). Dynamic coating is used for a full load of satellites, but static coating is also possible. In this case, for example, only two satellites are loaded and are turned statically in front of the coating source in the plasma. This enables flexible and fast order handling, as the machine does not have to be completely filled. Thanks to modern process control, all the important parameters are constantly monitored and controlled.

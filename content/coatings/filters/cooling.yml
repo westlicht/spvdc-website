@@ -9,18 +9,18 @@ items:
 -
   id: 1
   title:
-    de: nass
-    en: wet
-    fr: humide
+    de: Nass
+    en: Wet
+    fr: Humide
   groups: []
   recommended: [1,2,3,4,5,6,7,8,9]
   available: [1,2,3,4,5,6,7,8,9]
 -
   id: 2
   title:
-    de: trocken / MMS
-    en: dry / MQL
-    fr: sec / MQL
+    de: Trocken / MMS
+    en: Dry / MQL
+    fr: Sec / MQL
   groups: []
   recommended: [4,5,6,7,8]
   available: [4,5,6,7,8]

@@ -9,7 +9,7 @@ downloads:
   url: /assets/en/download/agb.pdf
 -
   description: Please read these important notes carefully before sending us your first order.
-  url: /assets/en/download/important-notes-pvd-process.pdf
+  url: /assets/en/download/important-notes-pvd.pdf
 -
   description: Use this form for your Coating Order.
   url: /assets/en/download/coating-order.pdf

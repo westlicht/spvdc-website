@@ -9,8 +9,8 @@ items:
   id: 1
   title:
     de: Unlegierten Stahl
-    en: unalloyed steel
-    fr: acier non-allié
+    en: Unalloyed steel
+    fr: Acier non-allié
   groups: [1,2,3]
   recommended: [2,3,4,5,7,8]
   available: [1,5,2,7,6,4,8,3]
@@ -18,8 +18,8 @@ items:
   id: 2
   title:
     de: Stahl 1000N/mm2
-    en: steel 1000N/mm2
-    fr: acier 1000N/mm2
+    en: Steel 1000N/mm2
+    fr: Acier 1000N/mm2
   groups: [1,2]
   recommended: [2,3,4,5,7,8]
   available: [1,5,2,7,6,4,8,3]
@@ -27,8 +27,8 @@ items:
   id: 3
   title:
     de: Stahl >1000N/mm2
-    en: steel >1000N/mm2
-    fr: acier >1000N/mm2
+    en: Steel >1000N/mm2
+    fr: Acier >1000N/mm2
   groups: [1,2]
   recommended: [8,7,4,5,2]
   available: [4,5,6,8,3]
@@ -36,8 +36,8 @@ items:
   id: 4
   title:
     de: Stahl 45-56 HRC
-    en: steel 45-56 HRC
-    fr: acier 45-56 HRC
+    en: Steel 45-56 HRC
+    fr: Acier 45-56 HRC
   groups: [1,2]
   recommended: [8,7,4,5,2]
   available: [4,5,6,8,3]
@@ -45,8 +45,8 @@ items:
   id: 5
   title:
     de: Stahl > 56 HRC
-    en: steel > 56 HRC
-    fr: acier > 56 HRC
+    en: Steel > 56 HRC
+    fr: Acier > 56 HRC
   groups: [1,2]
   recommended: [8,5,7]
   available: [4,5,6,7]
@@ -54,8 +54,8 @@ items:
   id: 6
   title:
     de: Rostbeständiger Stahl
-    en: stainless steel
-    fr: acier résistant à la corrosion
+    en: Stainless steel
+    fr: Acier résistant à la corrosion
   groups: [1,2,3]
   recommended: [8,3,7,5]
   available: [6,2,7,8]
@@ -63,8 +63,8 @@ items:
   id: 7
   title:
     de: Gusseisen
-    en: cast iron
-    fr: fonte d'acier
+    en: Cast iron
+    fr: Fonte d'acier
   groups: [1,2]
   recommended: [3,7,8,5,4,2]
   available: [4,8,2,7,6,3]
@@ -72,8 +72,8 @@ items:
   id: 8
   title:
     de: Guss GGG, GGV, ADI
-    en: cast iron SG, CGI, ADI
-    fr: fonte SG, CGI, ADI
+    en: Cast iron SG, CGI, ADI
+    fr: Fonte SG, CGI, ADI
   groups: [1,2]
   recommended: [3,7,8,5,4,2]
   available: [4,8,2,7,6,3]
@@ -117,8 +117,8 @@ items:
   id: 13
   title:
     de: Nickellegierungen
-    en: nickel alloy
-    fr: alliage de nickel
+    en: Nickel alloy
+    fr: Alliage de nickel
   groups: [1,2]
   recommended: [5,8,4,7]
   available: [4,6,7,8]
@@ -126,8 +126,8 @@ items:
   id: 14
   title:
     de: Buntmetalle (Kupfer, Bronze, Messing)
-    en: nonferrous metals (coppper, bronze, brass)
-    fr: métal non ferreux (cuivre, bronze, laiton)
+    en: Nonferrous metals (coppper, bronze, brass)
+    fr: Métal non ferreux (cuivre, bronze, laiton)
   groups: [1,2,3]
   recommended: [3,2,8,9]
   available: [2,3,9]

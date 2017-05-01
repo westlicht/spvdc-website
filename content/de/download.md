@@ -9,7 +9,7 @@ downloads:
   url: /assets/de/download/agb.pdf
 -
   description: Bitte lesen Sie unsere Hinweise vor einer ersten Bestellung sorgfältig durch.
-  url: /assets/de/download/wichtige-hinweise-pvd-verfahren.pdf
+  url: /assets/de/download/wichtige-hinweise-pvd.pdf
 -
   description: Ein ausgefülltes Formular sichert eine einwandfreie Abwicklung Ihres Beschichtungsauftrages.
   url: /assets/de/download/beschichtungsauftrag.pdf

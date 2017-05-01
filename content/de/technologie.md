@@ -20,7 +20,7 @@ partners:
 ---
 Unsere Dünnschichten werden mittels Lichtbogenverdampfen im Hochvakuum auf metallische Substrate (Werkzeuge, Uhrenteile, etc.) aufgetragen. Die Schichtdicken betragen üblicherweise 1-3 µm und weisen je nach Zusammensetzung eine Härte von 1000-4000 HV auf. Aufgrund der geringen Schichtdicke erfahren die Oberflächen keine Veränderung und wichtige Eigenschaften wie Schnittigkeit oder Oberflächenrauhigkeit bleiben erhalten. Unsere Standard-Prozesstemperaturen betragen optimalerweise 480°C, wir bieten jedoch auch Prozesse bei niedrigen Temperaturen bei heikleren Materialien an (min. 200°C).
 
-## Beschichtungsanlagen
+### Beschichtungsanlagen
 
 Unsere hochmodernen Beschichtungsanlagen werden durch unsere Schwesternfirma [swiss-PVD sa](http://www.swiss-pvd.ch) in Le Locle hergestellt. Unsere Anlagen verfügen über eine ideale physikalische Anordnung der Beschichtungsquellen in der Anlagenkammer. Diese optimale Beschichtungssymmetrie in Kombination mit einer hohen und gepulsten Plasma-Leistung ergibt eine extrem konzentrierte Plasmadichte: Die ideale Grundlage für sehr feine, harte und extrem zähe Verschleissschutz- und Gleitschichten. Unsere Beschichtungsanlagen verfügen zudem über eine segmentierbare Beladestation (Karussell). Bei einer vollen Beladung von 6 Satelliten erfolgt eine dynamische Beschichtung. Es besteht jedoch auch die Möglichkeit einer statischen Beschichtung. Hier werden z.B. nur 2 Satelliten geladen und statisch vor der Beschichtungsquelle im Plasma gedreht. Dies erlaubt uns eine sehr flexible und kurze Auftragsabwicklung, da die Anlage nicht komplett gefüllt werden muss.
 Dank einer modernen Prozess-Steuerung werden alle wichtigen Parameter ständig überwacht und kontrolliert.
