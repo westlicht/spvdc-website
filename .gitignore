@@ -6,3 +6,6 @@ node_modules
 
 # phenomic build
 dist
+
+# automatically built assets
+content/assets/*/contact/*.vcf
