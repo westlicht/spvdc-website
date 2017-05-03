@@ -9,7 +9,7 @@ const DownloadItem = ({ description, url }) => {
   const filename = url.split('/').pop()
   return (
     <div className={ styles.item }>
-      <a className={ styles.link } href={ encodeURI(url) }>
+      <a className={ styles.link } href={ encodeURI(url) } target='_blank'>
         <Icon className={ styles.icon } name="download" size="lg" />
         { filename }
       </a>

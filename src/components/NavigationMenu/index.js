@@ -12,6 +12,7 @@ const NavigationMenu = (props) => {
             <a
               key={ itemIndex }
               href={ encodeURI(item.url) }
+              target='_blank'
             >
               { item.name }
             </a>
