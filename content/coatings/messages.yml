@@ -18,7 +18,7 @@
   message:
     de: CrN zeichnet sich insbesondere durch gute Gleit- und Antiklebeigenschaften aus. Für glasfaser- und kohlefaserverstärkte Verbundmaterialien empfehlen wir den Einsatz von TiCN oder TiCX. Bei Auftreten von Heissgaskorrosion sollte AlCrO eingesetzt werden.
     fr: CrN se distingue par des caractéristiques d'anti-collage et de glissement. Pour des matériaux renforcés en fibre de verre ou de carbone, nous recommandons les couches TiCN ou TiCX. Pour des applications utilisant des gaz corrosifs, il faudrait déposer une couche d' AlCrO.
-    en: CrN stand out for its good gliding and non-sticking properties. For glas and carbon fiber reinforced materials, we recommend the use of TiCN or TiCX. In case of hot gas corrosion, AlCrO should be used.
+    en: CrN stands out for its good gliding and non-sticking properties. For glas and carbon fiber reinforced materials, we recommend the use of TiCN or TiCX. In case of hot gas corrosion, AlCrO should be used.
 -
   filters:
     material: [9]
