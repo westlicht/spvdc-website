@@ -20,7 +20,7 @@ header:
     name: "Contact"
 footer:
   -
-    url: "/assets/de/download/agb.pdf"
+    url: "/assets/en/download/agb.pdf"
     name: "AGB"
     external: true
   -
