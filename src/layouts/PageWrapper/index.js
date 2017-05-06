@@ -4,6 +4,7 @@ import invariant from "invariant"
 import { joinUri } from "phenomic"
 
 import translatedPages from "../../utils/translatedPages"
+import localeFromURL from "../../intl/localeFromURL"
 
 import Container from "../../components/Container"
 import Footer from "../../components/Footer"
@@ -62,7 +63,7 @@ const PageWrapper = (props, context) => {
           <Helmet
             key={ id }
             link={ [
-              { rel: "alternate", hreflang: item.locale, href: joinUri(context.metadata.pkg.homepage, item.__url) }
+              { rel: "alternate", hreflang: localeFromURL(item.__url), href: joinUri(context.metadata.pkg.homepage, item.__url) }
             ] }
           />
         ))
