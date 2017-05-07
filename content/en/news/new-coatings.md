@@ -14,8 +14,8 @@ We are proud to be able to present the following newly developed coatings to you
 | Schicht | Bezeichnung |
 | ------- | ----------- |
 | TiCX    | Developped on the basis of TiC, a real alternative to DLC coatings |
-| AlTiX   | On the basis of AlTiN, with outstanding results during drilling |
-| AlCrO   | On the basis of AlCrN, for use under very high application temperatures |
+| AlTiX   | Developped on the basis of AlTiN, with outstanding results during drilling |
+| AlCrO   | Developped on the basis of AlCrN, for use under very high application temperatures |
 
 You will find further information about coatings on the website. Alternatively, we would  be pleased to advise you personally on our range of coatings.
 

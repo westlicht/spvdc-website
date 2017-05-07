@@ -14,8 +14,8 @@ Wir sind stolz Ihnen folgende neu entwickelten Schichten vorstellen zu können:
 | Schicht | Bezeichnung |
 | ------- | ----------- |
 | TiCX    | Entwickelt auf Basis von TiC, eine echte Alternative zu DLC Schichten |
-| AlTiX   | Auf Basis von AlTiN, mit hervorragenden Resultaten beim Bohren |
-| AlCrO   | Auf Basis von AlCrN, für den Einsatz unter sehr hohen Einsatztemperaturen |
+| AlTiX   | Entwickelt auf Basis von AlTiN, mit hervorragenden Resultaten beim Bohren |
+| AlCrO   | Entwickelt auf Basis von AlCrN, für den Einsatz unter sehr hohen Einsatztemperaturen |
 
 Auf unserer Webseite finden Sie mehr Informationen zu unseren Schichten. Natürlich beraten wir Sie gerne auch persönlich Bzu unserem Schichtangebot.
 
