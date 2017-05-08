@@ -43,9 +43,9 @@ sections:
 -
   icon: diamond
   image: /assets/img/service/postprocessing.jpg
-  title: Traitement ultérieure
+  title: Traitement ultérieur
   body: |
-    En raison des procédés employés, le revêtement par PVD peut causer une augmentation de la rugosité des surfaces. Des gouttelettes de métal vaporisé se déposent sur la surface des pièces. Lors du traitement ultérieure, les gouttelettes sont enlevées et la surface des pièces est ainsi rendue plus brillante, ce qui améliore le glissement. Lors du post-traitement, diverses méthodes sont employées. Nous possédons des unités de sablage et de polissage ainsi qu'un personnel formé au polissage manuel.
+    En raison des procédés employés, le revêtement par PVD peut causer une augmentation de la rugosité des surfaces. Des gouttelettes de métal vaporisé se déposent sur la surface des pièces. Lors du traitement ultérieur, les gouttelettes sont enlevées et la surface des pièces est ainsi rendue plus brillante, ce qui améliore le glissement. Lors du post-traitement, diverses méthodes sont employées. Nous possédons des unités de sablage et de polissage ainsi qu'un personnel formé au polissage manuel.
 -
   icon: eye
   image: /assets/img/service/quality.jpg
