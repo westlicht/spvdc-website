@@ -1,5 +1,5 @@
 ---
-title: AlCro
+title: AlCrO
 layout: Coating
 id: alcro
 locale: de
