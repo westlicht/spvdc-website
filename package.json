@@ -27,7 +27,7 @@
     "pretest": "npm run lint",
     "test": "npm run build",
     "create-vcards": "node scripts/create-vcards.js",
-    "optimize": "node scripts/optimize-images.js",
+    "#optimize": "node scripts/optimize-images.js",
     "prebuild": "npm run create-vcards",
     "postbuild": "npm run optimize",
     "deploy": "npm run build && scripts/deploy-belele.sh"
@@ -120,7 +120,7 @@
     "flat": "^2.0.1",
     "font-awesome": "^4.7.0",
     "history": "^2.1.2",
-    "imagemin": "^5.2.2",
+    "imagemin": "^5.3.1",
     "imagemin-mozjpeg": "^6.0.0",
     "intl": "^1.2.5",
     "invariant": "^2.1.1",
@@ -133,7 +133,7 @@
     "normalize.css": "^5.0.0",
     "npm-run-all": "^3.1.1",
     "outdated-browser-rework": "^1.0.2",
-    "phenomic": "^0.20.2",
+    "phenomic": "^0.21.1",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-inherit": "^4.0.3",
@@ -169,12 +169,14 @@
     "redux": "^3.0.0",
     "sharp": "^0.17.2",
     "style-loader": "^0.13.0",
-    "stylelint": "^7.2.0",
+    "stylelint": "^6.5.0",
     "stylelint-config-standard": "^15.0.0",
     "vcards-js": "^2.4.1",
     "webpack": "^2.2.1",
     "whatwg-fetch": "^2.0.1",
     "yaml-loader": "^0.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
 }

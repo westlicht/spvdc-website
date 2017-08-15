@@ -6,7 +6,7 @@ module.exports = {
     "declaration-colon-space-before": "never",
     "declaration-block-trailing-semicolon": "always",
     // "function-comma-space-after": "always",
-    "function-url-quotes": "always",
+    // "function-url-quotes": "always",
     "media-feature-colon-space-after": "always",
     "media-feature-colon-space-before": "never",
     "media-feature-name-no-vendor-prefix": true,
