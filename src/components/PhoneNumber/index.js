@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import PropTypes from "prop-types"
 
 const PhoneNumber = ({ address, link = true }) => {
   const m = address.match(/(\+41)\s(\d{2})\s(\d{3})\s(\d{2})\s(\d{2})/)

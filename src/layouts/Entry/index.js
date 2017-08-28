@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import PropTypes from "prop-types"
 import { browserHistory } from "phenomic/lib/client"
 
 import cookie from "react-cookie"

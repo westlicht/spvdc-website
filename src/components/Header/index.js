@@ -1,5 +1,6 @@
 // import React from "react"
-import React, { PropTypes } from "react"
+import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "phenomic"
 import Markdown from "react-markdownit"
 import cookie from "react-cookie"

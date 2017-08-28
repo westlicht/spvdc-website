@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react"
+import React from "react"
+import PropTypes from "prop-types"
 import isBrowser from "../../utils/isBrowser"
 import Markdown from "react-markdownit"
 

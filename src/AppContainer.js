@@ -4,7 +4,8 @@ import "intl/locale-data/jsonp/de.js"
 import "intl/locale-data/jsonp/fr.js"
 import "intl/locale-data/jsonp/en.js"
 
-import React, { PropTypes } from "react"
+import React from "react"
+import PropTypes from "prop-types"
 import { addLocaleData, IntlProvider } from "react-intl"
 import flatten from "flat"
 
