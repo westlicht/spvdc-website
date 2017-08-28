@@ -19,4 +19,7 @@ downloads:
 -
   description: Fill out this form in order to receive a coating recommendation and price offer.
   url: /assets/en/download/recommendation-and-offer.pdf
+-
+  description: Certificate ISO 9001:2015
+  url: /assets/en/download/iso-9001.pdf
 ---

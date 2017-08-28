@@ -5,7 +5,7 @@ id: download
 headline: Downloads
 downloads:
 -
-  description: Unsere Allgemeinen Geschäftsbedingungen
+  description: Unsere Allgemeinen Geschäftsbedingungen.
   url: /assets/de/download/agb.pdf
 -
   description: Bitte lesen Sie unsere Hinweise vor einer ersten Bestellung sorgfältig durch.
@@ -19,4 +19,7 @@ downloads:
 -
   description: Formular für Anfragen zu Schichtempfehlung und Offerte.
   url: /assets/de/download/schichtempfehlung-und-offerte.pdf
+-
+  description: Zertifikat ISO 9001:2015 (Englisch)
+  url: /assets/de/download/iso-9001.pdf
 ---

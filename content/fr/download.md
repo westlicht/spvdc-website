@@ -5,7 +5,7 @@ id: download
 headline: Downloads
 downloads:
 -
-  description: Conditions commerciales générales
+  description: Conditions commerciales générales.
   url: /assets/fr/download/cg.pdf
 -
   description: Veuillez s'il vous plaît lire les remarques importantes pour un procédé PVD avant d'envoyer votre première commande.
@@ -19,4 +19,7 @@ downloads:
 -
   description: Formulaire des informations techniques pour le choix du revêtement et le devis.
   url: /assets/fr/download/choix-et-devis-revetement.pdf
+-
+  description: Certificat ISO 9001:2015 (Anglais)
+  url: /assets/fr/download/iso-9001.pdf
 ---
