@@ -98,9 +98,9 @@ persons:
   firstName: Tin
   lastName: Curtins
   title:
-    de: Produktionsleiter
-    fr: Responsable de production
-    en: Production manager
+    de: Produktionsleiter - Tools
+    fr: Responsable de production - Tools
+    en: Production manager - Tools
   language:
     de: Deutsch, Englisch
     fr: Allemand, Anglais
@@ -109,16 +109,16 @@ persons:
   email: tin.curtins@swiss-pvd-coating.ch
   image: /assets/img/team/tin-curtins.jpg
 -
-  firstName: Renate
-  lastName: Kunz
+  firstName: Rahel
+  lastName: Grolimund
   title:
-    de: Stv. Produktionsleiterin
-    fr: Responsable adjointe de production
-    en: Deputy production manager
+    de: Produktionsleiterin - Deco/Med
+    fr: Responsable de production - Deco/Med
+    en: Production manager - Deco/Med
   language:
     de: Deutsch
     fr: Allemand
     en: German
   phone: +41 32 652 87 70
-  email: renate.kunz@swiss-pvd-coating.ch
-  image: /assets/img/team/renate-kunz.jpg
+  email: rahel.grolimund@swiss-pvd-coating.ch
+  image: /assets/img/team/rahel-grolimund.jpg
