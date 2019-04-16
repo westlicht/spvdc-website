@@ -67,33 +67,19 @@ persons:
   email: info@swiss-pvd-coating.ch
   image: /assets/img/team/sophie-le.jpg
 -
-  firstName: Tina
-  lastName: Curtins
+  firstName: Makiessé
+  lastName: Favre
   title:
-    de: Geschäftsführerin
-    fr: Directrice
+    de: Geschäftsführer
+    fr: Directeur
     en: Managing director
   language:
     de: Deutsch, Französisch, Englisch
     fr: Allemand, Français, Anglais
     en: German, French, English
   phone: +41 32 652 87 70
-  email: tina.curtins@swiss-pvd-coating.ch
-  image: /assets/img/team/tina-curtins.jpg
--
-  firstName: Rahel
-  lastName: Kallweit
-  title:
-    de: Stv. Geschäftsführerin
-    fr: Directrice adjointe
-    en: Deputy managing director
-  language:
-    de: Deutsch, Französisch, Englisch
-    fr: Allemand, Français, Anglais
-    en: German, French, English
-  phone: +41 32 652 87 70
-  email: rahel.kallweit@swiss-pvd-coating.ch
-  image: /assets/img/team/rahel-kallweit.jpg
+  email: makiesse.favre@swiss-pvd-coating.ch
+  image: /assets/img/team/makiesse-favre.jpg
 -
   firstName: Tin
   lastName: Curtins
